@@ -1,0 +1,15 @@
+
+.hd{ width: 100%; height: 100%; position: relative;}
+.hd_bg{ width: 100%; height: 90%}
+.hd .hd_bg .left{ width: 50%; height: 100%; background: #CD6090; border-right: 1px solid #FF6EB4;}
+.hd .hd_bg .right{ width: 49.9%; height: 100%; background: #8B3A62;}
+.per_sta{ font-family: 'Comic Sans MS'; color: 	#363636; position:absolute; top: 40%; left: 50%; width: 420px; margin-left: -210px; height: 300px; font-size: 50px; font-weight: bold;}
+.name{ font-size: 20px; font-family: 'Comic Sans MS'; color: 	#CDB5CD; position: absolute; top: 50%; margin-left: -82px; left: 50%;}
+.hd_top{ width: 100%; border-top: 1px solid #FF6EB4;  position: absolute; top: 28px; left: 0; }
+.hd_bottom{ width: 100%; border-top: 1px solid #FF6EB4;  position: absolute; bottom: 98px; left: 0; }
+.hd_btn{ background:url(../img/xia.png) no-repeat; width: 35px; margin-left: -17px; cursor:pointer ; height: 20px; position: absolute; top: 60%;left: 50%;}
+.nav{ z-index: 9999; left:0; top:0; width:100%; height:69px; background:#FF1493; border-bottom: 2px solid #000;}
+.nav ul{ padding:0 100px}
+.nav ul li{ padding: 28px 15px 21px 15px; cursor: pointer; font-family: 'Comic Sans MS'; padding-top: 28px; font-size: 20px; color: #fff;}
+.nav ul li:hover{ background:#000}
+.nav ul .navigation:hover{background:#FF1493; width: 19px; height: 20px; display: block;}

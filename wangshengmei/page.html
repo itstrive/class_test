@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	* { margin:0; padding:0; }
+	body{ background: #000;}
+	ul { margin:50px auto; width:510px; height:510px; }
+	li { list-style:none; width:150px; height:150px; margin:10px; background:#fff; float:left; }
+	input { position:absolute; top:100px; cursor: pointer; left:50px; width:100px; height:30px; border:none; background: #399; }
+	</style>
+	<script src="js/move5.js"></script>
+	<script>
+	function Page(){
+		this.oBtn=document.getElementById('btn');
+		this.aLi=document.getElementsByTagName('li');
+		//布局转换
+		this.aPos=[];
+		for(var i=0;i<this.aLi.length;i++){
+			var left=this.aLi[i].offsetLeft;
+			var top=this.aLi[i].offsetTop;
+			this.aPos.push({
+				left:left,
+				top:top
+			});
+			this.aLi[i].style.left=left+'px';
+			this.aLi[i].style.top=top+'px';
+		}
+		for(var i=0;i<this.aLi.length;i++){
+			this.aLi[i].style.position='absolute';	
+			this.aLi[i].style.margin='0';
+		}
+		var _this=this;
+		this.oBtn.onclick=function(){
+			_this.fnClick();
+		};
+		
+	};
+
+	Page.prototype.fnClick=function(){
+		var _this=this;
+		var n=0;
+		this.timer=setInterval(function(){
+			
+			(function(index){
+				move(_this.aLi[n],{left:0,width:0,top:0,height:0},{
+					complete:function(){
+						if(index == _this.aLi.length-1){
+								_this.End();
+						}
+					}
+				});
+			})(n);
+			n++;
+			if(n == _this.aLi.length){
+				clearInterval(_this.timer);
+			}
+		},300);
+	};
+	Page.prototype.End=function(){
+		var _this=this;
+		for(var i=0;i<this.aLi.length;i++){
+			this.aLi[i].style.background='#399';
+		}
+		var n=this.aLi.length-1;
+		this.timer=setInterval(function(){
+			move(_this.aLi[n],{left:_this.aPos[n].left,top:_this.aPos[n].top,width:150,height:150});
+
+			n--;
+			if(n == -1){
+				clearInterval(_this.timer);
+			}
+		},300);
+	};
+	window.onload=function(){
+		new Page();
+	};
+	</script>
+</head>
+<body>
+	<input type="button" value="go" id="btn" />
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+		
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

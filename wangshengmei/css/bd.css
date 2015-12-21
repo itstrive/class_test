@@ -1,0 +1,30 @@
+.c1{ height: 640px;}
+.tit{ font-size: 30px;  line-height: 60px;font-family: '微软雅黑'; color: #FF1493;}
+.design li{ width: 177px; height: 206px; border:1px solid #FF1493; margin-right: 14px; margin-top: 20px; }
+.design li a{margin-left: 6px; margin-top: 8px; display: block; overflow: hidden; height: 155px; width: 164px;}
+.design li img{ width:expression(this.width>170&&this.width>this.height?155:true); height: expression(this.height>155?155:true); vertical-align:middle; max-width:164px; max-height:155px;transition:all 0.4s ease-in-out;-moz-transition:all 0.4s ease-in-out;-o-transition:all 0.4s ease-in-out;-webkit-transition:all 0.4s ease-in-out;}
+.design li a:hover img{transform:scale(1.2);-moz-transform:scale(1.2);-o-transform:scale(1.2);-webkit-transform:scale(1.2);}
+.design li h2{ color:#FF1493; font-family: '微软雅黑'; font-size: 15px; padding-left: 7px; margin-top: 16px; }
+.about{ height: 640px;background:	#2d2d35; text-align: center;}
+.aboutme { width: 900px;margin: 150px auto;}
+.aboutme li{ border-radius: 50%; width: 200px; overflow: hidden;  margin-right: 20px; height: 200px; position: relative; }
+.aboutme li a{ display: inline-block;}
+.aboutme li span{ width: 200px; border-radius: 50%; height: 200px; font-size: 30px; line-height: 200px; background: #000; opacity: 0.5; position: absolute; left: -200px; top: 0;}
+.aboutme li img{ width: 200px; height: 200px; background:#FF1493; border-radius: 50%;}
+.contact { position: relative; height: 640px; background: #2d2d35}
+.cont{ font-size: 14px; margin-top: 20px; color:#FF1493}
+.tit2{ padding-top: 50px;}
+.tell{ background: url(../img/tel.png) no-repeat;width: 19px; height: 29px; display: block;}
+.contact ol{ margin-top: 200px}
+.contact ol li span{ margin-top: 30px; color: #fff; margin-right: 50px; font-size: 15px}
+.em{ background: url(../img/email.png) no-repeat; width: 19px; height: 15px;}
+.sina{ background: url(../img/sina.png) no-repeat; width: 20px; height: 20px;}
+form{ position: relative;}
+.form{ width: 350px; height: 450px; background:#FF1493; position: absolute; right: 150px; top: 150px; }
+form input[type=text]{ width: 300px; height: 50px; background: #fff; border-radius: 5px; margin-top: 20px; margin-left: 22px;}
+textarea{ width: 300px; height: 200px; margin-top: 20px; margin-left: 22px; resize:none; border-radius: 5px;}
+form span{ font-size: 16px; color: #666;}
+.username{ position: absolute; top:38px; left: 130px;}
+.useremail{ position: absolute; top:113px; left: 130px;}
+.message{ position: absolute; top:200px; left: 130px;}
+form input[type=button]{ width: 100px; color: #FF1493; border-radius: 5px; cursor: pointer; height: 50px; margin-top: 20px; margin-left: 130px; background:#2d2d35; border: none; outline: none}
