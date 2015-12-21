@@ -1,0 +1,61 @@
+/*------------导航样式-----------*/
+body{background:#000;}
+/*.nav{width:1190px;height:158px;margin:0 auto;}
+.nav ul{overflow:hidden;margin-left:280px;height:158px;}
+.nav ul li{float:left;width:143px;text-align:center;position:relative;height:30px;line-height:30px;margin-top:60px;overflow:hidden;cursor:pointer;}
+
+.nav ul li dl{height:60px;overflow:hidden;position:absolute;left:0;top:-30px;}
+.nav ul li dl dt{font-family:'Arial';font-size:20px;text-align:center;}
+.nav ul li dl dd{font-family:'Microsoft YaHei';font-size:18px;text-align:center;}
+.nav ul li.active dl dt a{color:#00a2ff;}
+.nav ul li.active dl dd{color:#00a2ff;}*/
+/*------------第一屏样式-----------*/
+.banner{width:100%;background:url(../images/bannerbg.jpg) no-repeat center top;position:relative;margin:0 auto;}
+.head{width:162px;height:162px;background:#fff;opacity:0.4;filter:alpha(opactiy=40);border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-webkit-border-radius:50%;position:absolute;left:793px;top:78px;}
+.photo{width:150px;height:150px;background:url(../images/photo.jpg) no-repeat -10px -20px;border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-webkit-border-radius:50%;position:absolute;left:799px;top:84px;}
+.myname{font-size:24px;color:#fff;font-family:'方正兰亭超细黑简体','\65B9\6B63\5170\4EAD\8D85\7EC6\9ED1\7B80\4F53';position:absolute;/*left:365px;*/left:-300px;top:132px;}
+.myname label{font-size:36px;color:#fff;font-family:'方正兰亭大黑_GBK','\65B9\6B63\5170\4EAD\5927\9ED1_GBK';margin:0 10px;}
+.myJob{font-family:'Arial';font-size:16px;position:absolute;/*left:365px;*/left:-250px;top:202px;font-weight:bold;letter-spacing:1px;}
+.myJob label{font-family:'Microsoft YaHei';margin-left:5px;}
+.intro{width:680px;height:180px;line-height:28px;background:#fff;position:absolute;left:325px;top:265px;color:#444;font-size:16px;text-indent:32px;padding:10px;word-wrap:break-word;}
+.intro span{opacity:0;}
+.chat{position:absolute;left:355px;width:300px;height:40px;top:495px;}
+.chat a{width:43px;height:35px;display:inline-block;margin-right:25px;}
+.chat a.email{background:url(../images/email.png) no-repeat left center;}
+.chat a.email:hover{background:url(../images/emailBlue.png) no-repeat left center;}
+.chat a.weichat{background:url(../images/weiChat.png) no-repeat left center;}
+.chat a.weichat:hover{background:url(../images/chatBlue.png) no-repeat left center;}
+.chat a.blog{background:url(../images/blog.png) no-repeat left center;}
+.chat a.blog:hover{background:url(../images/blogBlue.png) no-repeat left center;}
+.arr{width:103px;height:76px;position:absolute;left:50%;bottom:50px;font-size:18px;font-family:'方正兰亭超细黑简体','\65B9\6B63\5170\4EAD\8D85\7EC6\9ED1\7B80\4F53';text-align:center;margin-left:-51px;}
+.arr img{margin-bottom:12px;}
+/*------------------第二屏幕效果---------------------*/
+.skill{background:#fff;position:relative;}
+/*左侧浮动*/
+.leftNav{width:44px;height:90%;position:absolute;left:0;top:5%;background:url(../images/leftarr.jpg) no-repeat center center #00a2ff;z-index:999;}
+.leftCon{width:280px;height:90%;position:absolute;left:-280px;top:5%;background:#00a2ff;z-index:9999;}
+.leftPhoto{width:150px;height:150px;background:#00e1ff;border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-webkit-border-radius:50%;margin:40px auto 0;overflow:hidden;}
+.leftPhoto span{display:block;width:138px;height:138px;background:url(../images/photo.jpg) no-repeat -15px -25px;border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-webkit-border-radius:50%;margin:6px 0 0 6px;}
+.leftEmail{width:195px;height:20px;line-height:20px;font-size:14px;font-family:"Microsoft YaHei";padding-left:35px;margin-top:50px;}
+.leftEmail i{display:block;float:left;width:23px;height:20px;margin-right:12px;}
+.leftEmail i img{width:23px;height:17px;margin-top:2px;}
+.leftEmail a{display:block;float:left;}
+.leftEmail a:hover{text-decoration:underline;}
+.leftMenu{width:218px;margin:75px 0 0 30px;}
+.leftMenu li{width:218px;height:30px;line-height:30px;margin-bottom:10px;background:#fff;text-align:center;font-size:16px;font-family:"Microsoft YaHei";}
+.leftMenu li a{color:#00a2ff;display:block;}
+.leftMenu li a:hover{background:#00c5ff;color:#fff;}
+.leftMenu li.on{background:#00c5ff;}
+.leftMenu li.on a{color:#fff;}
+.skillTit{width:100%;height:56px;background:url(../images/my-major.png) no-repeat center top;position:absolute;left:0;top:5%;}
+.skillCon{width:1190px;margin:0 auto;position:relative;}
+.skillCon div{border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;-webkit-border-radius:50%;text-align:center;font-weight:bold;position:absolute;font-family:"Microsoft YaHei";}
+.cirle1{width:308px;height:308px;line-height:308px;background:#eee;font-size:65px;left:100px;top:150px;}
+.cirle2{width:178px;height:178px;line-height:178px;background:#00a2ff;font-size:55px;left:528px;top:150px;}
+.cirle3{width:220px;height:220px;line-height:220px;background:#a2a2a2;font-size:40px;left:383px;top:355px;}
+.cirle4{width:270px;height:270px;line-height:270px;background:#eee;font-size:40px;left:659px;top:380px;}
+.cirle5{width:270px;height:270px;line-height:270px;background:#a2a2a2;font-size:35px;left:808px;top:97px;}
+.cirle6{width:175px;height:175px;line-height:175px;background:#00a2ff;font-size:40px;left:986px;top:380px;}
+.cirle1 a,.cirle4 a{color:#00a2ff;display:block;}
+.cirle2 a,.cirle3 a,.cirle5 a,.cirle6 a{color:#fff;display:block;}
+/*-----------------------------------第三屏----------------------------------------*/
