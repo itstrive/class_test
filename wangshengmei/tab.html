@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ padding:0; margin:0;}
+#box{ position:relative; padding-top:10px; width:400px; margin:0 auto; text-align:center;}
+input{ font-size:15px; border:none; border-radius:5px; outline:none; background:#669; color:#fff; cursor:pointer; width:73px; height:50px; margin-bottom:10px; text-align:center; line-height:50px;}
+input.active{ background:#C63;}
+#box div{ display:none;}
+#box div.active{ display:block;}
+img{ width:400px; height:600px; border-radius:5px;}
+i{ display:none; background:rgba(255,255,255,0.5); font-weight:bold; font-style:normal; cursor:pointer; width:50px; height:100px; font-size:50px; text-align:center; line-height:100px; position:absolute; top:50%; margin-top:-50px;}
+#up{ left:0;}
+#up:hover{ background:#F03;}
+#down:hover{ background:#F03;}
+#down{ right:0;}
+</style>
+<script>
+window.onload=function(){
+	var oBox=document.getElementById('box');
+	var aInp=oBox.getElementsByTagName('input');
+	var aDiv=oBox.getElementsByTagName('div');
+	var oUp=document.getElementById('up');
+	var oDown=document.getElementById('down');
+	var now=0;
+	function tab(){
+		for(var i=0;i<aInp.length;i++){
+			aInp[i].className='';
+			aDiv[i].className='';	
+		}
+		aInp[now].className='active';	
+		aDiv[now].className='active';	
+	}
+	//选项卡
+	for(var i=0;i<aInp.length;i++){
+		(function(index){
+			aInp[i].onclick=function(){
+				now=index;
+				tab();
+			};
+		})(i);	
+	}
+	//点击按钮
+	oUp.onmousedown=function(){
+		return false;
+	};
+	oDown.onmousedown=function(){
+		return false;
+	};
+	oUp.onclick=function(){
+		now--;
+		if(now == -1){
+			now=aDiv.length-1;	
+		}
+		tab();
+	};
+	oDown.onclick=next;
+	function next(){
+		now++;
+		if(now == aDiv.length){
+			now=0;	
+		}
+		tab();	
+	}
+	var timer=setInterval(next,1000);
+	oBox.onmouseover=function(){
+		clearInterval(timer);
+		oUp.style.display='block';
+		oDown.style.display='block';
+	};
+	oBox.onmouseout=function(){
+		timer=setInterval(next,1000);
+		oUp.style.display='none';
+		oDown.style.display='none';
+	};
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<i id="up"><</i>
+	<i id="down">></i>
+	<input type="button" value="第一张" class="active" />
+	<input type="button" value="第二张" />
+	<input type="button" value="第三张" />
+	<input type="button" value="第四张" />
+	<input type="button" value="第五张" />
+	<div class="active"><img src="img/IMG_0004.JPG" /></div>
+	<div><img src="img/IMG_0010.JPG" /></div>
+	<div><img src="img/IMG_0013.JPG" /></div>
+	<div><img src="img/IMG_0014.JPG" /></div>
+	<div><img src="img/IMG_0019.JPG" /></div>
+</div>
+</body>
+</html>
