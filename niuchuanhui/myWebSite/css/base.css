@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*全站公共样式*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font:12px "宋体","\5FAE\8F6F\96C5\9ED1";-webkit-text-size-adjust:100%; background:#fff;color:#fff;}
+a{color:#fff;text-decoration:none}
+a:hover{text-decoration:none}
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+p{word-wrap:break-word}
+.cls{clear:both;}
+.clear{clear:both;content:"";display:table;}
+.clearfix{zoom:1;}
+.clearfix:after{ content:"."; display:block; height:0; clear:both; overflow:hidden; visibility:visible}
+table{border-collapse:collapse;}
+.floatL{float:left;}
+.floatR{float:right;}
+input,textarea,select,button {outline:none;}
+
