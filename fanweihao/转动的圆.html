@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+.box { position:relative; width:400px; height:400px; border:1px solid #000; margin:100px auto; border-radius:50%; }
+.box span { position:absolute; left:50%; margin-left:-40px; top:0; margin-top:-40px; width:80px; height:80px; background:red; border-radius:50%; }
+</style>
+<script>
+window.onload=function (){
+	var oSpan=document.getElementById('span1');
+	var a=0; // 角度
+	var oDiv=document.getElementById('div1');
+	var R=oDiv.offsetWidth/2;
+	var total=5;
+	var aSpan=[];
+	
+	for (var i=0; i<total; i++)
+	{
+		var oSpan=document.createElement('span');
+		aSpan.push(oSpan);
+		oDiv.appendChild(oSpan);
+	}
+	
+	var bFlag=true;
+	
+	document.onclick=function (){
+		
+		if (bFlag)
+		{
+			for (var i=0; i<aSpan.length; i++)
+			{
+				var a=360/total*i;
+				move(aSpan[i], a);
+			}
+			
+			bFlag=false;
+		}
+		else
+		{
+			for (var i=0; i<aSpan.length; i++)
+			{
+				move(aSpan[i], 0);
+			}
+			
+			bFlag=true;
+		}
+		
+	};
+	
+	function move(obj, target)
+	{		
+		var start=obj.a || 0;
+		var dis=target-start;
+		
+		var count=Math.floor(1000/30);
+		var n=0;
+		
+		clearInterval(obj.timer);
+		obj.timer=setInterval(function (){
+			n++;
+			
+			var a=start+dis*n/count;
+			obj.a=a;
+			
+			var x=R+R*Math.sin(d2a(a));
+			var y=R-R*Math.cos(d2a(a));
+			
+			obj.style.left=x+'px';
+			obj.style.top=y+'px';
+			
+			if (n == count)
+			{
+				clearInterval(obj.timer);
+			}
+		}, 30);
+	}
+	function d2a(n)
+	{
+		return n*Math.PI/180;
+	}
+};
+</script>
+</head>
+
+<body>
+<div class="box" id="div1"></div>
+</body>
+</html>

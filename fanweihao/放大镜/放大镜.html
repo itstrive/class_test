@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{padding:0; margin:0;}
+span{width:100px; height:100px; background:black; opacity:0.5; filter:alpha(opacity:50); position:absolute; top:0; left:0; display:none;}
+div{width:310px; height:310px; float:left; margin:50px; position:relative; overflow:hidden;}
+#div2{display:none;}
+img{position:absolute; top:0; left:0;}
+#div1{background:url(images/m1.jpg);}
+</style>
+<script>
+window.onload=function(){
+	var oDiv1=document.getElementById('div1');
+	var oDiv2=document.getElementById('div2');
+	var oSpan=document.getElementById('span1');
+	var oImg=document.getElementById('img1');
+	
+	oDiv1.onmouseover=function(){
+		oDiv2.style.display='block';
+		oSpan.style.display='block';	
+	};
+	
+	oDiv1.onmouseout=function(){
+		oDiv2.style.display='none';	
+		oSpan.style.display='none';	
+	};
+	
+	oDiv1.onmousemove=function(ev){
+		var oEvent=ev || event;
+		var top=oEvent.clientY-oSpan.offsetHeight/2-oDiv1.offsetTop;
+		var left=oEvent.clientX-oSpan.offsetWidth/2-oDiv1.offsetLeft;
+		var X=oDiv1.offsetWidth-oSpan.offsetWidth;
+		var Y=oDiv1.offsetHeight-oSpan.offsetHeight;
+		if(top < 0)
+		{
+			top=0;
+		}
+		else if(top > Y)
+		{
+			top=Y;
+		}
+		
+		if(left < 0)
+		{
+			left=0;
+		}
+		else if(left > X)
+		{
+			left=X;
+		}
+		
+		oSpan.style.top=top+'px';
+		oSpan.style.left=left+'px';
+		
+		oImg.style.top=-top/Y*(oImg.offsetHeight-div2.offsetHeight)+'px';
+		oImg.style.left=-left/X*(oImg.offsetWidth-div2.offsetWidth)+'px';
+	};
+};
+</script>
+</head>
+
+<body>
+	<div id="div1">
+		<span id="span1"></span>
+	</div>
+	<div id="div2">
+		<img src="images/b1.jpg" id="img1"/>
+	</div>
+</body>
+</html>

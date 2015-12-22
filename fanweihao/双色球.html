@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{padding:0; margin:0;}
+span{width:100px; height:100px; border-radius:50%; margin:10px; background:red; color:#fff; font-size:60px; font-weight:bold; float:left; text-align:center; line-height:100px;}
+.blue{background:#00F;}
+div{overflow:hidden; width:850px; height:120px; position:absolute; top:50%; left:50%; margin-top:-60px; margin-left:-425px;}
+input{width:60px; height:30px; position:absolute; top:20%; left:50%; margin-left:-30px; background:red; color:#FFF; font-weight:bold;}
+</style>
+<script>
+window.onload=function(){
+	var oBtn=document.getElementById('btn');
+	var aSpan=document.getElementsByTagName('span');
+	var timer=null;
+	var arr;
+	
+	oBtn.addEventListener('click', function (){
+		clearInterval(timer);
+		timer=setInterval(function(){
+			arr=[];
+			while(arr.length < 7)
+			{
+				var n=toDub(rnd(1, 36));
+				if(! findInArr(arr, n))
+				{
+					arr.push(n);
+				}
+			}
+			arr.sort();
+			for(var i=0; i<arr.length; i++)
+			{
+				aSpan[i].innerHTML=arr[i];
+			}
+		},30);
+	}, false);
+	
+	oBtn.addEventListener('click', function (){
+		setTimeout(function(){
+			clearInterval(timer);
+			var arr1=[];
+			for(var i=0; i<arr.length; i++)
+			{
+				arr1.push(aSpan[i].innerHTML);
+			}
+			alert('恭喜您中奖了,您的中奖号码为:'+arr1);
+		},2000);
+	}, false);
+	
+	function findInArr(arr, n)
+	{
+		for(var i=0; i<arr.length; i++)
+		{
+			if(arr[i] == n)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	function rnd(n, m)
+	{
+		return Math.floor(Math.random()*(m-n)+n);
+	}
+	
+	function toDub(n)
+	{
+		return n<10 ? '0'+n : ''+n ;
+	}
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="开始" id="btn"/>
+	<div>
+		<span>02</span>
+		<span>03</span>
+		<span>05</span>
+		<span>12</span>
+		<span>24</span>
+		<span class="blue">26</span>
+		<span class="blue">32</span>
+	</div>
+</body>
+</html>

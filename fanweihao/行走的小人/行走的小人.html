@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{margin:0; padding:0;}
+#box{width:450px; height:730px; margin:0 auto; border:2px solid green; position:relative; background:url(bg.jpg) center center;}
+#box img{position:absolute; top:170px; left:400px;}
+</style>
+<script>
+window.onload=function(){
+	var oImg=document.getElementById('img1');
+	var arr=['pic1.png','pic2.png','pic3.png'];
+	var top=170;
+	var left=400;
+	var n=1;
+	var timer=setInterval(function(){
+		n++;
+		oImg.src=arr[n%arr.length];	
+		top+=10;
+		left-=7;
+		oImg.style.top=top+'px';
+		oImg.style.left=left+'px';
+		if(top >= 630 || left <= -100)
+		{
+			clearInterval(timer);
+		}
+	},100);
+};
+</script>
+</head>
+
+<body>
+<div id="box">
+	<img src="pic1.png" id="img1">
+</div>
+</body>
+</html>

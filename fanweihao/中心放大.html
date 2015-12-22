@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中心放大</title>
+<style>
+*{ padding:0; margin:0; list-style:none;}
+ul{ width:630px; height:630px; position:absolute; top:20px; left:50%; margin-left:-315px; padding:0 10px 10px 0; background:#eee;}
+li{ width:200px; height:200px; float:left; margin:10px 0 0 10px; position:relative;}
+a{ width:200px; height:200px; position:absolute;}
+a img{ width:200px; height:200px; position:absolute;}
+</style>
+<script>
+window.onload=function()
+{
+	var aLi=document.getElementsByTagName('li');
+	var aImg=document.getElementsByTagName('img');
+	for(var i=0; i<aLi.length; i++)
+	{
+		aLi[i].index=i;
+		aLi[i].onmouseover=function()
+		{
+			aImg[this.index].style.width='400px';
+			aImg[this.index].style.height='400px';
+			aImg[this.index].style.marginLeft='-100px';
+			aImg[this.index].style.marginTop='-100px';
+			aImg[this.index].style.zIndex=2;
+		};
+		aLi[i].onmouseout=function()
+		{
+			aImg[this.index].style.width='200px';
+			aImg[this.index].style.height='200px';
+			aImg[this.index].style.marginLeft='0';
+			aImg[this.index].style.marginTop='0';
+			aImg[this.index].style.zIndex=1;
+		};
+	}	
+};
+</script>
+</head>
+
+<body>
+<ul>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+  <li><a href="javascript:;"><img src="img/psu.jpg" width="400" height="400" /></a></li>
+</ul>
+</body>
+</html>

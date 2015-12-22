@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+ul,li{ margin:0px; padding:0; list-style:none;}
+.m-parent{width:300px;height:300px;position:relative;z-index:1;margin:200px auto;-webkit-transform-style:preserve-3d; -webkit-animation: spin 20s infinite linear;}   
+@-webkit-keyframes spin {
+  from { -webkit-transform:rotateX(0) rotateY(0) rotateZ(0); }
+  to   { -webkit-transform:rotateX(360deg) rotateY(360deg)  rotateZ(360deg);}
+}
+
+@-webkit-keyframes hh {
+	0%{-webkit-transform:rotatey(0);border-radius:40%;}
+	20%{-webkit-transform:rotatey(0deg);border-radius:10%;}
+	50%{-webkit-transform:rotatey(0deg);border-radius:30%;}
+	80%{-webkit-transform:rotatey(0deg); border-radius:10%;}
+	100%{-webkit-transform:rotatey(0deg);border-radius:40%;}
+	}
+.m-parent div{width:300px;height:300px;opacity:0.9;position:absolute;}
+
+.m-parent .m-child1{-webkit-transform:translateZ(150px);} 
+.div1 { width:100px; height:100px; background:#F00; -webkit-animation:hh  5s linear infinite;  opacity:0.5;}
+.div2 { width:100px; height:100px; background:#0F0; position:absolute; top:100px; left:100px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div3 { width:100px; height:100px; background:#00F; position:absolute; top:200px; left:0px;-webkit-animation:hh 5s linear infinite; opacity:0.5;}
+.div4 { width:100px; height:100px; background:#FF0; position:absolute; top:200px; left:200px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div5 { width:100px; height:100px; background:#0FF; position:absolute; top:0px; left:100px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div6 { width:100px; height:100px; background:#F0F; position:absolute; top:100px; left:200px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div7 { width:100px; height:100px; background:#06F; position:absolute; top:100px; left:0px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div8 { width:100px; height:100px; background:#C6F; position:absolute; top:0px; left:200px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+.div9 { width:100px; height:100px; background:#90F; position:absolute; top:200px; left:100px;-webkit-animation:hh 5s linear infinite;opacity:0.5;}
+
+  
+.m-parent .m-child2{left:150px;-webkit-transform:rotatey(90deg);}   
+.m-parent .m-child3{-webkit-transform: rotatey(180deg) translateZ(150px);}   
+.m-parent .m-child4{left:-150px;-webkit-transform:rotatey(270deg);}   
+.m-parent .m-child5{-webkit-transform:rotatex(90deg) translateZ(150px);}   
+.m-parent .m-child6{-webkit-transform:rotatex(90deg) translateY(0px) translateZ(-150px);}   
+li { text-align:center; line-height:100px;}
+
+
+</style>
+</head>
+<body style="background:#ccc;">
+<div class="m-parent">
+    <div class="m-child1">
+     <ul>
+      <li class="div1">☆</li>
+      <li class="div2">☆</li>
+      <li class="div3">☆</li>
+      <li class="div4">☆</li>
+      <li class="div5">☆</li>
+      <li class="div6">☆</li>
+      <li class="div7">☆</li>
+      <li class="div8">☆</li>
+      <li class="div9">☆</li>
+     </ul>
+     </div>
+    <div class="m-child2">
+          <li class="div1">★</li>
+      <li class="div2">★</li>
+      <li class="div3">★</li>
+      <li class="div4">★</li>
+      <li class="div5">★</li>
+      <li class="div6">★</li>
+      <li class="div7">★</li>
+      <li class="div8">★</li>
+      <li class="div9">★</li>
+     </ul>
+     </div>
+    <div class="m-child3">
+          <li class="div1">☆</li>
+      <li class="div2">☆</li>
+      <li class="div3">☆</li>
+      <li class="div4">☆</li>
+      <li class="div5">☆</li>
+      <li class="div6">☆</li>
+      <li class="div7">☆</li>
+      <li class="div8">☆</li>
+      <li class="div9">☆</li>
+     </ul>
+     </div>
+    <div class="m-child4">
+          <li class="div1">★</li>
+      <li class="div2">★</li>
+      <li class="div3">★</li>
+      <li class="div4">★</li>
+      <li class="div5">★</li>
+      <li class="div6">★</li>
+      <li class="div7">★</li>
+      <li class="div8">★</li>
+      <li class="div9">★</li>
+     </ul>
+     </div>
+    <div class="m-child5">
+          <li class="div1">☆</li>
+      <li class="div2">☆</li>
+      <li class="div3">☆</li>
+      <li class="div4">☆</li>
+      <li class="div5">☆</li>
+      <li class="div6">☆</li>
+      <li class="div7">☆</li>
+      <li class="div8">☆</li>
+      <li class="div9">☆</li>
+     </ul>
+     </div>
+    <div class="m-child6">
+          <li class="div1">★</li>
+      <li class="div2">★</li>
+      <li class="div3">★</li>
+      <li class="div4">★</li>
+      <li class="div5">★</li>
+      <li class="div6">★</li>
+      <li class="div7">★</li>
+      <li class="div8">★</li>
+      <li class="div9">★</li>
+     </ul>
+     </div>
+</div>
+</body>
+</html>

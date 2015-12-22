@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{background:#333;}
+*{margin:0; padding:0;}
+.box{margin:0 auto; width:630px; height:630px; border:5px solid _red; margin-top:20px;}
+img{width:200px;}
+.box div{overflow:hidden; position:relative; width:200px; height:200px; margin:5px; float:left; border-radius:50%;}
+span{position:absolute; top:0; left:-200px; width:100%; height:100%; background:#00F; opacity:0.7; border-radius:50%;}
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var oBox=document.getElementById('box');
+	var aDiv=oBox.getElementsByTagName('div');
+	var aSpan=document.getElementsByTagName('span');
+	
+	var enter=function (oDiv, oSpan){
+		oDiv.onmouseenter=function (ev){
+			var oEvent=ev || event;
+			var n=dealDiv(oDiv, oEvent);
+			
+			switch(n)
+			{
+				case 0: // right
+					oSpan.style.left='200px';
+					oSpan.style.top='0';
+					
+					move(oSpan, {left:0, top:0});
+					break;
+					
+				case 1: // bottom
+					oSpan.style.left='0';
+					oSpan.style.top='200px';
+					
+					move(oSpan, {left:0, top:0});
+					break;
+					
+				case 2: // left
+					oSpan.style.left='-200px';
+					oSpan.style.top='0';
+					
+					move(oSpan, {left:0, top:0});
+					break;
+					
+				case 3: // top
+					oSpan.style.left='0';
+					oSpan.style.top='-200px';
+					
+					move(oSpan, {left:0, top:0});
+					break;
+			};
+		};
+	};
+	
+	var leave=function (oDiv, oSpan){
+		
+		oDiv.onmouseleave=function (ev){
+			var oEvent=ev || event;
+			var n=dealDiv(oDiv, oEvent);
+			
+			switch(n)
+			{
+				case 0: // right
+					move(oSpan, {left:200});
+					break;
+					
+				case 1: // bottom
+					move(oSpan, {top:200});
+					break;
+					
+				case 2: // left
+					
+					move(oSpan, {left:-200});
+					break;
+					
+				case 3: // top
+					move(oSpan, {top:-200});
+					break;
+			};
+		};
+	};
+	
+	for (var i=0; i<aDiv.length; i++)
+	{
+		enter(aDiv[i], aSpan[i]);
+		leave(aDiv[i], aSpan[i]);
+	}
+	
+	
+	function dealDiv(obj, ev)
+	{
+		var x=obj.offsetWidth/2+obj.offsetLeft-ev.clientX;
+		var y=obj.offsetHeight/2+obj.offsetTop-ev.clientY;
+		
+		// 测试与效果无关
+		var oTest=document.getElementById('test');
+		
+		return Math.round((Math.atan2(y, x)*180/Math.PI+180)/90)%4;
+	}
+};
+</script>
+</head>
+
+<body>
+	<div class="box" id="box">
+		<div><img src="b1.png"/><span></span></div>
+		<div><img src="b2.png"/><span></span></div>
+		<div><img src="b3.png"/><span></span></div>
+		<div><img src="b4.png"/><span></span></div>
+		<div><img src="b5.png"/><span></span></div>
+		<div><img src="b6.png"/><span></span></div>
+		<div><img src="b7.png"/><span></span></div>
+		<div><img src="b8.png"/><span></span></div>
+		<div><img src="b9.png"/><span></span></div>
+	</div>
+</body>
+</html>

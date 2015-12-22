@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{padding:0; margin:0;}
+input{width:100px; height:30px; position:absolute; top:100px; left:100px;}
+div{width:700px; height:400px; margin:100px auto; position:relative;}
+span{position:absolute; background:url(img/h1.jpg) no-repeat; opacity:0;}
+</style>
+<script src="js/move.js"></script>
+<script>
+window.onload=function(){
+	var oBtn=document.getElementById('btn');	
+	var oDiv=document.getElementById('div1');	
+	var oImg=document.getElementById('img1');
+	var col=7;
+	var row=4;	
+	var h=400;
+	var w=700;
+	var height=h/row;
+	var width=w/col;
+	var aSpan=[];
+	var arr=['img/h1.jpg','img/h2.jpg','img/h3.jpg'];
+	var bFlag=false;
+	for(var r=0; r<row; r++)
+	{
+		for(var c=0; c<col; c++)
+		{
+			var oSpan=document.createElement('span');
+			oSpan.style.height=height+'px';
+			oSpan.style.width=width+'px';
+			var left=width*c;
+			var top=height*r;
+			oSpan.style.top=top+'px';
+			oSpan.style.left=left+'px';
+			oDiv.appendChild(oSpan);
+			aSpan.push(oSpan);
+			oSpan.style.backgroundPosition='-'+left+'px -'+top+'px';
+		}
+	}
+	var now=0;
+	oBtn.onclick=function (){
+		if (bFlag)
+		{
+			return;
+		}
+		bFlag=true;
+		now++;
+		//  初始化
+		var url='url('+arr[now%3]+')';
+		for (var i=0; i<aSpan.length; i++)
+		{
+			aSpan[i].style.opacity=0;
+			aSpan[i].style.backgroundImage=url;
+		}
+		var n=0; // 第几个
+		var timer=setInterval(function (){
+			(function (index){
+				move(aSpan[n], {opacity:1}, {
+					complete:function (){
+						if (index == aSpan.length-1)
+						{
+							// 运动结束
+							bFlag=false;
+							oImg.src=arr[now%3];
+						}
+					}
+				});
+			})(n);
+			n++;
+			if(n == aSpan.length)
+			{
+				clearInterval(timer);
+			}
+		},100);
+	};
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="go" id="btn"/>
+	<div id="div1">
+		<img src="img/h1.jpg" id="img1"/>
+	</div>
+</body>
+</html>

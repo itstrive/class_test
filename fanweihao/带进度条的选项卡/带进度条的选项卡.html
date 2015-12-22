@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+.box { overflow:hidden; position:relative; width:600px; height:300px; border:1px solid red; margin:100px auto; }
+li { list-style:none; }
+ol { position:absolute; top:0; left:0; }
+ol li { width:600px; height:300px; font-size:50px; line-height:300px; text-align:center; }
+
+ul { position:relative; width:480px; margin:0 auto; margin-top:240px; z-index:1; background:green; }
+ul li { float:left; margin:0 10px; width:100px; height:40px; background:#eee; } 
+span { display:block; width:10px; height:100%; background:#999; }
+</style>
+<script src="move.js"></script>
+<script>
+window.onload=function (){
+	var oOl=document.getElementById('ol1');
+	var h=oOl.children[0].offsetHeight;
+	var aSpan=document.getElementsByTagName('span');
+	var n=0;
+	
+	next();
+	
+	function next()
+	{
+		for (var i=0; i<aSpan.length; i++)
+		{
+			aSpan[i].style.width=0;
+		}
+		
+		move(aSpan[n%aSpan.length], {width:100}, {complete:function (){
+			n++;
+			move(oOl, {top:-h*(n%aSpan.length)});
+			next();
+			
+		}, duration:1000});
+	}
+	
+};
+</script>
+</head>
+
+<body>
+	<div class="box">
+		<ol id="ol1">
+			<li style="background:#F60">0</li>
+			<li style="background:#09F">1</li>
+			<li style="background:#6C6">2</li>
+			<li style="background:#F0F">4</li>
+		</ol>
+		
+		<ul>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+			<li><span></span></li>
+		</ul>
+	</div>
+</body>
+</html>
