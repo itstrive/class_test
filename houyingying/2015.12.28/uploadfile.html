@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        *{margin:0; padding:0; list-style:none; font-size:12px;}
+        .area{width:300px; height:300px; border:1px dotted #666; text-align:center; line-height:300px; margin:100px auto; display:none;}
+        .list{width:484px; margin:0 auto; overflow:hidden;}
+        .list li{width:200px; height:40px; padding:5px 10px; float:left; margin:10px; border:1px solid #ccc;}
+        .list li i{width:32px; height:32px; float:left; background:url(images/icon.png) no-repeat; margin:3px 8px 0 0;}
+        .list li p{float:left; margin-top:5px;}
+        .list li a{float:right; margin-top:10px;}
+    </style>
+    <script>
+        window.onload=function(){
+
+            var oArea=document.querySelector('.area');
+
+            document.ondragover=function(){
+
+                oArea.style.display='block';
+            };
+
+            var timer=null;
+            document.ondragleave=function(){
+
+                clearInterval(timer);
+                timer=setInterval(function(){
+                    oArea.style.display='none';
+                },500)
+            };
+
+            oArea.ondragover=function(){
+                return false;
+            };
+
+            var oList=document.getElementById('list');
+            oArea.ondrop=function(ev){
+                var files=ev.dataTransfer.files;
+                //alert(files[0].type);
+                for(var i=0; i<files.length; i++)
+                {
+                    var oLi=document.createElement('li');
+                    oLi.innerHTML='<i></i><p><span>'+files[i].name+'</span><br/><span>'+files[i].size+'k</span></p><a href="javascript:;">删除</a>';
+                    var oI=oLi.querySelector('i');
+                    alert(files[i].type);
+                    switch(files[i].type)
+                    {
+                        case 'text/plain':
+                            oI.style.backgroundPosition='-673px -64px';
+                            break;
+                        case 'image/png':
+                            oI.style.backgroundPosition='-64px -96px';
+                            break;
+                        case 'image/jpeg':
+                            oI.style.backgroundPosition='-0px -96px';
+                            break;
+                        case 'image/gif':
+                            oI.style.backgroundPosition='-32px -96px';
+                            break;
+//                        case 'image/bmp':
+//                            oI.style.backgroundPosition='-96px -96px';
+//                            break;
+//                        case 'application/msword':
+//                            oI.style.backgroundPosition='-64px -64px';
+//                            break;
+//                        case 'application/ppt':
+//                            oI.style.backgroundPosition='-96px -64px';
+//                            break;
+                        case 'text/html':
+                            oI.style.backgroundPosition='-288px -64px';
+                            break;
+                    }
+                    var oA=oLi.querySelector('a');
+                    oA.onclick=function(){
+                        oList.removeChild(oLi);
+                    };
+                    oList.appendChild(oLi);
+                }
+                return false;
+            };
+
+        };
+    </script>
+    <title>上传文件</title>
+</head>
+<body>
+    <ul class="list" id="list">
+
+    </ul>
+    <div class="area">
+        请将文件拖到此区域
+    </div>
+</body>
+</html>
