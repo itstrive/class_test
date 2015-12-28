@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{ margin: 0px; padding: 0px; list-style: none; text-decoration: none;}
+	#box{ width:700px; height: 100%; margin:0px auto;}
+	ul{ border: 1px solid #fafafa; overflow: hidden; margin:0px 0px 10px;}
+	ul li{ width: 345px; height: 45px; background: #efefef; margin:5px 2px 5px 2px; float: left;}
+	ul li em,ul li p{ float: left;}
+	ul li a{ float: right;}
+	ul li em{ display: inline-block; width: 32px; height: 32px; background: url(icon.png) no-repeat; margin: 5px;}
+	.type_text{ background-position: -673px -64px;}
+	.type_png{ background-position: -64px -100px;}
+
+
+	ul li p{ height: 32px; margin-top: 5px;}
+	ul li p i{ display:block; font-style: normal; font-size:12px; font-family: '微软雅黑'; line-height: 14px;}
+	ul li a{ float: right; height: 32px; margin-top: 5px; padding: 0px 5px; font-size: 12px; color: green; font-family: '微软雅黑'; line-height: 32px;}
+	#div1{ clear: both; width: 698px; height: 400px; background: #efefef;border: 1px dashed #999; text-align: center; line-height: 300px; display: block;}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var oDiv=document.querySelector('#div1');
+		var oUl=document.querySelector('ul');
+		var timer=null;
+
+		document.ondragover=function(){
+			oDiv.style.display='block';
+			clearInterval(timer);
+			timer=setTimeout(function(){
+				oDiv.style.display='none';
+			},100);
+		}
+
+		oDiv.ondragenter=function(){
+			this.innerHTML='释放鼠标';
+		}
+		oDiv.ondragleave=function(){
+			this.innerHTML='请将文件拖到此处';
+		}
+
+		oDiv.ondragover=function(){
+			return false;
+		}
+
+		oDiv.ondrop=function(ev){
+			var file=ev.dataTransfer.files;	
+				for(var i=0; i<file.length; i++){
+					var oLi=document.createElement('li');
+					var type=file[i].type;
+					var type_Name=null;
+					switch(type){
+						case 'image/png':
+							type_Name='type_png';
+						break;
+						case 'text/plain':
+							type_Name='type_text';
+						break;
+					}
+					oLi.innerHTML='<em class='+type_Name+'></em>'+
+								'<p>'+
+								'<i class="name">'+file[i].name+'</i>'+
+								'<i class="size">'+file[i].size+'</i>'+
+								'</p>'+
+								'<a href="javascript:;">删除</a>';
+					oUl.appendChild(oLi);
+				}
+				var aBtn=document.getElementsByTagName('a');
+				for (var i=0; i<aBtn.length; i++)
+				{
+					aBtn[i].onclick=function (){
+						var oLi=this.parentNode;
+						oLi.style.display='none';
+					};
+				}
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+<div id="box">
+	<ul>
+	</ul>
+	<div id="div1">
+		请将文件拖到此处
+	</div>
+</div>
+</body>
+</html>
