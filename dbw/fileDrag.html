@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文件拖拽</title>
+	<style>
+		*{margin:0;padding:0;}
+		#div1{
+			width:400px;
+			height:400px;
+			border:1px solid #333;
+			margin:20px auto;
+			text-align: center;
+			line-height: 400px;
+			display: none;
+		}
+		ul{
+			width:400px;
+			list-style:none;
+			margin:10px auto;
+			font-size:14px;
+			overflow: hidden;
+		}
+		ul li{
+			width:200px;
+			float:left;
+			margin-bottom: 5px;
+		}
+		.fileBg{
+			width:32px;
+			height:32px;
+			float: left;
+			background:url(icon.png) no-repeat 0 -96px;
+			margin-right:4px;
+		}
+		li a{
+			text-decoration: none;
+			float: right;
+			margin-right:15px;
+		}
+		.fileSize,.fileSucc{
+			font-size:12px;
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var oDiv=document.getElementById('div1');
+			var timer=null;
+			document.ondragover=function(){
+				oDiv.style.display='block';
+				clearTimeout(timer);
+				timer=setTimeout(function(){
+					oDiv.style.display='none';
+				},300);
+			};
+			oDiv.ondragenter=function(){
+				oDiv.innerHTML='释放鼠标';
+			};
+			oDiv.ondragleave=function(){
+				oDiv.innerHTML='请将文件拖到此区域';
+			};
+			oDiv.ondragover=function(){
+				return false;
+			};
+			oDiv.ondrop=function(ev){
+				var file=ev.dataTransfer.files;
+				var oUl=document.getElementsByTagName('ul')[0];
+				for(var i=0;i<file.length;i++){
+					var oLi=document.createElement('li');
+					oLi.innerHTML='<span class="fileBg"></span><h3 class="fileTit">'+file[i].name.substring(0,10)+'</h3><span class="fileSize">'+(file[i].size/1024).toFixed(2)+'KB'+'</span><span class="fileSucc">上传成功！</span><a href="javascript:;">删除</a>';
+					oUl.appendChild(oLi);
+				}
+				var oDel=document.getElementsByTagName('a');
+				for(var i=0;i<oDel.length;i++){
+					oDel[i].onclick=function(){
+						oUl.removeChild(this.parentNode);
+					};
+				}
+				return false;
+			};
+		};
+	</script>
+</head>
+<body>
+	<div id="box">
+		<ul>
+			<!-- <li>
+				<span class="fileBg"></span>
+				<h3 class="fileTit">css.css</h3>
+				<span class="fileSize">12k</span>
+				<span class="fileSucc">上传成功！</span>
+				<a href="javascript:;">删除</a>
+			</li> -->
+			
+		</ul>
+		<div id="div1">
+			请将文件拖到此区域！
+		</div>
+	</div>
+</body>
+</html>
