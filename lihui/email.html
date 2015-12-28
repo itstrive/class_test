@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .clearfix:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+        .wrap{
+            width: 600px;
+            height: 500px;
+            border: 1px solid #ccc;
+            position: relative;
+            margin: 80px auto;
+        }
+        .box{
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            top: 150px;
+            left: 0;
+            text-align: center;
+            line-height: 300px;
+            border-top: 1px solid #ccc;
+            display: none;
+        }
+        input{
+            position: absolute;
+            top: 10px;
+            left: 100px;
+        }
+        ul{
+            list-style: none;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            top: 50px;
+        }
+        li{
+            width: 180px;
+           float: left;
+            margin:5px  15px;
+            font-size: 12px;
+        }
+        span{
+            width: 30px;
+            height: 32px;
+            float: left;
+            background:url("icon.png") no-repeat -1px 0px;
+        }
+        em,i{
+            float: right;
+            font-style: normal;
+            margin-right: 6px;
+        }
+        a{
+            text-decoration: none;
+            color:red;
+            position: absolute;
+            left: 60px;
+        }
+    </style>
+    <script>
+       window.onload=function(){
+           var oDiv=document.querySelector('.box');
+           var oUl=document.querySelector('ul');
+           var timer=null;
+
+           document.ondragover=function(){
+               clearTimeout(timer);
+               oDiv.style.display='block';
+
+               timer=setTimeout(function(){
+                   oDiv.style.display='none';
+               },100);
+           };
+
+           oDiv.ondragenter=function(){
+               oDiv.innerHTML='释放鼠标';
+           };
+
+           oDiv.ondragleave=function(){
+               oDiv.innerHTML='请将文件拖到此区域';
+           };
+
+           oDiv.ondragover=function(){
+               return false;
+           };
+
+           oDiv.ondrop=function(ev){
+               var file=ev.dataTransfer.files;
+               for(var i=0;i<file.length;i++)
+               {
+                   var oLi=document.createElement('li');
+                   oLi.innerHTML='<span></span><em>'+file[i].name+'</em><br/><i>'+(file[i].size/1024).toFixed(2)+'KB</i><a href="javascript:;" class="del">删除</a>';
+                   var oSpan=oLi.querySelector('span');
+                    switch (file[i].type)
+                    {
+                        case 'text/plain':
+                            oSpan.style.backgroundPosition='-673px  0';
+                            break;
+
+                        case 'image/jpeg':
+                            oSpan.style.backgroundPosition='0px  -32px';
+                            break;
+
+                        case 'application/msword':
+                            oSpan.style.backgroundPosition='-63px  0px';
+                            break;
+
+                        case 'text/html':
+                            oSpan.style.backgroundPosition='-289px  0px';
+                            break;
+
+                    }
+                   oUl.appendChild(oLi);
+               }
+               return false;
+           };
+            //事件委托
+           oUl.onclick=function(ev){
+               var oEvent=ev||event;
+               var oSrc=oEvent.srcElement||oEvent.target;
+
+               if(oSrc.className=='del')
+               {
+                   var oLi=oSrc.parentNode;
+                   oUl.removeChild(oLi);
+               }
+           };
+       };
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <input type="file"/>
+        <ul class="clearfix">
+            <!--<li>-->
+                <!--<span></span>-->
+                <!--<em>a.txt</em>-->
+                <!--<i>8b</i>-->
+                <!--<a href="javascript:;">删除</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<span></span>-->
+                <!--<em>a.txt</em>-->
+                <!--<i>8b</i>-->
+            <!--</li>-->
+        </ul>
+        <div class="box">
+            请将文件拖到此区域！
+        </div>
+    </div>
+</body>
+</html>
