@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	div{
+		width: 300px;
+		height: 300px;
+		border:2px dashed #000;
+		display: none;
+		margin-left: 100px;
+	}
+	ul{
+		width: 500px;
+		height: 200px;
+		border:1px solid red;
+		overflow: hidden;
+		position: relative;
+		padding-top: 30px;
+	}
+	ul li{
+		width: 300px;
+		height: 30px;
+		background:#399;
+		color:#fff;
+		list-style: none;
+		float: left;
+		margin: 10px;
+	}
+	ul li h1{
+		float:left;
+		font-size: 16px;
+		height: 100%;
+		line-height: 30px;
+		overflow: hidden;
+	}
+	li i{
+		width: 30px;
+		height: 30px;
+		float:left;
+	}
+	li span{
+		width: 50px;
+		height: 100%;
+		float:left;
+	}
+	li em{
+		width: 100px;
+		height: 100%;
+		float:left;
+	}
+	ul li p{
+		float:right;
+		cursor:pointer;
+		font-size: 16px;
+		height: 100%;
+		line-height: 30px;
+	}
+	/*ul input{
+		position: absolute;
+		left:0;
+		top:0;
+	}*/
+	/*h1{
+		background: url(icon.png) no-repeat -674px -64px;
+	}*/
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var oDiv=document.querySelector('div');
+		var oUl=document.querySelector('ul');
+		var timer=null;
+		document.ondragover=function(){
+			clearTimeout(timer);
+			oDiv.style.display='block';
+			timer=setTimeout(function(){
+				oDiv.style.display='none';
+			},300);
+		};
+
+		oDiv.ondragenter=function(){
+			this.innerHTML='请释放鼠标';
+		};
+
+		oDiv.ondragleave=function(){
+			this.innerHTML='请将文件拖拽到此区域';
+		};
+
+		oDiv.ondragover=function(){
+			return false;
+		};
+
+		oDiv.ondrop=function(ev){
+			var file=ev.dataTransfer.files;
+			// alert(file[0].type);
+			for(var i=0; i<file.length; i++)
+			{
+				var oLi=document.createElement('li');
+
+				oLi.innerHTML='<h1><i></i><span>'+file[i].name+'</span><em>'+file[i].size+'</em></h1>'+'<p>删除</p>';
+				var oI=oLi.querySelector('i');
+
+				switch(file[i].type)
+				{
+					case 'text/plain':
+					oI.style.background='url(icon.png) no-repeat -674px -64px';
+					break;
+					case 'image/jpeg':
+					oI.style.background='url(icon.png) no-repeat 0 -96px';
+					break;
+					case 'text/html':
+					oI.style.background='url(icon.png) no-repeat -290px -65px';
+					break;
+				}
+
+
+
+				
+				oUl.appendChild(oLi);
+			}
+			
+			var aP=document.querySelectorAll('p');
+			for(var i=0; i<aP.length; i++)
+			{
+				aP[i].onclick=function(){
+					oUl.removeChild(this.parentNode);
+				};
+			}
+
+			return false;
+		};
+
+	};
+	</script>
+</head>
+<body>
+	<ul>
+		<!-- <input type="file"> -->
+	</ul>
+	<div>请将文件拖拽到此区域</div>
+</body>
+</html>
