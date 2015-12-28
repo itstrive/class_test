@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拖拽文件测试</title>
+    <style>
+        *{margin:0px; padding:0px;}
+        #ul1{list-style: none; width:400px; overflow: hidden;}
+        .type-img{ background-position: -30px -30px;}
+        .type-msword{background-position: -62px -2px;}
+        .type-text{background-position: 0 0;}
+        ul li{
+            width:400px;
+            height: 30px;
+        }
+        ul li i{
+            display: block;
+            width:18px;
+            height: 18px;
+            background: url("images/fileico_v5.png") 0 0 no-repeat;
+            float: left;
+        }
+        #ul1 li span,a{ display: block; float: left;}
+        .drap_area{
+            width:400px;
+            height:400px;
+            background: #f5feb4;
+            border:1px dashed #2b2b2b;
+            margin:10px auto;
+            font-size: 30px;
+            line-height: 400px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<script>
+    window.onload = function(){
+        var oDiv = document.querySelector('.drap_area');
+        var oUl = document.getElementById('ul1');
+        var timer = null;
+        document.ondragover = function(){
+            clearTimeout(timer);
+            oDiv.style.display = 'block';
+            timer = setTimeout(function(){
+                oDiv.style.display = 'none';
+            },300);
+        }
+        oDiv.ondragenter = function(){
+            oDiv.innerHTML = '放手~';
+        }
+        oDiv.ondragleave = function(){
+            oDiv.innerHTML = '请将文件拖入此处~~';
+        }
+        oDiv.ondragover = function(){
+            return false;
+        }
+        oDiv.ondrop = function(ev){
+            var files = ev.dataTransfer.files;
+            for(var i = 0;i<files.length;i++){
+                var oLi = document.createElement('li');
+                var type = files[i].type;
+                var sClass = '';
+                switch(type){
+                    case 'image/gif':
+                        sClass = 'type-img';
+                        break;
+                    case 'application/msword':
+                        sClass = 'type-msword';
+                        break;
+                    case 'text/plain':
+                        sClass = 'type-text';
+                        break;
+                    default:
+                        sClass = 'type-text';
+                        break;
+                }
+
+                function re(oLi){
+                    console.log(oLi);
+                    oUl.removeChild(oLi);
+                }
+
+                oLi.innerHTML = "<i class="+sClass+"></i>" +
+                        "<span>:"+files[i].name+",</span>" +
+                        "<span>"+countSize(files[i].size)+"-----</span>" +
+                        "<a href='javascript:;'>删除</a>";
+
+                oLi.getElementsByTagName('a')[0].onclick = function(){
+                    oUl.removeChild(oLi);
+                }
+
+                oUl.appendChild(oLi);
+            }
+
+
+            function countSize(str){
+                var num = parseInt(str);
+                return (num/1024).toFixed(2)+"KB";
+            }
+
+            return false;
+        }
+    }
+</script>
+图片展示，只支持txt,gif和doc三种格式。默认都是txt格式。
+<ul id="ul1">
+    <li><i></i><span>file.txt</span><span>12kb</span><a href="javascript:;" >删除</a></li>
+</ul>
+<div class="drap_area">
+    请将文件拖入此处~~
+</div>
+</body>
+</html>
