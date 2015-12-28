@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>邮箱上传文件</title>
+	<style>
+	*{ padding: 0; margin: 0; list-style: none;}
+	.section{
+		width: 300px;
+		height:300px;
+		border:1px dashed #000;
+		text-align: center;
+		line-height: 300px;
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+		top: 50%;
+		margin-top:-150px;
+		display: none;
+	}
+	#ul{ 
+		width: 710px;
+		padding:3px 5px ;
+		background:#ecf7fb ;
+		overflow: hidden;
+	 }
+	#ul1 li{
+		width:346px;
+		height: 44px;
+		background:#e1f3f7 ;
+		float: left;
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+	.pg{
+		width: 30px;
+		height: 32px;
+		float: left;
+		margin-right: 5px;
+	}
+	.msg{
+		width: 170px;
+		float: left;
+	}
+	.msg .size{
+		color:#b7baba;
+		margin-top: 5px;
+	}
+	.del{
+		float: right;
+		color: #2588a3;
+		text-decoration: none;
+	}
+	</style>
+	<script>
+		window.onload=function(){
+			var oSec=document.querySelector('.section');
+			var oUl=document.getElementById('ul1');
+			var oInp=document.getElementById('inp1');
+			var aA=[];
+			var aLi=[];
+			var timer=null;
+
+			oInp.onchange=function(){
+				var json=this.files;
+				console.log(json);
+				for(var name in json)
+				{
+					var oLi=document.createElement('li');
+					oLi.innerHTML=getPag(json[name].type)+
+			'<div class="msg">'+
+				'<p class="name">'+json[name].name+'</p>'+
+				'<p class="size">'+json[name].size+'K</p></div>'+
+			'<a href="javascript:;" class="del">删除</a>';
+					oUl.appendChild(oLi);
+					aLi.push(oLi);
+					var oA=oLi.querySelector('.del');
+					aA.push(oA);
+				}
+
+				for(var i=0;i<aA.length;i++)
+				{
+					(function(index){
+
+						aA[i].onclick=function(){
+							oUl.removeChild(aLi[index]);
+						};
+
+					})(i);
+				}
+
+			};
+
+			document.ondragover=function(){
+				clearInterval(timer);
+				oSec.style.display='block';
+
+				timer=setInterval(function(){
+					oSec.style.display='none';
+				},100);
+			};
+
+			oSec.ondragenter=function(){
+				this.innerHTML='释放鼠标';
+			};
+
+			oSec.ondragleave=function(){
+				this.innerHTML='请将文件拖到此区域';
+			};
+
+			oSec.ondragover=function(){
+				return false;
+			};
+
+			oSec.ondrop=function(ev){
+				var aFile=ev.dataTransfer.files;
+				//创建元素
+				
+				for(var i=0;i<aFile.length;i++)
+				{
+					var oLi=document.createElement('li');
+					oLi.innerHTML=getPag(aFile[i].type)+
+			'<div class="msg">'+
+				'<p class="name">'+aFile[i].name+'</p>'+
+				'<p class="size">'+aFile[i].size+'K</p></div>'+
+			'<a href="javascript:;" class="del">删除</a>';
+					oUl.appendChild(oLi);
+					aLi.push(oLi);
+					var oA=oLi.querySelector('.del');
+					aA.push(oA);
+					console.log(aFile[i].type);
+
+				}
+
+				//删除功能
+			
+			for(var i=0;i<aA.length;i++)
+			{
+				(function(index){
+
+					aA[i].onclick=function(){
+						oUl.removeChild(aLi[index]);
+					};
+
+				})(i);
+			}
+
+
+				return false;
+			};
+			function createLi()
+			{
+
+			}
+			function getPag(type)
+			{
+				var str='';
+				switch(type)
+				{
+					case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':  //doc文件
+					str='<div class="pg" style="background:url(icon.png) no-repeat -64px -64px"></div>';
+					break;
+					case 'text/plain':   //文本文档
+					str='<div class="pg" style="background:url(icon.png) no-repeat -674px -64px"></div>';
+					break;
+					case 'text/html':   //html文件
+					str='<div class="pg" style="background:url(icon.png) no-repeat -289px -64px"></div>';
+					break;
+					case 'image/jpeg':   //jpg文件
+					str='<div class="pg" style="background:url(icon.png) no-repeat 0px -96px"></div>';
+					break;
+					default:
+					str='<div class="pg" style="background:url(icon.png) no-repeat 0px -96px"></div>';
+
+					break;
+					
+				}
+				return str;
+			}
+		};
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<!-- <li>
+			<div class="pg"></div>
+			<div class="msg">
+				<p class="name">xxx</p>
+				<p class="size">xx</p>
+			</div>
+			<a href="javascript:;" class="del">删除</a>
+		</li> -->
+
+	</ul>
+	<div class="section">请将文件拖到此区域</div>
+	<input type="file" id="inp1">
+</body>
+</html>
