@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .box{
+            width:400px;
+            height:50px;
+            background:#88ecff;
+            padding:6px;
+            float:left;
+            margin:20px;
+        }
+        .box img{
+            width:40px;
+            /*height:50px;*/
+            float:left;
+            margin-top:8px;
+        }
+        .box ul{
+            height:50px;
+            float:left;
+        }
+        .box ul li{
+            /*width:60px;*/
+            height:25px;
+            /*background:#fff;*/
+            line-height:25px;
+            margin-left:10px;
+        }
+        .box a{
+            height:50px;
+            float:right;
+            text-align:center;
+            line-height:50px;
+        }
+        #div1{
+            width:200px;
+            height:200px;
+            border:1px solid #cccc99;
+            line-height:200px;
+            text-align:center;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin:-100px 0 0 -100px;
+            display:none;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oDiv=document.getElementById('div1');
+
+            var timer=null;
+
+            document.ondragover=function(){
+
+                clearTimeout(timer);
+
+                oDiv.style.display='block';
+
+                timer=setTimeout(function(){     // 解决冒泡；
+                    oDiv.style.display='none';
+                },100);
+            };
+
+            /*document.ondragleave=function(){
+             oDiv.style.display='none';
+             };*/    // 冒泡
+
+            oDiv.ondragenter=function(){
+                oDiv.innerHTML='释放手标';
+            };
+
+            oDiv.ondragleave=function(){
+                oDiv.innerHTML='请将文件拖到此区域';
+            };
+
+            oDiv.ondragover=function(){
+                return false;  //  配合ondrop;
+            };
+
+            oDiv.ondrop=function(ev){    //*******
+                //alert(1);
+                var file=ev.dataTransfer.files[0];   // *************
+                // alert(file.type);  // image/png   text/html  text/plain
+                /*alert(file.name);  // 文件拖拽.png
+                alert(file.size);  // 22425*/
+
+                var type=file.type;
+                var name=file.name;
+                var size=file.size;
+                //alert(file.lastModifiedDate);
+
+                var oBox=document.createElement('div');
+
+                oBox.className='box';
+
+                var arr=['png-1.jpg','png-2.jpg','png-3.jpg'];
+
+                switch(type){
+                    case 'image/png':
+                        //alert(1);
+                        var n=0;
+                        break;
+                    case 'text/html':
+                        //alert(1);
+                        var n=1;
+                        break;
+                    case 'text/plain':
+                        //alert(1);
+                        var n=2;
+                        break;
+                }
+
+                oBox.innerHTML='<img src="'+arr[n]+'" />'
+                        +'<ul>'
+                            +'<li>'+name+'</li>'
+                            +'<li>'+size+' B</li>'
+                        +'</ul>'
+                        +'<a href="javascript:;">删除</a>';
+
+                document.body.appendChild(oBox);
+
+                var aDel=document.querySelectorAll('.box a');
+
+                for(var i=0; i<aDel.length; i++){
+                    (function(index){
+                        aDel[i].onclick=function(){
+                            document.body.removeChild(aDel[index].parentNode);
+                        };
+                    })(i);
+                }
+
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <!--<div class="box">
+        <img />
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <a href="javascript:;">删除</a>
+    </div>-->
+
+    <div id="div1">
+        请将文件拖到此区域；
+    </div>
+</body>
+</html>
