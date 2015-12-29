@@ -1,0 +1,160 @@
+<!-- code by cwl -->    	
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+<style>
+*{
+	line-height: 20px;
+	padding:0;
+	margin:0;
+}
+div{
+	position: fixed;
+	top:50%;
+	left:50%;
+	margin-top:-200px;
+	margin-left:-200px;
+	display: none;
+	width:400px;
+	height:400px;
+	border:1px solid #ccc;
+}
+div p{
+
+}
+ul{
+	background: #ecf7fb;
+	width:350px;
+	padding:15px;
+}
+li{
+	margin-bottom: 5px;
+	padding:6px;
+	list-style: none;
+	width:340px;
+	height:34px;
+	background: #e1f3f7;
+}
+li span{
+	margin-right:15px;
+	display: inline-block;
+}
+li .icon{
+	width:32px;
+	height:32px;
+	background:url(icon.png);
+}
+a{
+	text-decoration: none;
+}
+</style>
+<script>
+window.onload=function(){
+	var oList=document.getElementById('list');
+	var oBox=document.getElementById('box');
+	var oT=document.getElementById('txt');
+
+	var timer=null;
+	document.ondragover=function(){
+		clearTimeout(timer);
+		oBox.style.display='block';
+		timer=setTimeout(function(){
+			oBox.style.display='none';
+		},300);
+	}
+	oBox.ondragenter=function(){
+		oT.innerHTML='释放鼠标';
+	}
+	oBox.ondragleave=function(){
+		oT.innerHTML='请将文件拖到此区域';
+	}
+	oBox.ondragover=function(){
+		return false;
+	}
+	oBox.ondrop=function(ev){
+            var n=ev.dataTransfer.files.length;
+            for(var i=0; i<n; i++){
+            	var files=ev.dataTransfer.files[i]
+            	var oLi=document.createElement('li');
+            	var size=0;
+            	if(files.size<1024){
+            		size=files.size+'B';
+            	}
+            	else if(files.size>=1024 && files.size<1024*1024){
+            		size=(files.size/1024).toFixed(2)+'Kb';
+            	}
+            	else{
+            		size=(files.size/1024*1024).toFixed(2)+'Mb';
+            	}
+            	oLi.innerHTML='<span class="icon"></span>'+
+							'<span class="name">'+files.name+'</span>'+
+							'<span class="byte">'+size+'</span>'+
+							'<a href="javascript:;">删除</a>';
+			var oA=oLi.children[3];
+			oA.onclick=function(){
+				var oSrc=event.srcElement;
+				if(oSrc.tagName == 'A'){
+					oList.removeChild(oA.parentNode);
+				}
+			}
+	            /*
+	                text/html
+	                image/jpeg
+	                image/png
+	            */
+	            if((files.name).lastIndexOf('.')!=-1){
+	            	var suffix=(files.name).substring((files.name).lastIndexOf('.')+1);
+		            switch(suffix){
+		            	case 'rar':
+		            	case 'zip':
+		            		oLi.children[0].style.backgroundPosition='-160px -64px';
+		            		break;
+		            	default:
+		            		oLi.children[0].style.backgroundPosition='-384px -64px';
+		            }
+	            }
+	            else{
+	            	oLi.children[0].style.backgroundPosition='-256px -64px';
+	            }
+            	switch(files.type){
+            		case 'text/html':
+            			oLi.children[0].style.backgroundPosition='-288px -64px';
+            			break;
+            		case 'text/css':
+            			oLi.children[0].style.backgroundPosition='-352px -64px';
+            			break;
+            		case 'application/javascript':
+            			oLi.children[0].style.backgroundPosition='-320px -64px';
+            			break;
+            		case 'image/jpeg':
+            			oLi.children[0].style.backgroundPosition='0 -96px';
+            			break;
+            		case 'image/png':
+            			oLi.children[0].style.backgroundPosition='-64px -96px';
+            			break;
+            		case 'image/gif':
+            			oLi.children[0].style.backgroundPosition='-32px -96px';
+            			break;
+            	}
+			oList.appendChild(oLi);
+            }
+            return false;
+	}
+}
+</script>
+</head>
+<body>
+	<ul id="list">
+	<!--	<li>
+			<span class="icon"></span>
+			<span class="name">a.txt</span>
+			<span class="byte">8B</span>
+			<a href="javascript:;">删除</a>
+		</li>-->
+	</ul>
+	<div id="box">
+		<p id="txt">请将文件拖到此区域</p>
+	</div>
+</body>
+</html>
