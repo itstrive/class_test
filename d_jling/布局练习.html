@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        head,html{height:100%;}
+        body{height:100%}
+        *{margin:0;padding:0;list-style:none;}
+        .box{
+            height:100%;
+            border: 1px solid #000;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-box-align:justify; /*垂直居中*/
+            -webkit-box-pack:justify;
+        }
+        .top{height:100px;background:#ccc;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-align:center; /*垂直居中*/
+            -webkit-box-pack:justify;
+        }
+        .l{width:80px;margin-left:10px;height:80px;background:#399;}
+        .r{width:80px;margin-right:10px;height:80px;background:#966;}
+        .footer{height:100px;background:#ccc;
+            display: -webkit-box;}
+        .footer div{height:100%;
+            -webkit-box-flex:1;
+        }
+        .f1{background: #963d99;}
+        .f2{background: #276999;}
+        .f3{background:#399;}
+        .f4{background: #997d25;}
+    </style>
+</head>
+<body>
+
+</body>
+<div class="box">
+    <div class="top">
+        <div class="l"></div>
+        <div class="r"></div>
+    </div>
+    <div class="footer">
+        <div class="f1"></div>
+        <div class="f2"></div>
+        <div class="f3"></div>
+        <div class="f4"></div>
+    </div>
+</div>
+</html>
