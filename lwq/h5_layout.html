@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    *{margin:0px; padding:0px; font-size: 45px}
+    #box{width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+    }
+    #box .top{
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        height:132px;
+        width: 100%;
+        display: block;
+        background: pink;
+        z-index: 2;
+        display: -webkit-box;
+    }
+    #box .bottom{
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height:147px;
+        display: block;
+        background:pink;
+        position: fixed;
+        bottom:0px;
+        left:0px;
+        z-index: 2;
+    }
+    #box .center{
+        width: 100%;
+        height:calc(100% - 132px);
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+        background: #fef35b;
+        z-index: 1;
+    }
+    #box .center .main{
+        width:500px;
+        height: 3000px;
+        background: deeppink;
+        margin:0px auto;
+        border-top:10px solid #000000;
+    }
+    #box .top>div,.top>span{height: 132px; text-align: center; line-height: 132px;}
+    #box .top .logo{width:132px;  background: deeppink;}
+    #box .top .title{ display: block; -webkit-box-flex:1; }
+    #box .top .menu{width:132px;  background: deeppink;}
+
+    #box .bottom>ul {width:100%; display: -webkit-box;}
+    #box .bottom>ul li{ display: block; height: 147px;border:1px solid black;text-align: center; line-height: 147px; -webkit-box-flex:1;}
+
+</style>
+<body>
+<div id="box">
+    <div class="top">
+        <div class="logo">logo</div>
+        <span class="title">粉腻了</span>
+        <div class="menu">menu</div>
+    </div>
+    <div class="center">
+        <div class="main">
+            <br/><br/><br/><br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+            main<br/>
+        </div>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
