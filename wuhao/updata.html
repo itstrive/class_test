@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0;}
+.file{ width:400px; height:400px; border:1px solid #000; margin:10px auto; line-height:400px; text-align:center; display:none;}
+ul{ width:400px; overflow:hidden; margin:20px auto; overflow: hidden;}
+ul li{ width:200px; height:40px; line-height:20px; float:left; list-style:none;}
+.title{ height:32px; width:32px; background:url(icon.png) 0 -96px; float:left;}
+.msg{ float:left; margin-left:3px; font-size:12px;}
+.msg h1{ font-size:16px; font-weight:normal;}
+</style>
+<script>
+window.onload=function(){
+	var oUl=document.querySelector('ul');
+	var oDiv=document.querySelector('div');
+	var timer=null;
+	document.ondragover=function(){
+		clearInterval(timer);
+		oDiv.style.display='block';
+		timer=setInterval(function(){
+			oDiv.style.display='none';	
+		},300)
+		
+	};
+	oDiv.ondragenter=function(){
+		oDiv.innerHTML='请释放鼠标';
+	};	
+	oDiv.ondragleave=function(){
+		oDiv.innerHTML='请将文件拖到此区域';
+	};
+	oDiv.ondragover=function(){
+		return false;	
+	};
+	oDiv.ondrop=function(ev){
+		var file=ev.dataTransfer.files;
+		for(var i=0;i<file.length;i++)
+		{
+			var oLi=document.createElement('li');
+			oLi.innerHTML='<div class="title"></div> <div class="msg"><h1>'+file[i].name.substring(0,9)+'</h1> <p>'+file[i].size+'B</p></div> <a href="javascript:;">删除</a>';
+			
+			
+			oUl.appendChild(oLi);
+			
+			
+			
+			
+		}
+		var aA=document.querySelectorAll('a');
+		for(var i=0;i<aA.length;i++)
+		{
+			aA[i].onclick=function(){
+				oUl.removeChild(this.parentNode);
+			};	
+		}
+		
+		
+		return false;	
+		
+	};
+	
+};
+</script>
+</head>
+
+<body>
+	<ul>
+	</ul>
+	<div class="file">
+		请将文件拖到此区域
+	</div>
+</body>
+</html>
