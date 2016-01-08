@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ctrip</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<style>
+*{ margin:0; padding:0; }
+li{ list-style:none; }
+a{ text-decoration:none; color:#000; }
+input{ outline:none;}
+.fl{ float:left; display:inline;}
+.fr{ float:right; display:inline;}
+.clearfix:after{ display:block; clear:both; content:'';}
+.clearfix{ zoom:1;}	
+
+.content.bc3d{ background:#3d98ff; }
+.content.bc44{ background:#44c522; }
+.content.bcfc{ background:#fc9720; }
+
+.wrap{ width:100%; }
+header{ height:44px;  background:#f6f6f6; box-sizing:border-box; padding: 7px 13px 7px 6px; position:relative; }
+.seek-box{  width:calc(100% - 30px); position:relative;}
+.seek{width:calc(100% - 26px);  height:24px; background:#fff;  border:1px solid #999; border-radius:4px; padding-left:26px; font-size:12px; color:#666; box-shadow: 0 2px 4px rgba(0,0,0,0.2);}
+.seek-icon{ position:absolute; left:7px; top:6px; background:url(img/a.jpg) no-repeat; width:15px; height:15px; }
+.my-icon{  position:absolute; right:0; top:4px; background:url(img/a.png) no-repeat top center; width:30px;  margin-left:10px; padding-top:20px; text-align:center; }
+.my-icon span{ font-size:12px; color:#2faae0; }
+
+.banner a img{ display:block; width:100%; }
+
+section{ padding:0 5px; box-sizing:border-box; }
+.content{ width:100%; background:#ff697a; height:89px; margin-top:6px;  border-radius:5px; }
+.content-left,.content-mid,.content-right{ width:calc(100% / 3); height:100%; float:left;   box-sizing:border-box; text-align:center;  }
+.content-left a{ display:inline-block; font-size:14px; color:#fff; text-shadow:1px 1px 2px #000; margin-top:16px; background:url(img/x.png) no-repeat center bottom; width:40px; height:60px;   }
+.content-left a.plane{ background-image:url(img/fly.png);  }
+.content-left a.trip{background-image:url(img/nv.png);}
+.content-left span{ background:url(img/x.png) no-repeat; width:40px; height:33px; display:block; }
+.content-mid{ border-left:1px solid #fff; border-right:1px solid #fff; }
+.content-mid,.content-right{height:100%;  }
+.content-mid a,.content-right a{ display:block; height:calc(100% / 2);  font-size:14px; color:#fff; text-align:center; line-height:45px; text-shadow:1px 1px 2px #000;  }
+.content-mid-t{ border-bottom:1px solid #fff; }
+
+.msg{ width:calc(100% - 2px); border:1px solid #d8d8d8; margin-top:6px; border-radius:5px; box-sizing:border-box;   }
+.msg a{ float:left; width:calc(100% / 2); box-sizing:border-box; }
+.msg a img{ display:block; width:100%; border-radius:5px; }
+.te{ border-right:1px solid #d8d8d8; }
+
+footer{ margin-top:5px; border-top:1px solid #ccc; }
+footer .ivon{ float:left; width:calc(100% / 3); text-align:center; font-size:12px; color:#333;   position:relative; margin-top:30px;  height:50px; border-bottom:1px solid #ccc; }
+footer .ivon i{ background:url(img/un_ico_home_v66.png) no-repeat -0px -0px; width:17px; height:17px; position:absolute; left:50%; top:50%; margin-top:-17px;   margin-left:-17px; background-size:100%; }
+.last{ margin-top:11px; text-align:center; }
+</style>
+</head>
+
+<body>
+	<header class="wrap">
+    	<div class="seek-box">
+            <input type="text" placeholder="搜索：目的地/酒店/景点/航班号" class="seek"/>
+            <span class="seek-icon"></span>
+        </div>
+        <a class="my-icon" href="javascript:;">
+        	<span class="my">我的</span>
+        </a>
+    </header>
+    <div class="banner">
+    	<a href="javascript:;">
+        	<img src="img/1.jpg" alt=""/>
+        </a>
+    </div>
+	<section class="wrap">
+    		<div class="content clearfix">
+                <div class="content-left">
+                	<a href="javascript:;">酒店</a>
+                </div>
+                <div class="content-mid">
+                    <a class="content-mid-t" href="javascript:;">海外酒店</a>
+                    <a href="javascript:;">特惠酒店</a>
+                </div>
+                <div class="content-right">
+                	<a class="content-mid-t" href="javascript:;">团购</a>
+                    <a  href="javascript:;">客栈.公寓</a>
+                </div>
+            </div>
+            <div class="content clearfix bc3d">
+                <div class="content-left">
+                	<a class="plane" href="javascript:;">机票</a>
+                </div>
+                <div class="content-mid">
+                    <a class="content-mid-t" href="javascript:;">火车票	</a>
+                    <a href="javascript:;">国际机票</a>
+                </div>
+                <div class="content-right">
+                	<a class="content-mid-t" href="javascript:;">汽车票.船票</a>
+                    <a  href="javascript:;">自驾.专车</a>
+                </div>
+            </div>
+            <div class="content clearfix bc44">
+                <div class="content-left">
+                	<a href="javascript:;" class="trip">旅游</a>
+                </div>
+                <div class="content-mid">
+                    <a class="content-mid-t" href="javascript:;">攻略.身边</a>
+                    <a href="javascript:;">周末游</a>
+                </div>
+                <div class="content-right">
+                	<a class="content-mid-t" href="javascript:;">游轮</a>
+                    <a  href="javascript:;">保险.签证</a>
+                </div>
+            </div>
+            <div class="content clearfix bcfc">
+                <div class="content-mid">
+                    <a class="content-mid-t" href="javascript:;">门票·玩乐</a>
+                    <a href="javascript:;">礼品卡</a>
+                </div>
+                <div class="content-mid">
+                    <a class="content-mid-t" href="javascript:;">美食</a>
+                    <a href="javascript:;">出境WiFi</a>
+                </div>
+                <div class="content-right">
+                	<a class="content-mid-t" href="javascript:;">全球购</a>
+                    <a  href="javascript:;">更多</a>
+                </div>
+            </div>
+            <div class="msg clearfix">
+			<a class="te" href="javascript:;">
+                    	<img src="img/aaa.png" alt="" />
+            </a>
+            <a href="javascript:;">
+                <img src="img/bbb.png" alt="" />
+            </a>
+    		</div>
+    </section>
+	<footer class="wrap clearfix">
+    	<a class="ivon" href="javascript:;">
+        	<i></i>
+       	 	<span>电话预定<span>
+        </a>
+        <a class="ivon" href="javascript:;">下载客户端</a>
+        <a class="ivon" href="javascript:;">我的</a>
+    </footer>
+    <p class="last">
+        	<a href="javascript:;">网站地图</a>|
+            <a href="javascript:;">ENGLISH</a>|
+            <a href="javascript:;">电脑版</a>
+    </p>
+   <p class="last">&copy;2015携程旅游</p>
+</body>
+</html>
