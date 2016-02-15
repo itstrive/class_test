@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{width: 100px;height: 100px;background: red;position: absolute;left:0;top: 0;}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+
+		var left=0;
+		var iSpeed=0;
+		var timer=null;
+		var dis=300;
+
+		oBox.onclick=function(){
+			oBox.style.left=300+'px';
+		};
+	};
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+</html>
