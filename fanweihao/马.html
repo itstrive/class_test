@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{padding:0; margin:0; list-style:none;}
+input{width:100px; height:40px; position:absolute; top:150px; left:100px;}
+ul{width:450px; height:450px; margin:100px auto; overflow:hidden;}
+li{float:left; width:150px; height:150px;}
+img{display:block; width:100%; }
+</style>
+<script>
+window.onload=function(){
+	var oBtn=document.getElementById('btn');
+	var aLi=document.getElementById('ul1').children;
+	var arr=[];
+	for(var i=0; i<aLi.length; i++)
+	{
+		var left=aLi[i].offsetLeft;
+		var top=aLi[i].offsetTop;
+		aLi[i].style.left=left+'px';
+		aLi[i].style.top=top+'px';
+		arr.push({
+			'left':left,
+			'top':top
+		});
+	}
+	
+	for(var i=0; i<aLi.length; i++)
+	{
+		aLi[i].style.position='absolute';
+		aLi[i].style.margin='0';	
+	}
+	
+	oBtn.onclick=function(){
+		
+		var n=0;
+		var timer=setInterval(function(){
+			(function(n){
+				move(aLi[n], {'width':0, 'height':0, 'left':0, 'top':0}, {'fn':function(){
+					if(n == aLi.length-1)
+					{
+						end();	
+					}	
+				},time:300});
+			})(n);
+			
+			n++;
+			if(n == aLi.length)
+			{
+				clearInterval(timer);
+			}
+		},200);
+	};
+	
+	function end()
+	{
+		var oUl=document.getElementById('ul1');
+		var aImg=document.getElementsByTagName('img');
+		for(var i=0; i<aLi.length; i++)
+		{
+			aImg[i].src='img/'+(i+1)+'.jpg';
+		}
+		var n=aLi.length-1;
+		var timer=setInterval(function(){
+			move(aLi[n], {'width':150, 'height':150, 'left':arr[n]['left'], 'top':arr[n]['top']},{
+				time:300
+			});
+			n--;
+			if(n == -1)
+			{
+				clearInterval(timer);
+			}
+		},200);
+	}
+	
+	function move(obj, json, options)
+	{
+		options=options || {};
+		var time=options['time'] || 1000;
+		
+		var start={};
+		var dis={};
+		for(var name in json)
+		{
+			start[name]=parseFloat(getStyle(obj, name));
+			dis[name]=json[name]-start[name];
+		}
+		var count=Math.floor(time/30);
+		var n=0;
+		clearInterval(obj.timer);
+		obj.timer=setInterval(function(){
+			n++;
+			
+			for(var name in json)
+			{
+				var cur=start[name]+dis[name]*n/count
+				if(name == 'opacity')
+				{
+					obj.style[name]=cur;
+				}
+				else
+				{
+					obj.style[name]=cur+'px';
+				}
+			}
+			if(n == count)
+			{
+				clearInterval(obj.timer);
+				options['fn'] && options['fn']();
+			}
+		},30);
+	}
+	
+	function getStyle(obj, sName)
+	{
+		return (obj.currentStyle || getComputedStyle(obj, false))[sName];
+	}		
+};
+</script>
+</head>
+
+<body>
+	<input type="button" value="go" id="btn"/>
+	<ul id="ul1">
+		<li><img src="img/5.jpg" /></li>
+		<li><img src="img/9.jpg" /></li>
+		<li><img src="img/6.jpg" /></li>
+		
+		<li><img src="img/2.jpg" /></li>
+		<li><img src="img/8.jpg" /></li>
+		<li><img src="img/1.jpg" /></li>
+		
+		<li><img src="img/4.jpg" /></li>
+		<li><img src="img/7.jpg" /></li>
+		<li><img src="img/3.jpg" /></li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>游戏-马</title>
+<style>
+*{margin:0; padding:0;}
+ul{width:450px; height:450px; border:1px solid red; margin:100px auto;}
+li{position:relative; float:left; list-style:none; width:150px; height:150px;}
+img{display:block; width:100%; }
+.active{width:140px; height:140px; border:5px dashed red;}
+/*span{position:absolute; top:0; left:0; width:100%; height:100%; line-height:150px; text-align:center; font-size:50px; font-weight:bold; background:rgba(255, 255, 255, 0.7); color:red;}*/
+</style>
+<script src="js/move.js"></script>
+<script>
+window.onload=function (){
+	var aLi=document.getElementsByTagName('li');
+	var zIndex=1;
+	var oNear=null;
+	
+	//测试
+
+	// 布局转换
+	var aPos=[];
+	for (var i=0; i<aLi.length; i++)
+	{
+		aPos.push({
+			left:aLi[i].offsetLeft,
+			top:aLi[i].offsetTop
+		});
+	}
+	for (var i=0; i<aLi.length; i++)
+	{
+		aLi[i].style.position='absolute';
+		aLi[i].style.left=aPos[i].left+'px';
+		aLi[i].style.top=aPos[i].top+'px';
+		aLi[i].style.margin=0;
+	}
+	// 拖拽
+	for (var i=0; i<aLi.length; i++)
+	{
+		aLi[i].index=i;
+		drag(aLi[i]);
+	}
+	function drag(obj)
+	{
+		obj.onmousedown=function (ev){
+			obj.style.zIndex=zIndex++;
+			var oEvent=ev || event;
+			var disX=oEvent.clientX-obj.offsetLeft;
+			var disY=oEvent.clientY-obj.offsetTop;
+			document.onmousemove=function (ev){
+				var oEvent=ev || event;
+				var left=oEvent.clientX-disX;
+				var top=oEvent.clientY-disY;
+				obj.style.left=left+'px';
+				obj.style.top=top+'px';
+				// 找最近元素
+				oNear=findNear(obj);
+				if (oNear)
+				{
+					for (var i=0; i<aLi.length; i++)
+					{
+						aLi[i].className='';
+					}
+					oNear.className='active';
+				}
+				else
+				{
+					for (var i=0; i<aLi.length; i++)
+					{
+						aLi[i].className='';
+					}
+				}
+			};
+			document.onmouseup=function (){
+				document.onmousemove=null;
+				document.onmouseup=null;
+				// 换位置
+				if (oNear)
+				{
+					// 有
+					// obj -> oNear
+					// oNear -> obj
+					move(obj, aPos[oNear.index], {
+						duration:300,
+						easing:Tween.Elastic.easeOut
+					});
+					move(oNear, aPos[obj.index], {
+						duration:300,
+						easing:Tween.Elastic.easeOut
+					});
+				
+					// 换下标
+					var tmp=obj.index;
+					obj.index=oNear.index;
+					oNear.index=tmp;
+					for (var i=0; i<aLi.length; i++)
+					{
+						aLi[i].className='';
+					}
+					
+					//成功还原
+					
+					//结束
+				}
+				else
+				{
+					// 没有
+					move(obj, aPos[obj.index], {
+						duration:300,
+						easing:Tween.Elastic.easeOut
+					});
+				}
+			};
+			return false;
+		};
+	}
+	function findNear(obj)
+	{
+		var nMin=999999;
+		var nMinIndex=-1;
+		for (var i=0; i<aLi.length; i++)
+		{
+			if (aLi[i] != obj)
+			{
+				if (collTest(obj, aLi[i]))
+				{
+					var dis=getDis(obj, aLi[i]);
+					if (dis < nMin)
+					{
+						nMin=dis;
+						nMinIndex=i;
+					}
+				}
+			}
+		}
+		if (nMinIndex == -1)
+		{
+			return null;
+		}
+		else
+		{
+			return aLi[nMinIndex];
+		}
+	}
+	function getDis(obj1, obj2)
+	{
+		var a=obj1.offsetLeft+obj1.offsetWidth/2-(obj2.offsetLeft+obj2.offsetWidth/2);
+		var b=obj1.offsetTop+obj1.offsetHeight/2-(obj2.offsetTop+obj2.offsetHeight/2);
+		return Math.sqrt(a*a+b*b);
+	}
+	function collTest(obj1, obj2)
+	{
+		var l1=obj1.offsetLeft;
+		var r1=l1+obj1.offsetWidth;
+		var t1=obj1.offsetTop;
+		var b1=t1+obj1.offsetHeight;
+		var t2=obj2.offsetTop;
+		var b2=t2+obj2.offsetHeight;
+		var l2=obj2.offsetLeft;
+		var r2=l2+obj2.offsetWidth;
+		if (l2>r1 || l1>r2 || t2>b1 || t1>b2)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+};
+</script>
+</head>
+
+<body>
+	<ul>
+		<li><img src="img/5.jpg" /></li>
+		<li><img src="img/9.jpg" /></li>
+		<li><img src="img/6.jpg" /></li>
+		
+		<li><img src="img/2.jpg" /></li>
+		<li><img src="img/8.jpg" /></li>
+		<li><img src="img/1.jpg" /></li>
+		
+		<li><img src="img/4.jpg" /></li>
+		<li><img src="img/7.jpg" /></li>
+		<li><img src="img/3.jpg" /></li>
+	</ul>
+</body>
+</html>

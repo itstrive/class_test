@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+* { margin:0; padding:0; }
+.box { overflow:hidden; position:relative; width:920px; height:305px; margin:100px auto; border:1px solid red; }
+
+li { position:absolute; top:0; left:0; width:840px; padding-left:20px; list-style:none; }
+img { width:840px; height:305px; }
+span { position:absolute; top:0; left:0; width:20px; height:100%; }
+</style>
+<script>
+window.onload=function (){
+	var aLi=document.getElementsByTagName('li');
+	var aSpan=document.getElementsByTagName('span');
+	var nLiW=aLi[0].offsetWidth;
+	var nSpanW=aSpan[0].offsetWidth;
+	
+	for (var i=0; i<aLi.length; i++)
+	{
+		if ( i != 0)
+		{
+			aLi[i].style.left=nLiW+nSpanW*(i-1)+'px';
+		}
+		
+		(function (index){
+			aSpan[i].onmouseover=function (){	
+				for (var i=0; i<aLi.length; i++)
+				{
+					if (i<=index)
+					{
+						aLi[i].style.left=i*nSpanW+'px';
+					}
+					else
+					{
+						var left=nLiW+nSpanW*(i-1);
+						aLi[i].style.left=left+'px';
+					}
+				}
+			};
+		})(i);
+	}
+	
+};
+</script>
+</head>
+
+<body>
+<div class="box">
+		<ul>
+			<li>
+				<span style="background:#FF0;">第一项</span>
+				<img src="0.jpg" />
+			</li>
+			
+			<li>
+				<span style="background:#C90;">第二项</span>
+				<img src="1.jpg" />
+			</li>
+			
+			<li>
+				<span style="background:#FC6;">第三项</span>
+				<img src="2.jpg" />
+			</li>
+			
+			<li>
+				<span style="background:#F3C;">第四项</span>
+				<img src="3.jpg" />
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

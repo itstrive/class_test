@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0; margin:0; line-height:100%;}
+body{font-size:12px;}
+a{color:#000; text-decoration:none;}
+img{vertical-align:top;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,b,strong{font-weight:normal; font-size:100%;}
+i,em{font-style:normal;}
+.clearfix:after{display:block; clear:both; content:'';}
+.clearfix{zoom:1;}
+a img{border:none;}
+.fl{float:left;}
+.fr{float:right;}
+
