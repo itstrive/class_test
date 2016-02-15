@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{ margin:0; padding:0; list-style:none; font-size:12px;}
+	.box{ width:400px; height:230px; margin:30px auto; background:#eee; border:#333 dotted 1px; display:none;}
+	.it-box{ width:400px;}
+	.it{ width:400px; background:#FFF; float:left;height:40px; line-height:40px; }
+	.it i{ float:left; width:30px; height:32px; margin-right:4px; margin-top:4px; overflow:hidden; }
+	.it span{ margin-right:6px;float:left; width:30px; height:32px; margin-right:4px; margin-top:4px; overflow:hidden;}
+	.txt{background:url(icon.png) no-repeat -257px -64px;}
+	.jpg{ width:32px; height:32px; background:url(icon.png) no-repeat 0px -96px;}
+	.gif{ width:32px; height:32px; background:url(icon.png) no-repeat -32px -96px;}
+	.png{ width:32px; height:32px; background:url(icon.png) no-repeat -64px -96px;}
+</style>
+<script>
+window.onload=function(){
+	var oBox=document.querySelector('.box');
+	var oCon=document.querySelector('.con');
+	var timer=null;
+	document.ondragover=function(){
+		clearTimeout(timer);
+		oBox.style.display='block';
+		timer=setTimeout(function(){
+			oBox.style.display='none';	
+		},100)
+	};
+	oBox.ondragenter=function(){
+		oBox.innerHTML="请释放鼠标";
+	};
+	oBox.ondragleave=function(){
+		oBox.innerHTML="请将文件拖到此区域";
+	};
+	oBox.ondragover=function(){
+		return false;
+	};
+	oBox.ondrop=function(ev){
+		clearTimeout(timer);
+		var files=ev.dataTransfer.files;
+		oBox.innerHTML="";
+		for(var i=0; i<files.length;i++)
+		{
+			alert(files[i].type)
+			var oDiv=document.createElement('div');
+			oDiv.classList.add('it-box')
+			switch (files[i].type)
+			{
+				case "text/plain":
+					oDiv.innerHTML="<div class='it'><i class='txt'></i><span>文件名:"+files[i].name+"</span><strong>文件类型:"+files[i].type+"</strong><b>字节数："+files[i].size+"b</b></div>";
+					oBox.appendChild(oDiv)
+					break;
+				case "image/jpeg":
+					oDiv.innerHTML="<div class='it'><i class='jpg'></i><span>文件名:"+files[i].name+"</span><strong>文件类型:"+files[i].type+"</strong><b>字节数："+files[i].size+"b</b></div>";
+					oBox.appendChild(oDiv)
+					break;
+				case "image/gif":
+					oDiv.innerHTML="<div class='it'><i class='gif'></i><span>文件名:"+files[i].name+"</span><strong>文件类型:"+files[i].type+"</strong><b>字节数："+files[i].size+"b</b></div>";
+					oBox.appendChild(oDiv)
+					break;
+				case "image/png":
+					oDiv.innerHTML="<div class='it'><i class='png'></i><span>文件名:"+files[i].name+"</span><strong>文件类型:"+files[i].type+"</strong><b>字节数："+files[i].size+"b</b></div>";
+					oBox.appendChild(oDiv)
+					break;
+			}
+			
+		}
+/*		alert(typeof files)
+    	for(var name in files)
+		{
+			//alert(files[name][name])
+		}*/
+		return false;
+	};
+};
+</script>
+</head>
+<body>
+		<div class="box">
+			请将文件拖到此区域
+			
+		</div>
+		<ul class="con">
+					<!--<li><i></i><span>aaa.txt</span><strong>文本</strong></li>-->
+			</ul>
+</body>
+</html>
