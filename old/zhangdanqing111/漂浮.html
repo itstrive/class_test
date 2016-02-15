@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none
+        }
+        #div1{
+            width:100px;
+            height:100px;
+            background: red;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+<script>
+	window.onload=function(){
+		var oDiv=document.getElementById('div1');
+		var iSpeedX=20;
+		var iSpeedY=8;
+		var timer=null;
+		timer=setInterval(function(){
+			iSpeedY+=3;
+			var l=oDiv.offsetLeft+iSpeedX;
+			var t=oDiv.offsetTop+iSpeedY;
+			if(t>document.documentElement.clientHeight-oDiv.offsetHeight){
+				t=document.documentElement.clientHeight-oDiv.offsetHeight;
+				iSpeedY*=-0.8;
+				iSpeedX*=0.8;
+			}
+			if(l>=document.documentElement.clientWidth-oDiv.offsetWidth){
+				l=document.documentElement.clientWidth-oDiv.offsetWidth;
+				iSpeedX*=-0.8;
+				iSpeedY*=0.8;
+			}
+			if(t<=0){
+				t=0;
+				iSpeedY*=-0.8;
+				iSpeedX*=0.8;
+			}
+			if(l<=0){
+				l=0;
+				iSpeedX*=-0.8;
+				iSpeedY*=0.8;
+			}
+			oDiv.style.left=l+'px';
+			oDiv.style.top=t+'px';
+			
+			if(Math.abs(iSpeedX)<0)iSpeedX=0;
+			if(Math.abs(iSpeedY)<0)iSpeedX=0;
+			if(iSpeedX==0 && iSpeedY==0 && t==document.documentElement.clientHeight-oDiv.offsetHeight)
+			{
+				clearInterval(timer);
+			}
+		},30);
+		
+		
+		
+	};
+</script>
+</head>
+
+<body>
+ <div id="div1"></div>
+</body>
+</html>
