@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>弹出比上次大1的数字</title>
+<script>
+window.onload=function (){
+	var aBtn=document.getElementsByTagName('input')[0];
+
+		aBtn.onclick=function ()
+		{
+			var a=parseInt(aBtn.value);
+			alert(a+1);
+			aBtn.value=a+1;
+		};
+};
+</script>
+</head>
+
+<body>
+<input type="button" value="0" />
+</body>
+</html>
