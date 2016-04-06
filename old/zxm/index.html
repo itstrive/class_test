@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0;}
+div{ width:666px; overflow:hidden; margin:0 auto;}
+ul{ width:200px; float:left; margin:10px; border:1px solid #f00;}
+li{ list-style:none; font-size:50px; background:#fcc; margin:5px; }
+p{ display:none; height:50px; background-color:rgb(128,128,128);}
+a{ display:inline-block; width:30px; height:30px; margin:10px;}
+</style>
+<script>
+window.onload=function(){
+	var aUl=document.getElementsByTagName('ul');
+	var oYm=document.getElementById('ym');
+	var arr=[];
+	
+	
+	var n=0;
+	for(var i=0; i<aUl.length; i++){
+		arr.push(aUl[i]);
+	}	
+	li();
+		
+	window.onscroll=function(){
+		var scroll=document.documentElement.scrollTop || document.body.scrollTop;
+		var client=document.documentElement.clientHeight;
+		var top=scroll+client;
+		
+		var h=document.body.offsetHeight;
+		if(top > h-200){			
+			li();
+		}			
+	};
+	function li(){
+		
+		n++;
+		if(n>5){
+			oYm.style.display='block';
+			return ;
+		}
+		document.title=n;
+		var oA=document.createElement('a');
+		oA.href='javascript:;';
+		oA.innerHTML=n;
+		oYm.appendChild(oA);
+		for(var i=0; i<20; i++){
+			var aLi=document.createElement('li');
+			aLi.innerHTML=i+1;
+			aLi.style.height=rnd(100,300)+'px';
+			arr.sort(function(ul1,ul2){
+				return ul1.offsetHeight-ul2.offsetHeight;
+			});			
+			aLi.style.background='rgb('+rnd(0,255)+','+rnd(0,255)+','+rnd(0,255)+')';
+			arr[0].appendChild(aLi);
+		}
+		
+			//aLi[i].style.background='rgb('+r+', '+g+', '+b+')';
+									
+	}
+	
+	function rnd(n,m){
+		return Math.floor(Math.random()*(m-n)+n);
+	}
+	
+};
+
+</script>
+</head>
+
+<body>
+<p></p>
+<div>
+	<ul></ul>
+	<ul></ul>
+	<ul></ul>
+</div>
+<p id="ym"></p>
+</body>
+</html>
