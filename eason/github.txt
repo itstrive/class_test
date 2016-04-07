@@ -1,1 +1,3 @@
 my private website location£ºSelinbo.GitHub.io
+
+my SVN location: http://1.elriva.applinzi.com/
