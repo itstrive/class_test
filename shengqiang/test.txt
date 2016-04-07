@@ -1,0 +1,2 @@
+svn:http://6666cheet.applinzi.com/
+git:http://strpoint.github.io/
