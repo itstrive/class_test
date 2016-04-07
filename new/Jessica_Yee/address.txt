@@ -1,0 +1,2 @@
+svn:http://lagouys.applinzi.com
+github:https://jessicays.github.io
