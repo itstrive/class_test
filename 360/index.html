@@ -1,0 +1,822 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/base.css" rel="stylesheet">
+<script src="js/base.js"></script>
+<title>hao 360</title>
+</head>
+<body>
+
+<div class="topbar" id="topbar">
+    <div class="topbar_bd clear">
+        <div class="top_menu">
+            <a href="javascript:;">设为主页</a>
+            <span class="split">|</span>               
+            <a href="javascript:;">主页修复</a>
+        </div>
+        <div class="top_info">
+            <a href="javascript:;" class="link_icon">超速上网、安全支付、3亿用户都在用360安全浏览器，推荐使用！</a>              
+            <a href="javascript:;" class="link_btn">立即下载</a>
+        </div>
+        <div class="top_toolbar">
+            <a href="javascript:;" class="yunpan">我的云盘</a>            
+            <a href="javascript:;" class="feedback">反馈</a>
+            <a href="javascript:;" class="version">正式版</a>
+            <a href="javascript:;" class="skin">换肤</a>
+        </div>
+    </div>
+</div>
+
+<div class="header">
+	<h1 class="logo">
+    	<a href="javascript:;"><img src="image/logo.png" width="230" height="62"></a>
+    </h1>
+    <ul class="header_bd">
+    	<li class="city">
+        	<span>北京</span>
+            <a href="javascript:;" class="change">[切换]</a>	
+        </li>
+        <li>
+        	<a href="javascript:;" class="link">
+            	<img src="image/4.png">
+            	<span class="air air_up">今 雷阵雨 25°C</span>
+                <span class="air">无持续风向：微风</span>
+            </a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="link w_132">
+            	<img src="image/4.png">
+            	<span class="air air_up">明 雷阵雨</span>
+                <span class="air">31~25°C</span>
+            </a>
+        </li>
+        <li class="arrow">
+            	<a href="javascript:;"></a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="link week">
+            	<span>6月5日周三</span><br>
+                <span>四月廿七</span>
+            </a>
+        </li>
+    </ul>
+    <div class="email">
+    	<p class="hd">
+            <a href="javascript:;" class="hot_icon"></a>
+            <a href="javascript:;" class="hot_txt">笑话：总是会有冒牌货</a>
+        </p>
+        <div class="email_input" id="email">
+        	<a href="javascript:;" class="email_icon"></a>
+            <input type="text" class="email_input_txt" id="email_input_txt" placeholder="邮箱帐号" >
+            <div class="email_list" id="email_list">
+            	<select id="mail-opts" class="mail_type">
+					<option value="">请选择邮箱</option>
+					<option value="@163.com 网易">@163.com 网易</option>
+                    <option value="@126.com 网易">@126.com 网易</option>
+                    <option value="@sina.com 新浪">@sina.com 新浪</option>
+                    <option value="@yahoo.com.cn">@yahoo.com.cn</option>
+                    <option value="@yahoo.cn 雅虎">@yahoo.cn 雅虎</option>
+                    <option value="@sohu.com 搜狐">@sohu.com 搜狐</option>
+                    <option value="@yeah.net 网易">@yeah.net 网易</option>
+                    <option value="@tom.com">@tom.com</option>
+                    <option value="@21cn.com">@21cn.com</option>
+                    <option value="@139.com">@139.com</option>
+                    <option value="以下在弹出页登录" style="font-weight:600;">以下在弹出页登录</option>
+                    <option value="@qq.com">@qq.com</option>
+                    <option value="@gmail.com">@gmail.com</option>
+                    <option value="@hotmail.com">@hotmail.com</option>
+                    <option value="淘宝账号">淘宝账号</option>
+                    <option value="支付宝">支付宝</option>
+                    <option value="新浪微博" style="color:red;">新浪微博</option>
+                    <option value="开心网">开心网</option>
+                    <option value="人人网">人人网</option>
+                    <option value="百度">百度</option>
+                    <option value="51.com">51.com</option>
+                    <option value="chinaren校友录">chinaren校友录</option>
+                    <option value="天涯社区">天涯社区</option>
+                  </select>
+                  <p class="email_ft">
+                  	<input type="password" class="psw" placeholder="*****">
+                   	<button class="btn-login" type="submit">登录</button>
+                  </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div class="banner clear" id="banner">
+	<div class="banner_hd">
+        <a href="javascript:;" class="logo_link bing" id="logo_link">综合搜索</a>
+        <span class="toggle" id="toggle_logo"></span>
+        <div class="logo_search" id="logo_list">
+            <a class="youdao" name="">有道搜索</a>
+            <a class="so360">360搜索</a>
+            <a class="bing">bing搜索</a>
+            <a class="google last">google搜索</a>
+        </div>
+    </div>
+    <div class="banner_bd">
+      	<ul class="tab clear">
+            <li><a href="javascript:;" class="link selected">网页</a></li>
+            <li><a href="javascript:;" class="link">新闻</a></li>			
+            <li><a href="javascript:;" class="link">视频</a></li>
+            <li><a href="javascript:;" class="link">图片</a></li>
+            <li><a href="javascript:;" class="link">音乐</a></li>
+            <li><a href="javascript:;" class="link">微博</a></li>
+            <li ><a href="javascript:;" class="link">地图</a></li>
+            <li ><a href="javascript:;" class="link">问答</a></li>
+            <li ><a href="javascript:;" class="link">购物</a></li>
+            <li ><a href="javascript:;" class="link">机票</a></li>
+            <li><a href="javascript:;" class="link">汽车</a></li>
+        </ul>
+        <div class="tab_input">
+        	<ul>
+            	<li class="item">
+                	<input type="text" class="search_txt" id="search_list_btn">
+                    <span class="arrow "></span>
+                    <div class="search_list" id="search_list">
+                    	<ul>
+                        	<li>
+                            	<a href="javascript:;">
+                                	<em class="hot">1</em>
+                                    <span>习近平请彭丽媛闻花香</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em class="hot">2</em>
+                                    <span>京港澳高速56车相撞56车相撞</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em class="hot">3</em>
+                                    <span>安徽原副省长造假</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >4</em>
+                                    <span>习近平请彭丽媛闻花香</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >5</em>
+                                    <span class="new">民众反对推迟退休民众反对推迟退休</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >6</em>
+                                    <span>民众反对推迟退休民对推迟退休</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >7</em>
+                                    <span class="new">民众反对推迟退休民众反对推迟退休</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >8</em>
+                                    <span class="new">民众民众反对推迟退休</span>
+                                </a>
+                            </li>
+                            <li>
+                            	<a href="javascript:;">
+                                	<em >9</em>
+                                    <span class="new">高考生拍城管遭围殴</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                	<button class="search_btn" href="javascript:;" id="search_btn">360搜索</button>
+                </li>
+                <li class="item_last">
+                	<a href="javascript:;">全国聘礼地图</a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+</div>
+
+<div class="nav">
+	<ul class="clear">
+    	<li>
+        	<a href="javascript:;" class="home selected">我的主页</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="new">新闻头条</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="tv">电视剧</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="movie">最新电影</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="gam">小游戏</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="xiaoshuo">小说大全</a>
+        </li><li>
+        	<a href="javascript:;" class="trip">旅游度假</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="buy">正品购物</a>
+        </li>
+        <li>
+        	<a href="javascript:;" class="day bline">今日团购</a>
+        </li>
+    </ul>
+</div>
+
+<div class="main clear">
+
+	<div class="side_bar">
+    	<div class="news border">
+        	<a href="javascript:;" class="side_ad">
+            	<img src="image/hd_ad.png" width="238"  height="94">
+            </a>
+        	<!--<h2 class="date_title"></h2>
+            <ul>
+            	<li>
+                	<a href="javascript:;">备考</a>|
+                    <a href="javascript:;">四大误区 </a>
+                    <a href="javascript:;">备考全程指导</a>
+                </li>
+                <li>
+                	<a href="javascript:;">资讯</a>|
+                    <a href="javascript:;">2013年高考作文题目预测汇总 </a>
+                </li>
+                <li>
+                	<a href="javascript:;" class="green">高考时间</a>
+                    <a href="javascript:;">心理减压 </a>
+                    <a href="javascript:;" class="orange">高考问答 </a>
+                </li>
+            </ul>-->
+        </div>
+        
+        <div class="type_list">
+        	<ul class="clear">
+            	<li>
+                	<a href="javascript:;">新闻</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">娱乐</a>
+                </li>
+                <li>
+                	<a href="javascript:;">电影</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">电视剧</a>
+                </li>
+                <li>
+                	<a href="javascript:;">新闻</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">娱乐</a>
+                </li>
+              
+                <li>
+                	<a href="javascript:;">彩票</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">双色球</a>
+                </li>
+                 <li>
+                	<a href="javascript:;">购物</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">逛女装</a>
+                </li>
+                 <li>
+                	<a href="javascript:;">音乐</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">小说</a>
+                </li>
+                 <li>
+                	<a href="javascript:;">游戏</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">棋牌</a>
+                </li>
+                <li>
+                	<a href="javascript:;">星座</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">美食</a>
+                </li>
+                
+                 <li>
+                	<a href="javascript:;">查询</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">火车票</a>
+                </li>
+                
+                 <li>
+                	<a href="javascript:;">机票</a>
+                    <span class="point">.</span>
+                    <a href="javascript:;">酒店</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="guess">
+        	<h3 class="clear">猜你喜欢 <a href="javascript:;">换一下</a></h3>
+            <div class="new_tab" id="new_tab">
+            	<ul class="hd_ul" id="new_ul">
+                	<li class="selected"><a href="javascript:;" class="first">新闻</a></li>
+                    <li ><a href="javascript:;">八卦</a></li>
+                    <li><a href="javascript:;">情感</a></li>
+                    <li><a href="javascript:;" class="item_last">军事</a></li>
+                </ul>
+                <div class="new_item" style="display:block">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic1.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic2.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">徐若瑄遗憾没有怀吴建豪的种4</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男徐若瑄遗憾没有怀吴建豪的种</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">4女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">乐基儿与黎明离活窘迫独钟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic3.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">收入三 女友说结婚拿23万</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">老汉看不上倒插门女婿生被打</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic4.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">俄军队与胶带不得不说的故事</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">美震撼报道：中国曾捕获UFO</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">中国十大敌人排行榜日本第一</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">俄空军近期将接收24架米格35钟</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="new_tab" >
+            	<ul class="hd_ul">
+                	<li class="selected"><a href="javascript:;" class="first">新闻</a></li>
+                    <li ><a href="javascript:;">八卦</a></li>
+                    <li><a href="javascript:;">情感</a></li>
+                    <li><a href="javascript:;" class="item_last">军事</a></li>
+                </ul>
+                <div class="new_item" style="display:block">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic1.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic2.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">徐若瑄遗憾没有怀吴建豪的种4</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男徐若瑄遗憾没有怀吴建豪的种</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">4女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">乐基儿与黎明离活窘迫独钟</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic3.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">男人为何对40岁女人情有独钟</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">收入三 女友说结婚拿23万</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">老汉看不上倒插门女婿生被打</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="new_item">
+                	<p class="new_img">
+                    	<a href="javascript:;">
+                        	<img src="image/new_pic4.jpg">
+                        </a>
+                    </p>
+                    <ul>
+                    	<li>
+                        	<a href="javascript:;">俄军队与胶带不得不说的故事</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">美震撼报道：中国曾捕获UFO</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">中国十大敌人排行榜日本第一</a>
+                        </li>
+                        <li>
+                        	<a href="javascript:;">俄空军近期将接收24架米格35钟</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+    	<div class="content_hd">
+        	<div class="site">
+            	<span class="avtor"></span>
+            	<ul class="clear">
+                	<li>
+                    	<a href="javascript:;">百度</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">贴吧</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">360搜索</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">谷歌</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新浪</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">微博</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">搜狐</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">视频</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">网易</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">邮箱</a>
+                    </li>
+                     <li>
+                    	<a href="javascript:;">360搜索</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">谷歌</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">新浪</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">微博</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">搜狐</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">视频</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">网易</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">邮箱</a>
+                    </li>
+                    <li class="icon">
+                    	<a href="javascript:;" class="icon_hd">正品商城 </a><span class="toggle" id="goggle"></span>
+                       	<div class="group_list">
+                        	<a href="javascript:;">排行榜</a>
+                            <a href="javascript:;">品牌团</a>
+                            <a href="javascript:;">逛女装</a>
+                            <a href="javascript:;">团　购</a>
+                            <a href="javascript:;">特价品</a>
+                        </div>
+                    </li>
+                   
+                    <li>
+                    	<a href="javascript:;">360</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">手机卫士</a>
+                    </li>
+                    <li>
+                    	<a href="javascript:;">搜狐</a>
+                        <span class="point">.</span>
+                        <a href="javascript:;">视频</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="site_link clear">
+            	<ul class="clear">
+                    <li class="icon">
+                    	<a href="javascript:;">淘宝特卖</a><span class="toggle" id="toggle_taobao"></span>
+                    	<div class="group_list">
+                        	<a href="javascript:;">排行榜</a>
+                            <a href="javascript:;">品牌团</a>
+                            <a href="javascript:;">逛女装</a>
+                            <a href="javascript:;">团　购</a>
+                            <a href="javascript:;">特价品</a>
+                        </div>
+                    </li>
+                    <li class="icon icon_360">
+                    	<a href="javascript:;" class="icon_hd">360影视</a>
+                        <span class="toggle" id="goggle_360"></span>
+                        <div class="group_list">
+                        	<a href="javascript:;">排行榜</a>
+                            <a href="javascript:;">品牌团</a>
+                            <a href="javascript:;">逛女装</a>
+                            <a href="javascript:;">团　购</a>
+                            <a href="javascript:;">特价品</a>
+                        </div>
+                    </li>
+                    <li><a href="javascript:;">土豆</a></li>
+                    <li><a href="javascript:;">360影视</a></li>
+                    <li><a href="javascript:;">360彩票</a></li>
+                    <li><a href="javascript:;">东方财富</a></li>
+                    <li><a href="javascript:;">人民</a><span class="point">.</span><a href="javascript:;">新华</a></li>
+                    <li><a href="javascript:;">CNTV</a></li>
+                    <li><a href="javascript:;">太平洋电脑</a></li>
+                    <li><a href="javascript:;">世纪佳缘</a></li>
+                    <li><a href="javascript:;">携程网</a></li>
+                    <li><a href="javascript:;">中关村在线</a></li>
+                    <li><a href="javascript:;">汽车之家</a></li>
+                    <li><a href="javascript:;">峰网</a></li>
+                    <li><a href="javascript:;">易车网</a></li>
+                    <li><a href="javascript:;" class="green">苏宁易购</a></li>
+                    <li><a href="javascript:;">糯米网</a></li>
+                    <li><a href="javascript:;">58同城</a></li>
+                    <li><a href="javascript:;">赶集网</a></li>
+                    <li><a href="javascript:;">百合网</a></li>
+                     <li><a href="javascript:;">当当网</a></li>
+                    <li><a href="javascript:;">安居网</a></li>
+                    <li><a href="javascript:;">1号店</a></li>
+                    <li><a href="javascript:;">梦 芭 莎</a></li>
+                    <li><a href="javascript:;">艺 龙 网</a></li>
+                    <li><a href="javascript:;">去哪儿网	</a></li>
+                    <li><a href="javascript:;">智联招聘</a></li>
+                    <li><a href="javascript:;">美 团 网</a></li>
+                    <li><a href="javascript:;">国美在线</a></li>
+                    <li><a href="javascript:;">去哪儿网	</a></li>
+                    <li><a href="javascript:;">唯 品 会</a></li>
+                    <li><a href="javascript:;">美 团 网</a></li>
+                    <li><a href="javascript:;" class="orange">聚美优品</a></li> 
+                    <li><a href="javascript:;">美丽说</a></li>
+                    <li><a href="javascript:;">M18麦考林</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class="content_mid_bar">
+        	<ul class="clear">
+            	<li><a href="javascript:;">1号店超市</a></li>
+                <li><a href="javascript:;">京东服装城</a></li>
+                <li><a href="javascript:;" class="green">酒仙网购酒市</a></li>
+                <li><a href="javascript:;">优购网</a></li>
+                <li><a href="javascript:;">优众奢侈品</a></li>
+                <li><a href="javascript:;">珍品奢侈品</a></li>
+                <li><a href="javascript:;">赚钱生意街</a></li>
+                <li><a href="javascript:;">绿瘦商城</a></li>
+                <li><a href="javascript:;">好乐买鞋城</a></li>
+            </ul>
+        </div>
+        <div class="content_nav_bar">
+        	<div class="nav_box clear">
+            	<div class="hd">
+                	<a href="#">游戏</a>
+                    <a href="#">电影</a>
+                    <a href="#">电视剧</a>
+                    <a href="#">小说</a>
+                    <a href="#">音乐</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影票</a>
+                    <a href="#">今日特价品</a>
+                    <a href="#">淘宝皇冠店</a>
+                    <a href="#" class="last">特供机</a>
+                </div>
+                <div class="item">
+   
+                	<h3><a href="#" class="title">新闻</a></h3>
+                    <ul>
+                    	<li><a href="#">新浪新闻</a></li>
+                        <li><a href="#">网易新闻</a></li>
+                        <li><a href="#">搜狐新闻</a></li>
+                        <li><a href="#">凤凰新闻</a></li>
+                        <li><a href="#">环球网</a></li>
+                        <li><a href="#">新华网</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">军事</a></h3>
+                    <ul>
+                    	<li><a href="#">中华网军事</a></li>
+                        <li><a href="#">铁血军事</a></li>
+                        <li><a href="#">米尔军情</a></li>
+                        <li><a href="#">环球新军事</a></li>
+                        <li><a href="#">西陆军事</a></li>
+                        <li><a href="#">军事前沿</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">体育</a></h3>
+                    <ul>
+                    	<li><a href="#">新浪体育</a></li>
+                        <li><a href="#">搜狐体育</a></li>
+                        <li><a href="#">网易体育</a></li>
+                        <li><a href="#">虎扑体育</a></li>
+                        <li><a href="#">乐视体育</a></li>
+                        <li><a href="#">NBA季后赛</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">游戏</a></h3>
+                    <ul>
+                    	<li><a href="#">街机三国</a></li>
+                        <li><a href="#">龙将2</a></li>
+                        <li><a href="#">大将军</a></li>
+                        <li><a href="#">烈火战神</a></li>
+                        <li><a href="#">创世三国</a></li>
+                        <li><a href="#">霸 域</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+            </div>
+            <div class="nav_box clear">
+            	<div class="hd">
+                	<a href="#">游戏</a>
+                    <a href="#">电影</a>
+                    <a href="#">电视剧</a>
+                    <a href="#">小说</a>
+                    <a href="#">音乐</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影票</a>
+                    <a href="#">今日特价品</a>
+                    <a href="#">淘宝皇冠店</a>
+                    <a href="#" class="last">特供机</a>
+                </div>
+                <div class="item">
+   
+                	<h3><a href="#" class="title">新闻</a></h3>
+                    <ul>
+                    	<li><a href="#">新浪新闻</a></li>
+                        <li><a href="#">网易新闻</a></li>
+                        <li><a href="#">搜狐新闻</a></li>
+                        <li><a href="#">凤凰新闻</a></li>
+                        <li><a href="#">环球网</a></li>
+                        <li><a href="#">新华网</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">军事</a></h3>
+                    <ul>
+                    	<li><a href="#">中华网军事</a></li>
+                        <li><a href="#">铁血军事</a></li>
+                        <li><a href="#">米尔军情</a></li>
+                        <li><a href="#">环球新军事</a></li>
+                        <li><a href="#">西陆军事</a></li>
+                        <li><a href="#">军事前沿</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">体育</a></h3>
+                    <ul>
+                    	<li><a href="#">新浪体育</a></li>
+                        <li><a href="#">搜狐体育</a></li>
+                        <li><a href="#">网易体育</a></li>
+                        <li><a href="#">虎扑体育</a></li>
+                        <li><a href="#">乐视体育</a></li>
+                        <li><a href="#">NBA季后赛</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+                <div class="item">
+                	<h3><a href="#" class="title">游戏</a></h3>
+                    <ul>
+                    	<li><a href="#">街机三国</a></li>
+                        <li><a href="#">龙将2</a></li>
+                        <li><a href="#">大将军</a></li>
+                        <li><a href="#">烈火战神</a></li>
+                        <li><a href="#">创世三国</a></li>
+                        <li><a href="#">霸 域</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+            </div>
+            <div class="nav_box clear">
+            	<div class="hd">
+                	<a href="#">游戏</a>
+                    <a href="#">电影</a>
+                    <a href="#">电视剧</a>
+                    <a href="#">小说</a>
+                    <a href="#">音乐</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影</a>
+                    <a href="#">电影票</a>
+                    <a href="#">今日特价品</a>
+                    <a href="#">淘宝皇冠店</a>
+                    <a href="#" class="last">特供机</a>
+                </div>
+                <div class="item">
+   
+                	<h3><a href="#" class="title">新闻</a></h3>
+                    <ul>
+                    	<li><a href="#">新浪新闻</a></li>
+                        <li><a href="#">网易新闻</a></li>
+                        <li><a href="#">搜狐新闻</a></li>
+                        <li><a href="#">凤凰新闻</a></li>
+                        <li><a href="#">环球网</a></li>
+                        <li><a href="#">新华网</a></li>
+                    </ul>
+                    <a href="#" class="more">更多>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottom"></div>
+</body>
+</html>
