@@ -1,2 +1,0 @@
-Gighub:	https://www.leerayno.github.com
-svn :   http://leerayn.applinzi.com
