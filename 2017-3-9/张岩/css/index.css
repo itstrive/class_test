@@ -1,0 +1,300 @@
+.header {
+  height: 2.35rem;
+  width: 16rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid #4bccae;
+}
+
+.header a {
+  color: #fff;
+}
+
+.header .menu {
+  width: 1.45rem;
+  height: 1.2rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  text-indent: -999rem;
+  margin-left: 0.4rem;
+  background-size: 1.45rem 1.2rem;
+}
+
+.header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -999rem;
+  margin-right: 0.4rem;
+}
+
+.header .logo {
+  width: 6.3rem;
+  height: 1rem;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 6.3rem 1rem;
+  text-indent: -999rem;
+}
+
+/*身体*/
+
+.section {
+  /*注册登录*/
+  /*banner*/
+  /*news*/
+  /*answer*/
+  /*选项卡*/
+}
+
+.section nav {
+  width: 16rem;
+  height: 2.1rem;
+  background: #fafafa;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section nav a {
+  color: #828282;
+  padding-left: 2.025rem;
+  height: 1.475rem;
+  line-height: 1.475rem;
+}
+
+.section nav .user-login {
+  background: url(../img/user-login.png) no-repeat;
+  background-size: 1.45rem 1.475rem;
+  margin-right: 1.475rem;
+}
+
+.section nav span {
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #fdfdfd;
+  text-indent: -999rem;
+  height: 1.425rem;
+}
+
+.section nav .user-re {
+  background: url(../img/user-se.png) no-repeat;
+  background-size: 1.45rem 1.475rem;
+  margin-left: 1.35rem;
+}
+
+.section .banner li {
+  width: 16rem;
+  height: 7.8rem;
+  display: flex;
+}
+
+.section .banner li a {
+  width: 16rem;
+  height: 7.8rem;
+  background: url(../img/royal.png) no-repeat;
+  background-size: 16rem 7.8rem;
+  text-indent: -999rem;
+}
+
+.section .news {
+  width: 16rem;
+  height: 14.525rem;
+  border-bottom: 0.15rem solid #57c0af;
+}
+
+.section .news li {
+  width: 15.2rem;
+  height: 2.05rem;
+  display: flex;
+  margin: 0 0.4rem;
+  border-bottom: 0.05rem solid #e2e2e2;
+}
+
+.section .news li a {
+  width: 15.2rem;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  color: #484848;
+  font-size: 0.725rem;
+}
+
+.section .answer {
+  height: 2.025rem;
+  width: 16rem;
+  border-bottom: 0.05rem solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+}
+
+.section .answer h2 {
+  margin-left: 0.775rem;
+  font-size: 0.75rem;
+}
+
+.section .answer a {
+  width: 1.475rem;
+  height: 1.475rem;
+  background: url(../img/anwser.png) no-repeat;
+  background-size: 1.475rem;
+  text-indent: -999em;
+  margin-right: 0.725rem;
+}
+
+.section .options {
+  width: 16rem;
+  height: 2.1rem;
+  display: flex;
+  border-bottom: 0.05rem solid #e2e2e2;
+}
+
+.section .options li {
+  width: 3.125rem;
+  display: flex;
+  align-items: center;
+}
+
+.section .options li h3 {
+  width: 3.125rem;
+  padding: 0 0.775rem;
+  font-size: 0.7rem;
+  color: #2d2d2d;
+}
+
+.section .options-news {
+  width: 16rem;
+  height: 6.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.section .options-news li {
+  width: 14.6rem;
+  height: 6.5rem;
+}
+
+.section .options-news li a {
+  width: 14.6rem;
+  height: 6.5rem;
+}
+
+.section .options-news li a h4 {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.725rem;
+  color: #272727;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section .options-news li a span {
+  width: 5.2rem;
+  height: 3.7rem;
+  background: url(../img/hui.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+}
+
+.section .options-news li a p {
+  height: 3.5rem;
+  font-size: 0.65rem;
+  color: #9f9f9f;
+  line-height: 1.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.7rem;
+  padding-right: 0.375rem;
+}
+
+.section .options-news2 {
+  border-bottom: 0.15rem solid #57c0af;
+  height: 8.3rem;
+}
+
+.section .options-news3 {
+  height: 8.225rem;
+}
+
+.section .options-news2,
+.section .options-news3 {
+  width: 16rem;
+}
+
+.section .options-news2 li,
+.section .options-news3 li {
+  width: 15.2rem;
+  height: 2.05rem;
+  display: flex;
+  margin: 0 0.4rem;
+  border-top: 0.05rem solid #e2e2e2;
+}
+
+.section .options-news2 li a,
+.section .options-news3 li a {
+  width: 15.2rem;
+  height: 2.05rem;
+  line-height: 2.05rem;
+  color: #484848;
+  font-size: 0.725rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section h6 {
+  height: 3.175rem;
+  width: 16rem;
+  border-bottom: 0.15rem solid #57c0af;
+  border-top: 0.05rem solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section h6 a {
+  height: 1.425rem;
+  line-height: 1.425rem;
+  background: url(../img/shang.png) no-repeat;
+  background-size: 1.45rem 1.425rem;
+  padding-left: 1.925rem;
+  font-size: 0.725rem;
+  color: #6e7275;
+}
+
+footer {
+  width: 16rem;
+  height: 3.725rem;
+  background: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  font-size: 0.7rem;
+  color: #b6b6b6;
+  height: 1.15rem;
+  line-height: 1.15rem;
+}
+
+footer .edition-pc {
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  padding-left: 2.05rem;
+  margin-right: 2.1rem;
+}
+
+footer span {
+  width: 0.05rem;
+  height: 1.9rem;
+  background: #646464;
+  text-indent: -999rem;
+}
+
+footer .edition-phone {
+  background: url(../img/phone.png) no-repeat;
+  background-size: 0.65rem 1.15rem;
+  padding-left: 1.25rem;
+  margin-left: 1.75rem;
+}
