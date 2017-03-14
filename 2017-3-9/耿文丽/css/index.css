@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+header {
+  width: 16.0rem;
+  height: 2.35rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  border-bottom: 0.05rem solid #4bccae;
+  box-sizing: border-box;
+}
+
+header .menu {
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -24.975rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -24.975rem;
+}
+
+.userBox {
+  width: 16rem;
+  height: 2.05rem;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userBox a {
+  color: #76757a;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.userBox .userLogin {
+  background: url(../img/login-bg.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+}
+
+.userBox .userReg {
+  background: url(../img/reg-bg.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+}
+
+.userBox .line {
+  height: 1.45rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #fafafa;
+  font-size: 0;
+  margin: 0 1.4rem;
+}
+
+.bigbanner {
+  width: 16.0rem;
+  height: 7.8rem;
+  background: url(../img/bigbanner.png) no-repeat;
+  background-size: 16.0rem 7.8rem;
+}
+
+.oneList {
+  width: 16.0rem;
+  border-bottom: 0.1rem solid #57c0af;
+}
+
+.oneList ul {
+  width: 15.25rem;
+  margin: 0 auto;
+}
+
+.oneList ul li {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  font-size: 0.75rem;
+  color: #2f2f2f;
+  padding-left: 0.325rem;
+}
+
+.oneList ul li .lastLi {
+  border-bottom: none;
+}
+
+.biggerHot {
+  width: 16.0rem;
+  background: #fafafa;
+}
+
+.biggerHot .bigHot {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  background: url(../img/dian.png) no-repeat 14rem 0.125rem;
+  background-size: 1.475rem 1.475rem;
+  border-bottom: 0.025rem solid #e8e8e8;
+}
+
+.biggerHot .bigHot h2 {
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #000;
+  margin-left: 0.75rem;
+}
+
+.biggerHot .hotList {
+  width: 16.0rem;
+}
+
+.biggerHot .hotList li {
+  font-size: 0.75rem;
+  color: #242424;
+  width: 3.1rem;
+  line-height: 2.0rem;
+  text-align: center;
+  border-bottom: 0.05rem solid #ebebeb;
+}
+
+.biggerHot .bump {
+  width: 16.0rem;
+}
+
+.biggerHot .bump h2 {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  font-size: 0.75rem;
+  color: #373b3e;
+  margin-left: 0.7rem;
+}
+
+.biggerHot .bump .imgCont {
+  height: 3.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  display: inline-block;
+}
+
+.biggerHot .bump .imgCont img {
+  width: 5.2rem;
+  float: left;
+  margin-right: 0.325rem;
+  vertical-align: middle;
+}
+
+.biggerHot .bump .imgCont p {
+  font-size: 0.65rem;
+  color: #999;
+  line-height: 0.75rem;
+}
+
+.biggerHot .bump .oneList {
+  width: 16.0rem;
+  border-bottom: 0.1rem solid #57c0af;
+}
+
+.biggerHot .bump .oneList ul {
+  width: 15.25rem;
+  margin: 0 auto;
+}
+
+.biggerHot .bump .oneList ul li {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  font-size: 0.75rem;
+  color: #2f2f2f;
+  padding-left: 0.325rem;
+}
+
+.biggerHot .bump .oneList ul li .lastLi {
+  border-bottom: none;
+}
+
+.biggerHot .bump .oneList .retTop {
+  width: 16.0rem;
+  height: 3.0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biggerHot .bump .oneList .retTop .retTopIn a {
+  display: inline-block;
+}
+
+.biggerHot .bump .oneList .retTop .retTopIn a img {
+  width: 1.475rem;
+  vertical-align: middle;
+}
+
+.biggerHot .bump .oneList .retTop .retTopIn h3 {
+  display: inline-block;
+}
+
+footer {
+  width: 16.0rem;
+  height: 3.75rem;
+  background: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .PC {
+  font-size: 0.7rem;
+  color: #c4c4c4;
+}
+
+footer .PC img {
+  width: 1.45rem;
+  height: 1.15rem;
+  vertical-align: middle;
+  margin-right: 0.375rem;
+}
+
+footer .line {
+  height: 1.45rem;
+  border-left: 0.05rem solid #686868;
+  font-size: 0;
+  margin: 0 1.4rem;
+}
+
+footer .PH {
+  font-size: 0.7rem;
+  color: #c4c4c4;
+}
+
+footer .PH img {
+  width: 0.65rem;
+  height: 1.15rem;
+  vertical-align: middle;
+  margin-right: 0.375rem;
+}
