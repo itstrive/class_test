@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*header*/
+
+.header {
+  width: 16rem;
+  height: 2.225rem;
+  border-bottom: 0.1rem solid #4bccae;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.header .nav-bg {
+  width: 1.45rem;
+  height: 1.2rem;
+  background: url(../img/nav-bg.png) no-repeat;
+  background-size: 1.45rem 1.2rem;
+  text-indent: -99999em;
+  margin-left: 0.4rem;
+}
+
+.header .pc-bg {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -99999em;
+  margin-right: 0.4rem;
+}
+
+/*user*/
+
+.user {
+  width: 16rem;
+  height: 2.075rem;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user a {
+  font-size: 0.75rem;
+  color: #85888f;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.user .user-login {
+  background: url(../img/user-login.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+}
+
+.user .user-sign {
+  background: url(../img/user-sign.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+}
+
+.user span {
+  width: 0.2rem;
+  height: 1.5rem;
+  background: url(../img/line.png) no-repeat;
+  background-size: 0.2rem 1.5rem;
+  text-indent: -99999em;
+  margin: 0 1.45rem;
+}
+
+/*bg*/
+
+.bg {
+  width: 16rem;
+  height: 7.8rem;
+  display: flex;
+}
+
+.bg a {
+  width: 16rem;
+  height: 7.8rem;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 16rem 7.8rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bg a span {
+  width: 16rem;
+  height: 1.85rem;
+  background: #000;
+  opacity: 0.4;
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1.85rem;
+}
+
+/*list*/
+
+.list {
+  border-bottom: 0.1rem solid #58c1b0;
+}
+
+.list li {
+  height: 2rem;
+  margin: 0 0.4rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  font-size: 0.725rem;
+  line-height: 2rem;
+  padding-left: 0.3rem;
+}
+
+.list li a {
+  color: #323232;
+}
+
+.list .last {
+  border: none;
+}
+
+/*pro*/
+
+.pro .title {
+  width: 16rem;
+  height: 2rem;
+  border-bottom: 0.05rem solid #e2e2e2;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pro .title span {
+  font-size: 0.725rem;
+  color: #242424;
+  margin-left: 0.75rem;
+}
+
+.pro .title a {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/pro-bg.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+  margin-right: 0.75rem;
+  text-indent: -99999em;
+}
+
+.pro .kind {
+  width: 16rem;
+  height: 2.25rem;
+  border-bottom: 0.05rem solid #ececec;
+}
+
+.pro .kind ul {
+  display: flex;
+  font-size: 0.725rem;
+}
+
+.pro .kind ul li {
+  padding: 0.625rem 0.75rem;
+}
+
+.pro .kind ul li a {
+  color: #3d3d3d;
+}
+
+.pro .kind ul .first {
+  border-bottom: 0.1rem solid #d43553;
+}
+
+.pro .con {
+  border-bottom: 0.1rem solid #53c5ae;
+}
+
+.pro .con li {
+  height: 2rem;
+  margin: 0 0.4rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  font-size: 0.725rem;
+  line-height: 2rem;
+  padding-left: 0.3rem;
+}
+
+.pro .con li a {
+  font-size: 0.75rem;
+  color: #343434;
+}
+
+.pro .con .first {
+  height: 6.5rem;
+}
+
+.pro .con .first h5 {
+  font-size: 0.725rem;
+  font-weight: normal;
+}
+
+.pro .con .first div {
+  display: flex;
+}
+
+.pro .con .first div span {
+  width: 13.58rem;
+  height: 3.7rem;
+  background: url(../img/pro-con.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  text-indent: -9999em;
+}
+
+.pro .con .first div p {
+  font-size: 0.65rem;
+  color: #8a8a8a;
+  margin-left: 0.7rem;
+  line-height: 1.25rem;
+}
+
+.pro .con .last {
+  border: none;
+}
+
+/*hot*/
+
+.hot .title {
+  width: 16rem;
+  height: 2rem;
+  border-bottom: 0.05rem solid #e2e2e2;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hot .title span {
+  font-size: 0.725rem;
+  color: #242424;
+  margin-left: 0.75rem;
+}
+
+.hot .title a {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url(../img/pro-bg.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+  margin-right: 0.75rem;
+  text-indent: -99999em;
+}
+
+.hot .kind {
+  width: 16rem;
+  height: 2.25rem;
+  border-bottom: 0.05rem solid #ececec;
+}
+
+.hot .kind ul {
+  display: flex;
+  font-size: 0.725rem;
+}
+
+.hot .kind ul li {
+  padding: 0.625rem 0.75rem;
+}
+
+.hot .kind ul li a {
+  color: #3d3d3d;
+}
+
+.hot .kind ul .first {
+  border-bottom: 0.1rem solid #d43553;
+}
+
+.hot .con {
+  border-bottom: 0.05rem solid #e4e4e4;
+}
+
+.hot .con li {
+  height: 2rem;
+  margin: 0 0.4rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  font-size: 0.725rem;
+  line-height: 2rem;
+  padding-left: 0.3rem;
+}
+
+.hot .con li a {
+  font-size: 0.75rem;
+  color: #343434;
+}
+
+.hot .con .first {
+  height: 6.5rem;
+}
+
+.hot .con .first h5 {
+  font-size: 0.725rem;
+  font-weight: normal;
+}
+
+.hot .con .first div {
+  display: flex;
+}
+
+.hot .con .first div span {
+  width: 13.58rem;
+  height: 3.7rem;
+  background: url(../img/hot-con.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  text-indent: -9999em;
+}
+
+.hot .con .first div p {
+  font-size: 0.65rem;
+  color: #8a8a8a;
+  margin-left: 0.7rem;
+  line-height: 1.25rem;
+}
+
+.hot .con .last {
+  border-bottom: none;
+}
+
+/*return*/
+
+.return {
+  width: 16rem;
+  height: 3rem;
+  background: #fafafa;
+  border-bottom: 0.1rem solid #4dcaa8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.return a {
+  background: url(../img/return.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+  font-size: 0.725rem;
+  color: #848790;
+  padding-left: 1.95rem;
+  line-height: 1.5rem;
+}
+
+/*footer*/
+
+.footer {
+  width: 16rem;
+  height: 3.7rem;
+  background: #262626;
+  border-bottom: 0.05rem solid #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  height: 1.45rem;
+  line-height: 1.45rem;
+  font-size: 0.75rem;
+  color: #c4c4c4;
+}
+
+.footer .pc {
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  padding-left: 2.05rem;
+}
+
+.footer .phone {
+  background: url(../img/phone-bg.png) no-repeat;
+  background-size: 0.65rem 1.15rem;
+  padding-left: 1.25rem;
+}
+
+.footer span {
+  width: 0.05rem;
+  height: 1.9rem;
+  background: #666;
+  margin: 0 1.75rem 0 2.1rem;
+}
