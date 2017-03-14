@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  width: 16rem;
+  height: 2.35rem;
+  background: #262722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+
+header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -9999rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -249.975rem;
+}
+
+.banner {
+  width: 16rem;
+  height: 7.8rem;
+}
+
+.banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.banner a img {
+  width: 100%;
+  height: 100%;
+}
+
+.news {
+  width: 16rem;
+  height: 2rem;
+  border-bottom: 0.025rem solid #ececec;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  padding-left: 1.05rem;
+  box-sizing: border-box;
+}
+
+.new-last {
+  border-bottom: 0.05rem solid #58c1b0;
+}
+
+.gps a {
+  margin-right: 1.7rem;
+}
+
+.bor-botm-no {
+  border-bottom: none;
+}
+
+.h184 {
+  width: 16rem;
+  height: 4.6rem;
+  border-bottom: 0.025rem solid #ececec;
+  padding-left: 1.05rem;
+  box-sizing: border-box;
+}
+
+.h184 img {
+  width: 5.2rem;
+  height: 3.7rem;
+}
+
+.h184 .hezi {
+  width: 8.4rem;
+  height: 3.35rem;
+  font-size: 0.6rem;
+  line-height: 1.25rem;
+}
+
+.h184 .hezi a {
+  color: #ccc;
+}
+
+.diandian {
+  width: 1.55rem;
+  height: 1.5rem;
+  margin-top: 0.25rem;
+  margin-right: 0.75rem;
+}
+
+.center {
+  align-items: center;
+}
+
+.gotop {
+  width: 16rem;
+  height: 3.05rem;
+  border-bottom: 0.05rem solid #58c1b0;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gotop .go {
+  width: 5.175rem;
+  height: 1.5rem;
+  background: url(../img/up.png) no-repeat;
+  background-size: 1.575rem 1.475rem;
+}
+
+.gotop .go a {
+  font-size: 0.7rem;
+  color: #898792;
+  display: block;
+  margin-left: 2.25rem;
+  margin-top: 0.25rem;
+}
+
+.footer {
+  background: #262626;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 0.6rem;
+}
+
+.footer .xian {
+  height: 2rem;
+  border-left: 0.025rem solid #fff;
+  margin-left: 1.05rem;
+  margin-right: 2.05rem;
+  box-sizing: border-box;
+}
+
+.pc {
+  width: 4.4rem;
+  height: 1.325rem;
+}
+
+.pc img {
+  width: 1.675rem;
+  height: 1.2rem;
+  vertical-align: middle;
+}
