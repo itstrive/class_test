@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 16rem;
+  height: 2.25rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+
+.header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -99rem;
+}
+
+.header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+.header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -999rem;
+}
+
+.user-login {
+  width: 16rem;
+  height: 2.1rem;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-login a {
+  font-size: 0.8rem;
+  color: #76757a;
+  line-height: 1.5rem;
+  height: 1.5rem;
+  padding-left: 2rem;
+  background-size: 1.5rem 1.475rem;
+}
+
+.user-log {
+  background: url(../img/login-bg.png) no-repeat;
+}
+
+.register {
+  background: url(../img/reg-bg.png) no-repeat;
+}
+
+.h-bor {
+  height: 1.5rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #fafafa;
+  font-size: 0;
+  margin: 0 1.425rem;
+}
+
+.user-banr {
+  width: 16rem;
+  height: 7.775rem;
+  background: url(../img/banr.png) no-repeat;
+  background-size: 16rem 7.775rem;
+  text-indent: -9999rem;
+}
+
+.content-top {
+  font-size: 0.75rem;
+  color: #2d2d2d;
+}
+
+.con-top {
+  width: 16rem;
+  height: 2.05rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 0 0.45rem;
+}
+
+.last {
+  border-top: 0.05rem solid #57c0af;
+  width: 16rem;
+  height: 2.1rem;
+  border-bottom: 0.05rem solid #ebebeb;
+  box-sizing: border-box;
+  background: url(../img/con-tu.png) no-repeat;
+  background-size: 1.475rem 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.science {
+  width: 16rem;
+  height: 2.05rem;
+  font-size: 0.75rem;
+  color: #3b3b3b;
+  line-height: 2.05rem;
+  display: flex;
+}
+
+.con-science {
+  flex: 1;
+  line-height: 2.05rem;
+  padding: 0 0.45rem;
+  justify-content: space-between;
+}
+
+.con-comet {
+  width: 16rem;
+  height: 6.6rem;
+  border-top: 0.025rem solid #eaeaea;
+  border-bottom: 0.025rem solid #eaeaea;
+  box-sizing: border-box;
+}
+
+.con-comet-hea {
+  font-size: 0.75rem;
+  color: #484c4f;
+  line-height: 2.05rem;
+  padding: 0 0.45rem;
+  font-weight: normal;
+}
+
+.con-comet-hea-a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  color: #484c4f;
+}
+
+.con-comet-bo {
+  width: 16rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.con-comet-bo-left {
+  width: 5.2rem;
+  height: 3.7rem;
+  background: url(../img/con-tu2.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  margin-left: 0.45rem;
+}
+
+.con-comet-bo-right {
+  flex: 1;
+  font-size: 0.65rem;
+  color: #939393;
+  line-height: 0.975rem;
+  padding-left: 0.625rem;
+}
+
+.con-comet-body-left {
+  width: 5.2rem;
+  height: 3.7rem;
+  background: url(../img/con-tu3.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  margin-left: 0.45rem;
+}
+
+.Nest {
+  height: 2rem;
+  line-height: 2rem;
+  background: #fafafa;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #78777c;
+  background: url(../img/exi.png) no-repeat;
+  background-size: 1.475rem 1.475rem;
+  box-sizing: border-box;
+  border-bottom: 0.125rem solid #4dcaa8;
+}
+
+.footer {
+  width: 16rem;
+  height: 3.75rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-itimes: center;
+}
+
+.footer-pc,
+.footer-phone {
+  flex: 1;
+  font-size: 0.7rem;
+  color: #aeaeae;
+  line-height: 3.75rem;
+  align-itimes: center;
+  justify-content: center;
+  display: flex;
+  height: 3.75rem;
+}
+
+.footer-pc {
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+}
+
+.footer-phone {
+  background: url(../img/phone.png) no-repeat;
+  background-size: 0.65rem 1.15rem;
+}
+
+.footer-bor {
+  font-size: 1.9rem;
+  color: #666;
+  justify-content: center;
+  line-height: 3.75rem;
+}
