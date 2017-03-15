@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  width: 16rem;
+  height: 2.35rem;
+  background: #262722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+
+header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -9999rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -249.975rem;
+}
