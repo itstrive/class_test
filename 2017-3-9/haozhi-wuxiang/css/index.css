@@ -1,0 +1,416 @@
+header {
+  font-family: Microsoft YaHei;
+}
+header .menu {
+  display: none;
+  vertical-align: middle;
+}
+header .menu i {
+  float: left;
+  width: 36px;
+  height: 34px;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 0 0;
+  margin: 16px 0 16px 0;
+  padding: 9px 6px;
+  background: #15c288;
+}
+header .logo2 {
+  padding: 15px 10px;
+  display: none;
+}
+header .logo2 a {
+  display: block;
+  width: 90px;
+  height: 55px;
+}
+header .logo {
+  padding: 15px 10px;
+}
+header .logo a {
+  display: block;
+  width: 90px;
+  height: 55px;
+}
+header .collapse a {
+  padding: 30px 25px;
+  color: #666;
+  font-size: 16px;
+}
+header .collapse a:hover {
+  color: #46c37b;
+  background: #fff;
+}
+header .pull-right .pull-left .nav-bor {
+  height: 100%;
+  margin-top: 22px;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  line-height: 35px;
+}
+header .pull-right .pull-left .nav-bor .choose {
+  font-size: 14px;
+  padding: 0 15px;
+  margin: 5px 0;
+  line-height: 25px;
+  height: 25px;
+  border-right: 1px solid #f0f0f0;
+}
+header .pull-right .pull-left .nav-bor button {
+  border: none;
+  background: none;
+  color: #15C288;
+  font-size: 20px;
+  width: 40px;
+  height: 30px;
+}
+header .pull-right .pull-left .nav-bor input {
+  width: 135px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+}
+header .pull-right ul li {
+  list-style: none;
+  float: left;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+}
+header .pull-right ul li a {
+  color: #15c288;
+  padding: 0 10px;
+}
+header .pull-right ul li a span {
+  background: #e74c3c;
+  padding: 3px;
+  border-radius: 4px;
+  font-size: 0;
+  position: absolute;
+  top: 31px;
+  left: 18px;
+}
+header .pull-right ul li a .icon-smartphone:before {
+  content: "\e64b";
+  font-size: 16px;
+}
+header .pull-right ul li a:hover {
+  text-decoration: none;
+}
+section .carousel {
+  height: 420px;
+}
+section .carousel .carousel-inner .item img {
+  width: 100%;
+  height: 420px;
+}
+.main-nav .row {
+  height: 56px;
+  line-height: 56px;
+}
+.main-nav .row li {
+  list-style: none;
+  float: left;
+}
+.main-nav .row li a {
+  color: #666;
+}
+.main-nav .row li a.on {
+  color: #15C288;
+}
+.main-nav .row li a:hover {
+  text-decoration: none;
+  color: #15C288;
+}
+.content {
+  background: #f4f6f8;
+}
+.content .col-md-9 .con-header {
+  background: #fff;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.content .col-md-9 .con-header h3 {
+  border-bottom: 1px solid #eee;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  margin: 0 0;
+  font-size: 18px;
+}
+.content .col-md-9 .con-header h3 i {
+  font-size: 20px;
+  padding: 0 20px 0 30px;
+  line-height: 60px;
+  height: 60px;
+  border-left: 1px solid #eee;
+}
+.content .col-md-9 .con-header div.text {
+  color: #444;
+  text-align: center;
+  line-height: 4;
+}
+.content .col-md-9 .con-header div.col-md-4 {
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item {
+  padding: 10px;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-img {
+  overflow: hidden;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-img a img {
+  width: 100%;
+  height: auto;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info {
+  padding: 0 10px;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 40px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .title span {
+  white-space: nowrap;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #c6d0d8;
+  color: #fff;
+  display: inline-block;
+  margin-right: 5px ;
+  position: absolute;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .title a {
+  font-size: 75%;
+  line-height: 1.5;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  color: #444;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .title a:hover {
+  text-decoration: none;
+  color: #15C288;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .metas {
+  color: #c6d0d8;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .metas span {
+  margin: 0 0 10px 0;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .metas span a {
+  color: #666;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .teacher {
+  position: relative;
+  margin: 10px 0;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .teacher img {
+  width: 20px;
+  height: 20px;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .teacher a {
+  color: #444;
+}
+.content .col-md-9 .con-header div.col-md-4 .course .cour-item .cur-info .teacher a:hover {
+  text-decoration: none;
+  color: #15C288;
+}
+.content .col-md-9 .write h3 i {
+  border: none;
+}
+.content .col-md-9 .later .text {
+  padding: 30px 20px;
+}
+.content .col-md-9 .later .text textarea {
+  border: 1px solid #e1e1e1;
+  outline: none;
+  width: 100%;
+}
+.content .col-md-9 .later .text p {
+  text-align: left;
+  padding-left: 10px;
+  margin: -10px 0 0 0;
+}
+.content .col-md-9 .later .text p .pull-right {
+  border: none;
+  padding: 3px 5px;
+  background: #15C288;
+  color: #fff;
+  line-height: 30px;
+  width: 60px;
+}
+.content .col-md-3 .asd-nav {
+  background: url(../images/as1.png) #fff no-repeat;
+  margin: 10px 0;
+  text-align: center;
+  height: 100px;
+  vertical-align: middle;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.content .col-md-3 .asd-nav ul {
+  padding-left: 11px;
+  font-size: 20px;
+}
+.content .col-md-3 .asd-nav ul li.bor-right-no {
+  border-right: none;
+}
+.content .col-md-3 .asd-nav ul li {
+  list-style: none;
+  float: left;
+  padding: 0 14px;
+  border-right: 1px solid #eee;
+}
+.content .col-md-3 .asd-nav ul li a {
+  font-size: 12px;
+  display: block;
+  color: #666;
+  font-weight: normal;
+}
+.content .col-md-3 .zname {
+  background: #fff;
+  padding: 10px 20px;
+}
+.content .col-md-3 .zname p {
+  border-bottom: 1px dashed #eee;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+.content .col-md-3 .zname p span {
+  color: #999;
+}
+.content .col-md-3 .con-header {
+  background: #fff;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.content .col-md-3 .con-header h3 {
+  border-bottom: 1px solid #eee;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 20px;
+  margin: 0 0;
+  font-size: 18px;
+}
+.content .col-md-3 .con-header .text {
+  text-align: center;
+  color: #666;
+  padding-bottom: 10px;
+}
+.content .col-md-3 .con-header .text p {
+  line-height: 3;
+}
+.content .col-md-3 .con-header .text p.on {
+  color: #15C288;
+}
+.content .col-md-3 .con-header .text img {
+  margin: 20px 0 10px 0;
+}
+footer {
+  background: #515151;
+  color: #fff;
+  line-height: 52px;
+  padding: 35px 0;
+}
+footer .container .row {
+	text-align: center;
+}
+footer .container .row .col-md-4 {
+  font-size: 12px;
+}
+footer .container .row .col-md-4 span a {
+  padding: 0 8px;
+}
+footer .container .row .col-md-4 span a:hover {
+  text-decoration: none;
+  color: #15C288;
+}
+footer .container .row .about {
+  line-height: 24px;
+  padding: 8px 0 0;
+}
+footer .container .row .about .cor a {
+  color: #999;
+  margin-left: 20px;
+}
+footer .container .row .about span a {
+  color: #fff;
+}
+.friendlink {
+  background: #515151;
+  color: #999;
+  border-top: 1px solid #5f5f5f;
+  font-size: 12px;
+  line-height: 2;
+}
+.friendlink a {
+  color: #999;
+}
+.friendlink a.marl {
+  margin-left: 10px;
+}
+.friendlink a:hover {
+  text-decoration: none;
+  color: #15C288;
+}
+.friendlink .endlink span {
+  padding: 0 14px;
+}
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 10px;
+    max-width: 1024px;
+  }
+  .container .navbar-collapse {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+@media (max-width: 1024px) {
+  .choose {
+    display: none;
+  }
+  .collapse {
+    padding-left: 0;
+  }
+  .collapse .navbar-nav a {
+    padding: 30px 10px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container .input-right {
+    padding-left: 5px;
+  }
+}
+@media (max-width: 800px) {
+  .app {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  header .menu {
+    display: block;
+  }
+  header .menu i {
+    margin-top: 25px;
+    border-radius: 3px;
+  }
+  header .logo2 {
+    display: block;
+  }
+  header .logo,
+  header .nav-bor {
+    display: none;
+  }
+}
