@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  width: 16rem;
+  height: 2.35rem;
+  background: #262722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+
+header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -9999rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -249.975rem;
+}
+
+.user-box {
+  width: 16rem;
+  height: 2.1rem;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-box a {
+  color: #76757a;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+  background-size: 1.5rem 1.5rem;
+}
+
+.user-box .user-login {
+  background: url(../img/login-bg.png) no-repeat;
+  background-size: 1.5rem 1.475rem;
+}
+
+.user-box .user-reg {
+  background: url(../img/reg-bg.png) no-repeat;
+  background-size: 1.5rem 1.475rem;
+}
+
+.user-box .line {
+  height: 1.45rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #fafafa;
+  font-size: 0;
+  margin: 0 1.4rem;
+}
+
+.user-img {
+  width: 16rem;
+  height: 7.85rem;
+}
+
+.user-img img {
+  width: 16rem;
+  height: 7.85rem;
+}
+
+.user-body {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+}
+
+.user-body .one {
+  padding-bottom: 0.575rem;
+  padding-left: 0.325rem;
+  padding-right: 1.5rem;
+  color: #303030;
+  border-bottom: 0.05rem solid #ebebeb;
+}
+
+.user-body2 {
+  width: 16rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  padding-left: 0.725rem;
+  border-bottom: 0.15rem solid #57c0af;
+}
+
+.user-body2 .one2 {
+  color: #303030;
+}
+
+.user-body3 {
+  width: 16rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  padding-left: 0.725rem;
+  border-bottom: 0.15rem solid #ebebeb;
+}
+
+.user-body3 .one3 {
+  color: #303030;
+}
+
+.user-btn {
+  width: 16rem;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 0.025rem solid #ebebeb;
+  font-size: 0.75rem;
+}
+
+.user-btn a {
+  color: #303030;
+  margin: 0.75rem;
+}
+
+.text {
+  margin-left: 0.75rem;
+  color: #4a4a4a;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+}
+
+.box {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  border-bottom: 0.025rem solid #ebebeb;
+}
+
+.box img {
+  width: 5.2rem;
+  height: 3.7rem;
+  margin-left: 0.7rem;
+  float: left;
+}
+
+.box p {
+  float: left;
+  font-size: 0.75rem;
+  margin-left: 0.7rem;
+  margin-right: 1.1rem;
+}
+
+.tex {
+  width: 16rem;
+  height: 3rem;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.15rem solid #57c0af;
+}
+
+.tex a {
+  width: 5rem;
+  color: #8a8e91;
+  font-size: 0.75rem;
+  height: 1.475rem;
+  line-height: 1.475rem;
+  padding-left: 2rem;
+  background-size: 1.5rem 1.5rem;
+}
+
+.tex .btn {
+  background: url(../img/3.png) no-repeat;
+  background-size: 1.4rem 1.475rem;
+}
+
+.user-box2 {
+  width: 16rem;
+  height: 2.1rem;
+  background: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-box2 a {
+  color: #76757a;
+  font-size: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-size: 1.5rem 1.5rem;
+}
+
+.user-box2 .user-login2 {
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.5rem 1.475rem;
+  padding-left: 2rem;
+}
+
+.user-box2 .user-reg2 {
+  background: url(../img/4.png) no-repeat;
+  background-size: 0.675rem 1.15rem;
+  padding-left: 1.25rem;
+}
+
+.user-box2 .line2 {
+  height: 1.45rem;
+  border-left: 0.05rem solid #e0e0e0;
+  border-right: 0.05rem solid #fafafa;
+  font-size: 0;
+  margin: 0 1.4rem;
+}
