@@ -1,0 +1,315 @@
+html,
+body {
+  height: 100%;
+}
+
+#box {
+  height: 100%;
+  width: 16rem;
+  box-sizing: border-box;
+  /*user End*/
+  /* tabloid End*/
+  /*new End*/
+  /*Hot、team End*/
+}
+
+#box header {
+  height: 2.35rem;
+  background: #262626;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #49caac;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#box header .menu {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/menu.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -999rem;
+}
+
+#box header .PC {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/PC.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -999rem;
+}
+
+#box header .title {
+  color: #fff;
+  font-size: 0.95rem;
+  flex: 1;
+  text-align: center;
+}
+
+#box #user {
+  height: 2.1rem;
+  font-size: 0.75rem;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#box #user .login {
+  flex: 1;
+  height: 100%;
+  line-height: 2.1rem;
+  padding-left: 3.45rem;
+  background: url(../img/user-login.png) no-repeat 1.45rem 0.45rem;
+  background-size: 1.475rem 1.475rem;
+  color: #adacb2;
+}
+
+#box #user .register {
+  flex: 1;
+  height: 100%;
+  line-height: 2.1rem;
+  padding-left: 3.45rem;
+  background: url(../img/user.png) no-repeat 1.4rem 0.45rem;
+  background-size: 1.475rem 1.475rem;
+  color: #adacb2;
+}
+
+#box #user .line {
+  width: 0.05rem;
+  height: 1.5rem;
+  background: #e6e6e6;
+}
+
+#box #tabloid {
+  display: flex;
+}
+
+#box #tabloid a {
+  flex: 1;
+}
+
+#box #tabloid a img {
+  width: 100%;
+  height: 100%;
+}
+
+#box #new {
+  font-size: 0.75rem;
+  width: 100%;
+  border-bottom: 0.1rem solid #58c1b0;
+}
+
+#box #new ul {
+  padding: 0 0.45rem;
+  box-sizing: border-box;
+}
+
+#box #new ul li {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.3rem;
+  border-bottom: 0.05rem solid #ebebeb;
+}
+
+#box #new ul li a {
+  color: #333;
+}
+
+#box #new ul .last {
+  border: none;
+}
+
+#box #Hot,
+#box #team {
+  border-bottom: 0.1rem solid #58c1b0;
+  /*h3 End*/
+  /*tab end*/
+  /*list End*/
+}
+
+#box #Hot h3,
+#box #team h3 {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.75rem;
+  border-bottom: 0.05rem solid #eee;
+  background: #fafafa;
+  padding: 0 0.8rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#box #Hot h3 span,
+#box #team h3 span {
+  flex: 1;
+}
+
+#box #Hot h3 a,
+#box #team h3 a {
+  width: 1.475rem;
+  height: 100%;
+  line-height: 2rem;
+  background: url(../img/more.png) no-repeat 0 0.25rem;
+  background-size: 1.475rem 1.475rem;
+  text-indent: -999rem;
+}
+
+#box #Hot .tab,
+#box #team .tab {
+  height: 2.05rem;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+}
+
+#box #Hot .tab li,
+#box #team .tab li {
+  height: 100%;
+  text-align: center;
+  border-bottom: 0.05rem solid #eee;
+  flex: 1;
+}
+
+#box #Hot .tab li a,
+#box #team .tab li a {
+  width: 100%;
+  height: 100%;
+  line-height: 2.05rem;
+  display: block;
+}
+
+#box #Hot .tab .active,
+#box #team .tab .active {
+  border-bottom: 0.1rem solid #d43553;
+}
+
+#box #Hot .list,
+#box #team .list {
+  padding: 0 0.45rem;
+  box-sizing: border-box;
+}
+
+#box #Hot .list ul li,
+#box #team .list ul li {
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
+  padding: 0 0.3rem;
+  border-bottom: 0.05rem solid #ebebeb;
+}
+
+#box #Hot .list ul li a,
+#box #team .list ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #333;
+}
+
+#box #Hot .list ul .last,
+#box #team .list ul .last {
+  border: none;
+}
+
+#box #Hot .list .show,
+#box #team .list .show {
+  border-bottom: 0.05rem solid #ebebeb;
+}
+
+#box #Hot .list .show a,
+#box #team .list .show a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0 0.7rem 0 0.3rem;
+  box-sizing: border-box;
+}
+
+#box #Hot .list .show a h6,
+#box #team .list .show a h6 {
+  height: 1.4rem;
+  line-height: 1.4rem;
+  font-size: 0.75rem;
+  color: #333;
+}
+
+#box #Hot .list .show a .cont,
+#box #team .list .show a .cont {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem 0 0.8rem 0;
+}
+
+#box #Hot .list .show a .cont img,
+#box #team .list .show a .cont img {
+  width: 5.2rem;
+  height: 3.7rem;
+}
+
+#box #Hot .list .show a .cont p,
+#box #team .list .show a .cont p {
+  width: 8.325rem;
+  height: 3.225rem;
+  font-size: 0.65rem;
+  color: #828282;
+}
+
+#box #Hot .list .last,
+#box #team .list .last {
+  border: none;
+}
+
+#box #Hot .backTop,
+#box #team .backTop {
+  height: 3.05rem;
+  font-size: 0.75rem;
+  background: #fafafa;
+  border-top: 0.05rem solid #e3e3e3;
+  box-sizing: border-box;
+}
+
+#box #Hot .backTop a,
+#box #team .backTop a {
+  color: #74787b;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1.15rem 0 0 7.45rem;
+  background: url(../img/top.png) no-repeat 5.5rem 0.9rem;
+  background-size: 1.5rem 1.5rem;
+}
+
+#box footer {
+  height: 3.75rem;
+  font-size: 0.7rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+}
+
+#box footer .web {
+  flex: 1;
+  padding: 0.75rem 0 0 4.1rem;
+  background: url(../img/web.png) no-repeat 2.05rem 0.7rem;
+  background-size: 1.45rem 1.15rem;
+  color: #d6d6d6;
+}
+
+#box footer .phone {
+  flex: 1;
+  padding: 0.75rem 0 0 3.45rem;
+  background: url(../img/phone.png) no-repeat 1.75rem 0.7rem;
+  background-size: 0.65rem 1.15rem;
+  color: #d6d6d6;
+}
+
+#box footer .line {
+  width: 0.05rem;
+  height: 1.925rem;
+  background: #686868;
+  margin-top: 0.45rem;
+}
+
+/*END*/
