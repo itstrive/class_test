@@ -25,6 +25,7 @@ header .return {
   width: 0.16rem;
   height: 0.32rem;
   background: url(../img/jiantou.png) no-repeat;
+  background-size: 0.16rem 0.32rem;
   margin-left: 0.22rem;
   text-indent: -99999em;
 }
@@ -71,7 +72,6 @@ section li .select {
   height: 0.22rem;
   font-size: 0.22rem;
   color: #666865;
-  padding-left: -0.5rem;
   position: relative;
 }
 
@@ -83,6 +83,7 @@ section li .select span {
   width: 0.11rem;
   height: 0.22rem;
   background: url(../img/youjiantou.png) no-repeat;
+  background-size: 0.11rem 0.22rem;
 }
 
 section .message {
@@ -97,6 +98,7 @@ section .message textarea {
   outline: none;
   font-size: 0.22rem;
   padding-left: 0.2rem;
+  resize: none;
 }
 
 footer {
