@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  width: 16rem;
+  height: 2.35rem;
+  background: #262722;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #4bccae;
+}
+
+header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -9999rem;
+}
+
+header .logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: normal;
+}
+
+header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -249.975rem;
+}
+
+section {
+  height: 2.1rem;
+  display: flex;
+  padding: 0.25rem 1.425rem;
+  box-sizing: border-box;
+}
+
+section a {
+  text-decoration: none;
+  color: #76757a;
+  font-size: 0.75rem;
+}
+
+section .login {
+  flex: 1;
+  text-align: center;
+  color: #76757a;
+  font-size: 0.75rem;
+  background: url(../img/login-bg.png) no-repeat;
+  background-size: 1.5rem 1.475rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  padding-left: 2.025rem;
+  box-sizing: border-box;
+}
+
+section div {
+  height: 1.45rem;
+  text-indent: -24.975rem;
+  border-left: 0.05rem solid #e0e0e0;
+  margin: 0 1.375rem;
+}
+
+section .register {
+  flex: 1;
+  color: #76757a;
+  text-align: center;
+  font-size: 0.75rem;
+  background: url(../img/reg-bg.png) no-repeat;
+  background-size: 1.5rem 1.475rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  padding-left: 2.025rem;
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 7.775rem;
+  width: 100%;
+}
+
+.banner a img {
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.45rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #57c0af;
+}
+
+.list li {
+  border-bottom: 0.025rem solid #eaeaea;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  color: #353535;
+  padding: 0.65rem 0.3rem;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.list .del-botm {
+  border-bottom: 0;
+}
+
+.title {
+  height: 2rem;
+  border-bottom: 0.025rem solid #e8e8e8;
+  font-size: 0.75rem;
+  color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0.75rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.title a img {
+  height: 1.45rem;
+  width: 1.45rem;
+}
+
+.nav {
+  height: 2rem;
+  border-bottom: 0.025rem solid #e8e8e8;
+  font-size: 0.75rem;
+  color: #1f1f1f;
+  display: flex;
+  padding: 0.25rem 1.25rem 0.25rem 0.75rem;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.nav a {
+  flex: 1;
+}
+
+.hot-qa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.45rem;
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #57c0af;
+}
+
+.hot-qa li {
+  border-bottom: 0.025rem solid #eaeaea;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  color: #353535;
+  padding: 0.65rem 0.3rem;
+}
+
+.hot-qa li a {
+  text-decoration: none;
+  color: #353535;
+}
+
+.hot-qa .end {
+  width: 100%;
+  height: 2.975rem;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.hot-qa .end a {
+  width: 5.025rem;
+  height: 1.45rem;
+  font-size: 0.75rem;
+  background: url(../img/pic-up.png) no-repeat;
+  background-size: 1.45rem 1.45rem;
+  padding-left: 1.9rem;
+  color: #bcc0c3;
+}
+
+.text {
+  border-bottom: 0.025rem solid #eaeaea;
+  box-sizing: border-box;
+  padding: 0.65rem 0.75rem;
+}
+
+.text a p {
+  font-size: 0.75rem;
+  color: #353535;
+}
+
+.text a div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.625rem;
+}
+
+.text a img {
+  width: 5.25rem;
+  height: 3.75rem;
+}
+
+.text a span {
+  flex: 1;
+  font-size: 0.65rem;
+  color: #89898b;
+  margin-left: 0.725rem;
+  margin-right: 0.625rem;
+}
+
+footer {
+  width: 100%;
+  height: 3.75rem;
+  background: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem;
+  box-sizing: border-box;
+}
+
+footer a {
+  color: #c9c9c9;
+  font-size: 0.7rem;
+  padding-left: 2rem;
+  height: 1.2rem;
+}
+
+footer .pc {
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.5rem 1.2rem;
+}
+
+footer div {
+  height: 1.9rem;
+  text-indent: -24.975rem;
+  border-left: 0.05rem solid #e0e0e0;
+  margin: 0 2.025rem;
+}
+
+footer .mob {
+  background: url(../img/phone.png) no-repeat;
+  background-size: 0.725rem 1.25rem;
+}
