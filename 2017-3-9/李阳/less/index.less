@@ -1,0 +1,304 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.box{
+	display:-webkit-box;
+	display:flex;
+	-webkit-box-orient:vertical;
+	flex-direction:column;
+	.header{
+		background:#262626;
+		height:90px;
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-pack:justify;
+		justify-content:space-between;
+		box-sizing: border-box;
+		border-bottom:4px solid #4bccae;
+		-webkit-box-align:center;
+		align-items:center;
+		padding:16px 16px 0 16px;
+		.menu{
+			width:65px;
+			height:58px;
+			background:url(../img/menu.png) no-repeat;
+			background-size: 65px 58px;
+			text-indent: -9999px;
+		};
+		.logo{
+			font-size: 40px;
+			color:#f6f6f6;
+			font-weight: normal;
+			text-decoration: none;
+		};
+		.pc{
+			width:58px;
+			height:46px;
+			text-indent:-9999px;
+			background:url(../img/pc.png) no-repeat;
+			background-size:58px 46px;
+		}
+	};
+	.section{
+		flex:1;
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-orient:vertical;
+		flex-direction:column;
+		.sign{
+			height:82px;
+			background:#fafafa;
+			display:-webkit-box;
+			display:flex;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			justify-content:center;
+			align-items:center;
+			padding:0 56px 0 54px;
+			box-sizing: border-box;
+			.sign_in,.sign_up{
+				width:126px;
+				height:63px;
+				padding-left:82px;
+				font-size:30px;
+				color:#a0a4a3;
+				text-decoration: none;			
+				line-height: 63px;
+			};
+			.sign_in{
+				background:url(../img/logo_in.png) no-repeat;
+				background-size:63px 61px;
+			};
+			.border_sign{
+				margin:0 56px 0 56px;
+				height:60px;
+				border-left:2px solid #e0e0e0;
+			};
+			.sign_up{
+				background:url(../img/sign_up.png) no-repeat;
+				background-size:57px 61px;
+			};
+		};
+		.banner{
+			display:-webkit-box;
+			display:flex;
+			height:314px;
+			.banner_img{
+				flex:1;
+				>img{
+					width:100%;
+					height:314px;
+				}
+			}
+		};
+		.content1{
+			height:570px;
+			padding:0 10px 0 10px;
+			box-sizing: border-box;
+			dislay:-webkit-box;
+			display:flex;
+			-webkit-box-orient:vertical;
+			flex-direction:column;
+			>li{
+				width:100%;
+				flex:1;
+				border-bottom:2px solid #ebebeb;
+				box-sizing: border-box;
+				overflow:hidden;
+				text-overflow:ellipsis;
+				white-space:nowrap;
+				padding:16px 50px 0 12px;
+				>a{ 
+					text-decoration: none;
+					color:#34383b;
+					font-size:30px;
+					font-family: 'Microsoft Yahei';
+				};
+
+			};
+		};
+		.hot_question{
+			display:-webkit-box;
+			display:flex;
+			height:86px;
+			border-top:4px solid #57c0af;
+			border-bottom:2px solid #e2e2e2;
+			backround:#fafafa;
+			box-sizing:border-box;
+			padding:0 30px 0 30px;
+			-webkit-box-pack:justify;
+			-webkit-box-align:center;
+			justify-content:space-between;
+			align-items:center;
+			.hot_ans{
+				font-size: 30px;
+				color:#080808;
+				font-weight: bold;
+			};
+			.more{
+				width:58px;
+				height:60px;
+				background:url(../img/more_question.png) no-repeat;
+				background-size:58px 60px;
+				text-indent: -99999px;
+			};
+
+		};
+		.hot_question_nav{
+			display:-webkit-box;
+			display:flex;
+			height:82px;
+			border-bottom:2px solid #ececec;
+			padding-right:145px;
+			box-sizing: border-box;
+			-webkit-box-align:center;
+			align-items:center;
+
+			>a{
+				flex:1;
+				text-decoration: none;
+				font-size: 30px;
+				color:#313131;
+				font-family: 'Microsoft Yahei';
+				text-align: center;
+			}
+		};
+		.hot_nav_content{
+			display:-webkit-box;
+			display:flex;
+			-webkit-box-orient:vertical;
+			flex-direction:column;
+			height:590px;
+			padding:0 12px 0 12px;
+			box-sizing: border-box;
+			.hot_content_first{
+				display:-webkit-box;
+				display:flex;
+				-webkit-box-orient:vertical;
+				flex-direction:column;
+				height:262px;
+				border-bottom: 2px solid #e9e9e9;
+				box-sizing: border-box;
+				padding:0 26px 0 12px;
+				.pag1{
+					display:block;
+					height:80px;
+					line-height: 80px;
+					font-size:30px;
+					color:#373737;
+					font-weight: bold;
+					text-decoration: none;
+				};
+				.pag2{
+					flex:1;
+					display:-webkit-box;
+					display:flex;
+					-webkit-box-pack:justify;
+					-webkit-box-align:center;
+					justify-content:space-between;
+					align-items:center;
+					text-decoration: none;
+					.img_star{
+						width:212px;
+						height:153px;
+						>img{
+							width:212px;
+							height:153px;
+						};
+					};
+					.msg{
+						font-size:24px;
+						color:#7e7d82;
+						font-family: 'Microsoft Yahei';
+						padding-left:26px;
+						padding-right:28px;
+						box-sizing: border-box;
+
+					};
+				};
+			};
+			.common{
+				flex:1;
+				border-bottom: 2px solid #ebebeb;
+				box-sizing: border-box;
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				padding:16px 50px 0 12px;
+				>a{
+					text-decoration: none;
+					color:#34383b;
+					font-size:30px;
+					font-family: 'Microsoft Yahei';
+				};
+			};
+		};
+		.section_last{
+			display:-webkit-box;
+			display:flex;
+			-webkit-box-pack:center;
+			-webkit-box-align:center;
+			justify-content:center;
+			align-items:center;
+			height:118px;
+			background:#fafafa;
+			.return_top{
+				width:122px;
+				height:63px;
+				padding-left:78px;
+				color:#8a8d94;
+				text-decoration: none;
+				font-family: 'Microsoft Yahei';
+				background:url(../img/return_top.png) no-repeat;
+				background-size:60px 63px;
+				font-size:30px;
+				line-height: 63px;
+			};
+		};
+	};
+	.footer{
+		background:#262626;
+		height:155px;
+		box-sizing: border-box;
+		border-top:4px solid #4bccae;
+		padding:0 75px 0 82px;
+		display:-webkit-box;
+		display:flex;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+		justify-content:center;
+		align-items:center;
+		.pc_footer{
+			width:78px;
+			height:50px;
+			padding-left:82px;
+			background:url(../img/pc.png) no-repeat;
+			background-size:58px 46px;
+			text-decoration: none;
+			font-size:28px;
+			color:#919191;
+		};
+		.foot_border{
+			margin:0 70px 0 80px;
+			width:11px;
+			height:82px;
+			background:url(../img/border_bottom.png) no-repeat;
+			background-size:11px 82px;
+		};
+		.phone{
+			width:122px;
+			height:50px;
+			padding-left:50px;
+			background:url(../img/phnone.png) no-repeat;
+			background-size:29px 49px;
+			text-decoration: none;
+			font-size:28px;
+			color:#919191;
+		};
+	};
+
+
+};
