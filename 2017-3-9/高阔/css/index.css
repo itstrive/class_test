@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 16rem;
+  height: 2.225rem;
+  background: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  box-sizing: border-box;
+}
+
+.header .menu {
+  width: 1.5rem;
+  height: 1.225rem;
+  background: url(../img/menu-bg.png) no-repeat;
+  background-size: 1.5rem 1.225rem;
+  text-indent: -99rem;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header .pc {
+  width: 1.45rem;
+  height: 1.15rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  text-indent: -99rem;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  width: 16rem;
+  height: 2.1rem;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 0.05rem solid #e1e1e1;
+  bacground: #fafafa;
+}
+
+.login .userlog {
+  color: #807f85;
+  font-size: 0.75rem;
+  background: url(../img/login-bg.png) no-repeat;
+  background-size: 1.5rem 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  padding-left: 2rem;
+}
+
+.login .shu {
+  margin: 0 1.5rem;
+}
+
+.banner-img {
+  width: 16rem;
+  height: 7.775rem;
+  background: url(../img/banr.png) no-repeat;
+  background-size: 16rem 7.775rem;
+  display: block;
+}
+
+.banner-title {
+  background: #fefefe;
+  border-bottom: 0.15rem solid #57c0af;
+}
+
+.banner-title .banner-title-li {
+  width: 16rem;
+  height: 2rem;
+  border-bottom: 0.05rem solid #ececec;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 0.45rem;
+}
+
+.banner-title .banner-title-li .banner-txt {
+  font-size: 0.75rem;
+  color: #43474a;
+}
+
+.hotquestion .hot-title {
+  width: 15.55rem;
+  height: 1.975rem;
+  border-bottom: 0.05rem solid #ececec;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding-left: 0.45rem;
+  line-height: 1.975rem;
+  background: #fafafa;
+  background: url(../img/con-tu.png) no-repeat 14rem 0.225rem;
+  background-size: 1.475rem 1.5rem;
+}
+
+.hotquestion .hot-show {
+  width: 16rem;
+  height: 2.05rem;
+  border-bottom: 0.05rem solid #ececec;
+  display: flex;
+  align-items: center;
+}
+
+.hotquestion .hot-show .hot-show-li {
+  width: 3.1rem;
+  height: 2.05rem;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 2.05rem;
+  border-bottom: 0.05rem solid #ececec;
+}
+
+.hotquestion .hot-ban {
+  width: 16rem;
+  height: 6.5rem;
+  border-bottom: 0.05rem solid #ececec;
+}
+
+.hotquestion .hot-ban .hot-ban-title {
+  font-size: 0.75rem;
+  padding-left: 0.45rem;
+  height: 2.05rem;
+  line-height: 2.05rem;
+}
+
+.hotquestion .hot-ban .hot-ban-bot {
+  display: flex;
+  height: 3.7rem;
+  margin-left: 0.45rem;
+}
+
+.hotquestion .hot-ban .hot-ban-bot .hot-ban-img {
+  width: 5.2rem;
+  background: url(../img/con-tu2.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  margin-right: 0.675rem;
+}
+
+.hotquestion .hot-ban .hot-ban-bot .hot-ban-img1 {
+  width: 5.2rem;
+  background: url(../img/con-tu3.png) no-repeat;
+  background-size: 5.2rem 3.7rem;
+  margin-right: 0.675rem;
+}
+
+.hotquestion .hot-ban .hot-ban-bot .hot-ban-p {
+  font-size: 0.65rem;
+  color: #a4a3a8;
+  width: 8.4rem;
+  height: 3.7rem;
+}
+
+.hot-bot {
+  width: 16rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hot-bot .backtotop {
+  width: 5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  color: #74787b;
+  background: url(../img/exi.png) no-repeat;
+  background-size: 1.475rem 1.475rem;
+  line-height: 1.5rem;
+  text-align: right;
+}
+
+.footer {
+  display: flex;
+  width: 16rem;
+  height: 3.75rem;
+  justify-content: center;
+  align-items: center;
+  background: #262626;
+}
+
+.footer .footer-pc {
+  width: 4rem;
+  height: 1.125rem;
+  background: url(../img/pc-bg.png) no-repeat;
+  background-size: 1.45rem 1.15rem;
+  color: #b1b1b1;
+  text-align: right;
+}
+
+.footer .footer-mob {
+  width: 5rem;
+  height: 1.125rem;
+  background: url(../img/phone.png) no-repeat;
+  background-size: 0.65rem 1.15rem;
+  color: #b1b1b1;
+  text-align: right;
+}
+
+.cb1 {
+  color: #b1b1b1;
+}
