@@ -9,6 +9,12 @@ a {
   text-decoration: none;
 }
 
+/*less公共变量*/
+
+/* less 公共函数 */
+
+/*header css*/
+
 .head {
   width: 16rem;
   height: 2.35rem;
@@ -45,6 +51,8 @@ a {
   text-indent: -99rem;
 }
 
+/*user css*/
+
 .user-box {
   width: 16rem;
   height: 2.05rem;
@@ -80,14 +88,52 @@ a {
   margin: 0 1.45rem;
 }
 
-.banner {
+/*slider css*/
+
+.slider-box {
   width: 16rem;
-  height: 7.85rem;
-  background: url(../img/banner.png) no-repeat;
-  background-size: 16rem 7.85rem;
+  height: 7.775rem;
+  background: #000;
+  overflow: hidden;
 }
 
-.listbox {
+.slider-box li {
+  width: 16rem;
+  height: 7.775rem;
+  float: left;
+  position: relative;
+}
+
+.slider-box li img {
+  display: block;
+  width: 100%;
+}
+
+.slider-box li .slider-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slider-box li .slider-title a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 0.725rem;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*news-list css*/
+
+.news-list {
   width: 16rem;
   height: 14.3rem;
   display: flex;
@@ -97,25 +143,26 @@ a {
   padding: 0 0.4rem;
 }
 
-.listbox li {
-  width: 15.2rem;
+.news-list li {
   height: 2.025rem;
   line-height: 2.025rem;
   border-bottom: 0.05rem solid #e8e8e8;
   box-sizing: border-box;
 }
 
-.listbox .listbox-a {
+.news-list .listbox-a {
   font-size: 0.725rem;
   padding-left: 0.325rem;
 }
 
-.listbox .listbox-li {
+.news-list .listbox-li {
   border-bottom: none;
 }
 
+/*hot_answer css*/
+
 .hot_answer {
-  width: 100%;
+  width: 16rem;
   height: 2.025rem;
   display: flex;
   background: #fafafa;
@@ -126,9 +173,11 @@ a {
   padding: 0 0.75rem;
 }
 
-.hot_answer a {
+.hot_answer a,
+.hot_answer h3 {
   font-size: 0.725rem;
   color: #040404;
+  font-weight: normal;
 }
 
 .hot_answer .hot-icon {
@@ -139,8 +188,10 @@ a {
   text-indent: -999rem;
 }
 
+/*info css*/
+
 .info {
-  width: 100%;
+  width: 16rem;
   height: 2.075rem;
   display: flex;
   border-bottom: 0.05rem solid #e8e8e8;
@@ -149,13 +200,25 @@ a {
 }
 
 .info li {
-  font-size: 0.725rem;
-  color: #323232;
   padding: 0 0.85rem;
 }
 
+.info li a {
+  font-size: 0.725rem;
+  color: #323232;
+  height: 2.075rem;
+  line-height: 2.075rem;
+}
+
+.info .active {
+  border-bottom: 0.1rem solid #d43553;
+  box-sizing: border-box;
+}
+
+/*detect css*/
+
 .detect {
-  width: 100%;
+  width: 16rem;
   height: 6.55rem;
   padding: 0 0.4rem;
   display: flex;
@@ -197,8 +260,10 @@ a {
   padding-top: 0.65rem;
 }
 
+/*listfile css*/
+
 .listfile {
-  width: 100%;
+  width: 16rem;
   height: 8.15rem;
   padding: 0 0.4rem;
   display: flex;
@@ -221,8 +286,10 @@ a {
   box-sizing: border-box;
 }
 
-.list-height {
-  width: 100%;
+/*andlist css*/
+
+.andlist {
+  width: 16rem;
   height: 8.15rem;
   padding: 0 0.4rem;
   display: flex;
@@ -230,6 +297,8 @@ a {
   border-bottom: none;
   box-sizing: border-box;
 }
+
+/*roof css*/
 
 .roof {
   width: 100%;
@@ -255,6 +324,8 @@ a {
   background: url(../img/arrow.png) no-repeat;
   background-size: 1.475rem 1.475rem;
 }
+
+/*footer css*/
 
 .footer {
   width: 16rem;
