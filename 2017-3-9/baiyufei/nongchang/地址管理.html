@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>地址管理</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/dizhiguanli.css">
+	<script>
+    	;(function(){
+    		let html=document.documentElement;
+    		html.style.fontSize=html.clientWidth*50/375+'px';
+
+    		window.onresize=function(){
+    			html.style.fontSize=html.clientWidth*50/375+'px';
+    		};
+    	})();
+    </script>
+</head>
+<body class="body">
+<header>
+	<a class="return" href="javascript:;">返回</a>
+	<h1>地址管理</h1>
+	<a href=""></a>
+</header>
+<section>
+	<ul class="message">
+		<li class="nav1"><a href="">李某某</a><a href="">17316252344</a></li>
+		<li class="nav2">北京市丰台区花乡科技园诺德中心1期3号楼708室</li>
+	</ul>
+	<ul class="operation">
+		<li><a class="default" href="javascript:;"><span class="site"></span>默认地址</a></li>
+		<li><a class="update" href="javascript:;">编辑</a><a class="remove" href="javascript:;">删除</a></li>
+	</ul>
+</section>
+<footer>
+	<a href="javascript:;">新增地址</a>
+</footer>
+</body>
+</html>
