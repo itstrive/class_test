@@ -157,8 +157,61 @@ header .pc {
   height: 1.325rem;
 }
 
-.pc img {
+.pc span {
+  display: block;
   width: 1.675rem;
   height: 1.2rem;
-  vertical-align: middle;
+  background: url(../img/pc.png) no-repeat;
+  background-size: 1.675rem 1.2rem;
+  margin-right: 0.6rem;
+}
+
+.pc .icon {
+  width: 0.775rem;
+  height: 1.225rem;
+  background: url(../img/phonne.png) no-repeat;
+  background-size: 0.775rem 1.225rem;
+}
+
+.menu {
+  width: 16rem;
+  height: 2.05rem;
+  border-top: 0.125rem solid #3ccfb5;
+}
+
+.menu div {
+  float: left;
+  width: 8rem;
+  height: 100%;
+  background: #fafafa;
+}
+
+.menu div .delborder {
+  border-right: 0;
+}
+
+.menu div a {
+  font-size: 0.75rem;
+  line-height: 1.55rem;
+  color: #ccc;
+  width: 4.25rem;
+  height: 1.45rem;
+  border-right: 0.025rem solid #ccc;
+  margin-top: 0.25rem;
+}
+
+.menu div .user {
+  background: url(../img/user.png) no-repeat;
+  background-size: 1.55rem 1.475rem;
+}
+
+.menu div span {
+  margin-top: 0.4rem;
+  margin-left: 1.45rem;
+  display: block;
+  width: 1.55rem;
+  height: 1.475rem;
+  background: url(../img/login.png) no-repeat;
+  background-size: 1.55rem 1.475rem;
+  margin-right: 0.65rem;
 }
