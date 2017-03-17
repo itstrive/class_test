@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>地址管理（新增地址）</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="css/xinzengdizhi.css">
+	<script>
+    	;(function(){
+    		let html=document.documentElement;
+    		html.style.fontSize=html.clientWidth*50/375+'px';
+
+    		window.onresize=function(){
+    			html.style.fontSize=html.clientWidth*50/375+'px';
+    		};
+    	})();
+    </script>
+</head>
+<body class="body">
+<!-- 头部 -->
+<header>
+	<a class="return" href="javascript:;">返回</a>
+	<h1>添加新地址</h1>
+	<a class="save" href="javascript:;">保存</a>
+</header>
+<!-- 身体 -->
+<section>
+	<ul>
+		<li><a href="javascript:;">收货人</a></li>
+		<li><a href="javascript:;">联系电话</a></li>
+		<li class="choose"><a href="javascript:;">所在地区</a><a class="select" href="javascript:;">请选择<span></span></a></li>
+		<li class="choose"><a href="javascript:;">街道</a><a class="select" href="javascript:;">请选择<span></span></a></li>
+	</ul>
+	<div class="message">
+		<textarea placeholder="请填写下详细地址，不少于5个字"></textarea>
+	</div>
+</section>
+<!-- 底部 -->
+<footer>
+	<ul>
+		<li><a href="javascript:;">设为默认</a><a class="switch" href="javascript:;">开关</a></li>
+	</ul>
+</footer>
+</body>
+</html>

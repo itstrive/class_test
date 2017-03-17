@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body {
+  background: #eee;
+}
+
+/*header*/
+
+header {
+  width: 7.5rem;
+  height: 1.27rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.01rem solid #bec0bd;
+}
+
+header .return {
+  width: 0.16rem;
+  height: 0.32rem;
+  background: url(../img/jiantou.png) no-repeat;
+  background-size: 0.16rem 0.32rem;
+  margin-left: 0.22rem;
+  text-indent: -99999em;
+}
+
+header h1 {
+  font-size: 0.36rem;
+  color: #5ea427;
+}
+
+section {
+  width: 7.5rem;
+  height: 2.42rem;
+  margin-top: 0.18rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #bec0bd;
+}
+
+section .message {
+  width: 7.5rem;
+  height: 1.47rem;
+  border-bottom: 0.01rem solid #bec0bd;
+}
+
+section .message .nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.2rem 0.05rem 0.3rem;
+}
+
+section .message .nav1 a {
+  font-size: 0.22rem;
+  color: #323232;
+}
+
+section .message .nav2 {
+  padding: 0.22rem 0.2rem 0.3rem 0.3rem;
+  font-size: 0.24rem;
+  color: #2f2f2d;
+}
+
+section .operation {
+  height: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.18rem;
+  padding: 0.32rem 0.2rem 0.32rem 0.3rem;
+}
+
+section .operation .default {
+  position: relative;
+  color: #333;
+  padding-left: 0.3rem;
+}
+
+section .operation .default .site {
+  display: block;
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../img/moren.png) no-repeat;
+  background-size: 0.2rem 0.2rem;
+  top: 0.07rem;
+}
+
+section .operation .update {
+  background: url(../img/bianji.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+  color: #333;
+  padding-left: 0.35rem;
+  margin-right: 0.3rem;
+}
+
+section .operation .remove {
+  background: url(../img/remove.png) no-repeat;
+  background-size: 0.25rem 0.27rem;
+  color: #333;
+  padding-left: 0.3rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.49rem;
+}
+
+footer a {
+  display: inline-block;
+  width: 3.58rem;
+  height: 0.74rem;
+  background: #dcdcdc;
+  border: 0.01rem solid #c0c0c0;
+  border-radius: 0.2rem;
+  color: #303030;
+  font-size: 0.22rem;
+  line-height: 0.74rem;
+  text-align: center;
+}
