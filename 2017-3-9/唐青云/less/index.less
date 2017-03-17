@@ -7,9 +7,17 @@ a{
 	color: #353535;
 	text-decoration: none;
 }
-
+/*less公共变量*/
+@w:640px;
+/* less 公共函数 */
+.ellipsis(){
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+/*header css*/
 .head{
-	width:640px;
+	width:@w;
 	height: 94px;
 	background: #262626;
 	display:flex;
@@ -43,9 +51,9 @@ a{
 		text-indent: -99rem;
 	}
 }
-
+/*user css*/
 .user-box{
-	width:640px;
+	width:@w;
 	height: 82px;
 	background: #fafafa;
 	display: flex;
@@ -78,16 +86,47 @@ a{
 		margin: 0 58px;
 	}
 }
+/*slider css*/
+.slider-box{
+    width: @w;
+    height:311px;
+    background: #000;
+    overflow: hidden;
 
-.banner{
-	width: 640px;
-	height: 314px;
-	background: url(../img/banner.png) no-repeat;
-	background-size: 640px 314px;
+    li{
+        width: 640px;
+        height: 311px;
+        float: left;
+        position: relative;
+
+        img{
+            display: block;
+            width: 100%;
+        }
+        .slider-title{
+            position: absolute;
+            left:0;
+            bottom:0;
+            width: 100%;
+            height:75px;
+            line-height: 75px;
+            background: rgba(0,0,0,.2);
+
+            a{
+                text-decoration: none;
+                color: #fff;
+                width: 100%;
+                display: block;
+                font-size: 29px;
+                text-align: center;
+                .ellipsis();
+            }
+        }
+    }
 }
-
-.listbox{
-	width:640px;
+/*news-list css*/
+.news-list{
+	width:@w;
 	height: 572px;
 	display: flex;
 	border-bottom: 4px solid #58c1b0;
@@ -96,7 +135,6 @@ a{
 	padding: 0 16px;
 
 	li{
-		width:608px;
 		height: 81px;
 		line-height: 81px;
 		border-bottom: 2px solid #e8e8e8;
@@ -112,10 +150,9 @@ a{
 		border-bottom: none;
 	}
 }
-
-
+/*hot_answer css*/
 .hot_answer{
-	width: 100%;
+	width: @w;
 	height: 81px;
 	display: flex;
 	background: #fafafa;
@@ -125,9 +162,10 @@ a{
 	justify-content:space-between;
 	padding: 0 30px;
 		
-	a{
+	a,h3{
 		font-size: 29px;
 		color: #040404;
+		font-weight: normal;
 	}
 	.hot-icon{
 		width:59px;
@@ -137,9 +175,9 @@ a{
 		text-indent: -999rem;
 	}
 }
-
+/*info css*/
 .info{
-	width: 100%;
+	width: @w;
 	height: 83px;
 	display: flex;
 	border-bottom: 2px solid #e8e8e8;
@@ -147,14 +185,25 @@ a{
 	align-items:center;
 
 	li{
-		font-size: 29px;
-		color: #323232;
 		padding: 0 34px;
+
+		a{
+			font-size: 29px;
+			color: #323232;
+			height: 83px;
+			line-height: 83px;
+		}
+	}
+
+	.active{
+		border-bottom: 4px solid #d43553;
+		box-sizing: border-box;
+
 	}
 }
-		
+/*detect css*/	
 .detect{
-	width: 100%;
+	width: @w;
 	height: 262px;
 	padding: 0 16px;
 	display: flex;
@@ -192,9 +241,9 @@ a{
 		}
 	}
 }
-
+/*listfile css*/
 .listfile{
-	width: 100%;
+	width: @w;
 	height: 326px;
 	padding: 0 16px;
 	display: flex;
@@ -218,9 +267,9 @@ a{
 		box-sizing: border-box;
 	}
 }
-
-.list-height{
-	width: 100%;
+/*andlist css*/
+.andlist{
+	width: @w;
 	height: 326px;
 	padding: 0 16px;
 	display: flex;
@@ -228,6 +277,7 @@ a{
 	border-bottom: none;
 	box-sizing: border-box;
 }
+/*roof css*/
 .roof{
 	width: 100%;
 	height: 120px;
@@ -253,7 +303,7 @@ a{
 	}
 }
 
-
+/*footer css*/
 .footer{
 	width:640px;
 	height: 150px;
