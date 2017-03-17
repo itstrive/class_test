@@ -3,6 +3,7 @@
     padding:0;
     list-style: none;
 }
+// 头部 菜单 登录条部分
 header{
     width:640px;
     height:94px;
@@ -33,6 +34,8 @@ header{
         text-indent: -9999px;
     }
 }
+//头部结束
+//banner部分
 .banner{
     width: 640px;
     height: 312px;
@@ -55,6 +58,7 @@ header{
     padding-left: 42px;
     box-sizing: border-box;
 }
+//新闻标题部分
 .new-last{
     border-bottom: 2px solid #58c1b0
 }
@@ -94,6 +98,8 @@ header{
    
     align-items:center;
 }
+//新闻end
+//footer
 .gotop{
     width: 640px;
     height: 122px;
@@ -121,6 +127,7 @@ header{
     a{
         color: #fff;
         font-size: 24px;
+
     }
     .xian{
         height: 80px;
@@ -133,13 +140,59 @@ header{
 .pc{
     width: 176px;
     height: 53px;
-    img{
+    span{
+        display: block;
        width: 67px;
        height: 48px; 
-       vertical-align: middle;
+       background: url(../img/pc.png) no-repeat;
+       background-size: 67px 48px;
+       margin-right: 24px;
+
+    }
+    .icon{
+        width: 31px;
+        height: 49px;
+        background: url(../img/phonne.png) no-repeat;
+        background-size: 31px 49px;
+
     }
 }
 
-
-
+.menu{
+    width: 640px;
+    height: 82px;
+    border-top: 5px solid #3ccfb5;
+    div{
+        float: left;
+        width: 320px;
+        height: 100%;
+        background: #fafafa;
+        .delborder{
+            border-right: 0px;
+        }
+        a{
+            font-size: 30px;
+            line-height: 62px;
+            color: #ccc;
+            width: 170px;
+            height: 58px;
+            border-right: 1px solid #ccc;
+            margin-top: 10px;
+        }
+        .user{
+            background: url(../img/user.png) no-repeat;
+            background-size: 62px 59px;
+        }
+        span{
+            margin-top: 16px;
+            margin-left: 58px;
+            display: block;
+            width: 62px;
+            height: 59px;
+            background:url(../img/login.png) no-repeat;
+            background-size: 62px 59px;
+            margin-right: 26px;
+        }
+    }
+}
 
