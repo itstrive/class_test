@@ -5,6 +5,12 @@
   text-decoration: none;
 }
 
+/* less 公共变量 */
+
+/* less 公共函数 */
+
+/* header start */
+
 header {
   width: 16rem;
   height: 2.35rem;
@@ -38,6 +44,10 @@ header .pc {
   background-size: 1.45rem 1.15rem;
   text-indent: -249.975rem;
 }
+
+/* header end */
+
+/* 用户登录，注册 start */
 
 section {
   height: 2.1rem;
@@ -85,17 +95,45 @@ section .register {
   box-sizing: border-box;
 }
 
+/* 用户登录，注册 end */
+
+/* 轮播图 start */
+
 .banner {
   height: 7.775rem;
-  width: 100%;
+  width: 16rem;
+  float: left;
+  position: relative;
 }
 
 .banner a img {
   width: 100%;
 }
 
-.list {
+.banner .slider-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.banner .slider-title a {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* 轮播图 end */
+
+/* 列表 start */
+
+.list {
+  width: 16rem;
   display: flex;
   flex-direction: column;
   padding: 0 0.45rem;
@@ -112,13 +150,22 @@ section .register {
 }
 
 .list li a {
+  width: 12rem;
+  display: block;
   text-decoration: none;
   color: #353535;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .list .del-botm {
   border-bottom: 0;
 }
+
+/* 列表 end */
+
+/* 热门问答 小组热帖 start */
 
 .title {
   height: 2rem;
@@ -143,13 +190,22 @@ section .register {
   font-size: 0.75rem;
   color: #1f1f1f;
   display: flex;
-  padding: 0.25rem 1.25rem 0.25rem 0.75rem;
+  padding: 0.25rem 0;
   box-sizing: border-box;
   align-items: center;
 }
 
 .nav a {
-  flex: 1;
+  width: 3.15rem;
+  height: 2.125rem;
+  text-align: center;
+  line-height: 2rem;
+  color: #424242;
+}
+
+.nav .on {
+  box-sizing: border-box;
+  border-bottom: 0.1rem solid #d43553;
 }
 
 .hot-qa {
@@ -172,6 +228,11 @@ section .register {
 .hot-qa li a {
   text-decoration: none;
   color: #353535;
+  display: block;
+  width: 13.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hot-qa .end {
@@ -223,6 +284,10 @@ section .register {
   margin-right: 0.625rem;
 }
 
+/* 热门问答 小组热帖 end */
+
+/* 尾部 start */
+
 footer {
   width: 100%;
   height: 3.75rem;
@@ -257,3 +322,5 @@ footer .mob {
   background: url(../img/phone.png) no-repeat;
   background-size: 0.725rem 1.25rem;
 }
+
+/* 尾部 end */
