@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #eeeeee;
+}
+
+/* 头部 start */
+
+header {
+  width: 18.75rem;
+  height: 2.225rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #bec0bd;
+  display: flex;
+  align-items: center;
+  color: #5ea52d;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: 600;
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+header a {
+  margin-right: 6.45rem;
+}
+
+header a h2 {
+  width: 0.475rem;
+  height: 0.8rem;
+  background: url(../img/zy-zuo.png) no-repeat;
+  background-size: 0.475rem 0.8rem;
+  text-indent: -999em;
+}
+
+/* 头部 end */
+
+/* 导航 start */
+
+.lcl-nav {
+  height: 2rem;
+  width: 100%;
+  background: #fff;
+  border-bottom: 0.025rem solid #c6c6c6;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lcl-nav a {
+  font-size: 0.75rem;
+  color: #646464;
+  text-align: center;
+  width: 2.275rem;
+  height: 1.95rem;
+  line-height: 1.975rem;
+}
+
+.lcl-nav .active {
+  color: #62a532;
+  border-bottom: 0.05rem solid #60a62c;
+}
+
+/* 导航 end*/
+
+/* 蔬菜套餐 start*/
+
+.lcl-chili {
+  height: 6rem;
+  margin-top: 0.5rem;
+  background: #fff;
+  width: 100%;
+  border-top: 0.025rem solid #e8e8e8;
+  border-bottom: 0.025rem solid #c6c6c6;
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 0.7rem;
+}
+
+.lcl-chili img {
+  width: 5.8rem;
+  height: 4.475rem;
+  border: 0.025rem solid #e8e8e8;
+  margin-right: 0.5rem;
+}
+
+.lcl-chili .lcl-info ul {
+  width: 11.525rem;
+  height: 4.475rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 span {
+  color: #343434;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 .lcl-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 .lcl-num {
+  font-size: 0.45rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt2 {
+  font-size: 0.55rem;
+  color: #636361;
+  margin-top: 0.3rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 .lcl-adr {
+  font-size: 0.45rem;
+  color: #757573;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 .lcl-price {
+  font-size: 0.45rem;
+  color: #6ca43f;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 .lcl-price b {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn a {
+  width: 3.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  background: #959595;
+  font-size: 0.55rem;
+  color: #e8e6e7;
+  text-align: center;
+  line-height: 1.25rem;
+  margin-right: 0;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn .on {
+  background: #fa932c;
+}
+
+/* 彩椒 白菜 end*/

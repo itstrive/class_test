@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #323431;
+  text-decoration: none;
+}
+
+/*city-box css*/
+
+.city-box {
+  width: 18.75rem;
+  background: #eee;
+  /*header css*/
+  /*当前位置cur-pos css*/
+  /*商业区sowntown css*/
+  /*地址列表locationlist-box css*/
+}
+
+.city-box header {
+  width: 100%;
+  height: 2.225rem;
+  background: #fdfffc;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  border-bottom: 0.025rem solid #bec0bd;
+  box-sizing: border-box;
+}
+
+.city-box header .return {
+  width: 0.475rem;
+  height: 0.8rem;
+  background: url(../img/return.png) no-repeat;
+  background-size: 0.475rem 0.8rem;
+  text-indent: -9999rem;
+}
+
+.city-box header h4 {
+  font-size: 0.925rem;
+  color: #5ca32b;
+  font-weight: normal;
+  margin-left: 6.45rem;
+  box-sizing: border-box;
+}
+
+.city-box .cur-pos {
+  height: 4.05rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #c7c7c5;
+  margin-top: 0.45rem;
+  box-sizing: border-box;
+}
+
+.city-box .cur-pos li {
+  height: 2.025rem;
+  line-height: 2.025rem;
+  border-bottom: 0.025rem solid #e4e6e3;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+}
+
+.city-box .cur-pos li a {
+  font-size: 0.575rem;
+  color: #696967;
+}
+
+.city-box .cur-pos li .sitecolor {
+  color: #31312f;
+}
+
+.city-box .sowntown {
+  height: 7.35rem;
+  background: #fdfffc;
+  margin-top: 0.45rem;
+  border-bottom: 0.025rem solid #c6c6c6;
+  box-sizing: border-box;
+}
+
+.city-box .sowntown .select {
+  height: 2rem;
+  line-height: 2rem;
+  padding-left: 0.5rem;
+  border-bottom: 0.025rem solid #e4e6e3;
+  box-sizing: border-box;
+}
+
+.city-box .sowntown .select h4 {
+  font-size: 0.55rem;
+  color: #626262;
+  font-weight: normal;
+}
+
+.city-box .sowntown .retail-centre {
+  height: 5.325rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.city-box .sowntown .retail-centre li {
+  width: 3.975rem;
+  height: 1.375rem;
+  text-align: center;
+  background: #dcdcdc;
+  border-radius: 0.2rem;
+}
+
+.city-box .sowntown .retail-centre li a {
+  display: block;
+  height: 1.375rem;
+  line-height: 1.375rem;
+  font-size: 0.55rem;
+}
+
+.city-box .locationlist-box {
+  height: 17.35rem;
+  background: #fdfffc;
+}
+
+.city-box .locationlist-box .location-title {
+  height: 2.025rem;
+  padding-left: 0.5rem;
+  border-bottom: 0.025rem solid #e4e6e3;
+  box-sizing: border-box;
+}
+
+.city-box .locationlist-box .location-title a {
+  display: block;
+  line-height: 2.025rem;
+  font-size: 0.55rem;
+  color: #636363;
+}
+
+.city-box .locationlist-box .location-list {
+  height: 2.025rem;
+}
+
+.city-box .locationlist-box .location-list li {
+  height: 2.025rem;
+  line-height: 2.025rem;
+  border-bottom: 0.025rem solid #e4e6e3;
+  box-sizing: border-box;
+}
+
+.city-box .locationlist-box .location-list li a {
+  font-size: 0.55rem;
+  display: block;
+  padding-left: 0.5rem;
+}

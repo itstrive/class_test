@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/news_address.css">
+    <script>
+        ;(function(){
+            let html=document.documentElement;
+            html.style.fontSize=html.clientWidth*20/375+'px';
+            window.onresize=function(){
+                html.style.fontSize=html.clientWidth*20/375+'px';
+            };
+        })()
+    </script>
+</head>
+<body>
+    <!--city-box start-->
+    <div class="news_address-box">
+        <!--header start-->
+        <header>
+            <a href="javascript:;" class="return">return</a>
+            <h4>添加新地址</h4>
+            <a href="javascript:;" class="save">保存</a>
+        </header>
+        <!--header end-->
+        <section>
+            <!--address-list start-->
+            <ul class="address-list">
+                <li>
+                    <span>收货人</span>
+                    <input type="text">
+                </li>
+                <li>
+                    <span>联系电话</span>
+                    <input type="text">
+                </li>
+                <li class="choice">
+                    <span>所在地区</span>
+                    <div>
+                        <a href="javascript:;">
+                            请选择
+                            <span class="option">option</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="choice">
+                    <span>街道</span>
+                    <div>
+                        <a href="javascript:;">
+                            请选择
+                            <span class="option">option</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="detail">
+                    <textarea rows="5" cols="55" class="detail-txt" placeholder="请填写下详细地址，不少于5个字"></textarea>
+                </li>
+            </ul>
+            <!--address-list end-->
+            <!--set start-->
+            <div class="set">
+                <h4>设为默认</h4>
+                <a href="javascript:;" class="on-off">on-off</a>
+            </div>   
+            <!--set end-->
+        </section>
+    </div>
+    <!--city-box  end-->
+</body>
+</html>

@@ -1,0 +1,43 @@
+header {
+  width: 18.75rem;
+  height: 2.225rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #bec0bd;
+  display: flex;
+  align-items: center;
+  color: #a6c987;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+header div {
+  flex: 1;
+  display: flex;
+}
+
+header div a {
+  font-size: 0.625rem;
+  color: #a6c987;
+}
+
+header div .shopping-che {
+  width: 1.25rem;
+  height: 0.875rem;
+  text-indent: -999rem;
+  background: url(../img/zy-shopping.png) no-repeat;
+  background-size: 1.25rem 0.875rem;
+}
+
+header .shopping {
+  justify-content: flex-end;
+}
+
+header .classify {
+  justify-content: center;
+}
+
+header .classify a {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}

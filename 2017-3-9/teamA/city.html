@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/city.css">
+    <script>
+        ;(function(){
+            let html=document.documentElement;
+            html.style.fontSize=html.clientWidth*20/375+'px';
+            window.onresize=function(){
+                html.style.fontSize=html.clientWidth*20/375+'px';
+            };
+        })()
+    </script>
+</head>
+<body>
+    <!--city-box start-->
+    <div class="city-box">
+        <!--header start-->
+        <header>
+            <a href="javascript:;" class="return">return</a>
+            <h4>城市列表</h4>
+        </header>
+        <!--header end-->
+        <section>
+            <!--cur-pos start-->
+            <ul class="cur-pos">
+                <li>
+                    <a href="javascript:;">当前位置</a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="sitecolor">深圳</a>
+                </li>
+            </ul>
+            <!--cur-pos end-->
+            <!--sowntown start-->
+            <div class="sowntown">
+                <div class="select">
+                    <h4>请选择商业区</h4>
+                </div>
+                <ul class=" retail-centre">
+                    <li><a href="javascript:;">东门老街</a></li>
+                    <li><a href="javascript:;">罗湖商业城</a></li>
+                    <li><a href="javascript:;">华强北</a></li>
+                    <li><a href="javascript:;">福田中心</a></li>
+
+                    <li><a href="javascript:;">八封岭</a></li>
+                    <li><a href="javascript:;">沙头角</a></li>
+                    <li><a href="javascript:;">湾口岸</a></li>
+                    <li><a href="javascript:;">南山-南油</a></li>
+                </ul>
+            </div>
+            <!--sowntown end-->
+            <!--locationlist-box start-->
+            <div class="locationlist-box">
+                <div class="location-title">
+                    <a href="javascript:;">省列城市</a>
+                </div>
+                <ul class="location-list">
+                    <li>
+                        <a href="javascript:;">深圳</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">北京</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">上海</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">广州</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">苏州</a>
+                    </li>
+                </ul>
+            </div>
+            <!--locationlist-box end-->
+        </section>
+    </div>
+    <!--city-box  end-->
+</body>
+</html>

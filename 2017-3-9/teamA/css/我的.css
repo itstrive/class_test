@@ -1,0 +1,17 @@
+header {
+  width: 18.75rem;
+  height: 2.225rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #bec0bd;
+  display: flex;
+  align-items: center;
+  color: #60a727;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 0.9rem;
+}

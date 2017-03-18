@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #eeeeee;
+}
+
+/* 头部 start */
+
+header {
+  width: 18.75rem;
+  height: 2.225rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #bec0bd;
+  display: flex;
+  align-items: center;
+  color: #a6c987;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: 600;
+  flex: 1;
+  font-size: 0.85rem;
+}
+
+header a {
+  margin-right: 6.45rem;
+}
+
+header a h2 {
+  width: 0.475rem;
+  height: 0.8rem;
+  background: url(../img/zy-zuo.png) no-repeat;
+  background-size: 0.475rem 0.8rem;
+  text-indent: -999em;
+}
+
+/* 头部 end */
+
+/* 内容 start */
+
+/* 蔬菜套餐 start*/
+
+.lcl-chili {
+  height: 6rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  background: #fff;
+  display: flex;
+  padding: 0 0.5rem;
+  border-top: 0.025rem solid #e8e8e8;
+  border-bottom: 0.025rem solid #c6c6c6;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 0.7rem;
+}
+
+.lcl-chili .lcl-ring {
+  width: 0.575rem;
+  height: 0.575rem;
+}
+
+.lcl-chili .lcl-pic {
+  width: 5.8rem;
+  height: 4.475rem;
+  border: 0.025rem solid #e8e8e8;
+  margin-right: 0.5rem;
+}
+
+.lcl-chili .lcl-info ul {
+  width: 10.325rem;
+  height: 4.475rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 span {
+  color: #343434;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 .lcl-name {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 .lcl-price {
+  font-size: 0.45rem;
+  color: #6ca43f;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt1 .lcl-price b {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt2 {
+  font-size: 0.55rem;
+  color: #636361;
+  margin-top: 0.3rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-txt3 .lcl-adr {
+  font-size: 0.45rem;
+  color: #757573;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn a {
+  width: 3.25rem;
+  height: 1.25rem;
+  border-radius: 0.25rem;
+  background: #959595;
+  font-size: 0.55rem;
+  color: #e8e6e7;
+  text-align: center;
+  line-height: 1.25rem;
+  margin-right: 0;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn .lcl-add-delete {
+  width: 5.375rem;
+  height: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn .lcl-add,
+.lcl-chili .lcl-info ul .lcl-btn .lcl-delete,
+.lcl-chili .lcl-info ul .lcl-btn .lcl-dispaly-box {
+  width: 2rem;
+  height: 100%;
+  background: #e5e5e5;
+  border-radius: 0;
+  color: #000;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.1rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn .lcl-dispaly-box {
+  width: 1.4rem;
+  background: #fff;
+  font-size: 0.7rem;
+}
+
+.lcl-chili .lcl-info ul .lcl-btn .on {
+  background: #fa932c;
+}
+
+/* 彩椒 白菜 end*/
+
+/* 确定按钮 start */
+
+.lcl-btn-ensure {
+  width: 100%;
+  height: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lcl-btn-ensure p {
+  width: 5.25rem;
+  height: 1.55rem;
+  border-radius: 0.125rem;
+  background: #60a42d;
+  color: #fdfdff;
+  text-align: center;
+  line-height: 1.55rem;
+  font-size: 0.65rem;
+}
+
+/* 确定按钮 end */
+
+/* 内容 start */
+
+/*尾部*/
+
+footer {
+  width: 18.75rem;
+  height: 2.45rem;
+  display: flex;
+  align-items: center;
+}
+
+footer .money {
+  width: 9.35rem;
+}
+
+footer div h6 {
+  font-size: 0.5rem;
+  color: #727272;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+footer div h6 span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url(../img/radus.png) no-repeat;
+  background-size: 0.5rem;
+  text-indent: -999em;
+  display: block;
+  float: left;
+  margin-top: 0.1rem;
+}
+
+footer div p {
+  font-size: 0.7rem;
+  color: #656565;
+  margin-left: 1.7rem;
+}
+
+footer div p span {
+  font-size: 0.8rem;
+  color: #f8940a;
+}
+
+footer div a {
+  width: 7.125rem;
+  height: 2.45rem;
+  background: #60a42b;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 2.45rem;
+  text-align: center;
+  float: right;
+}

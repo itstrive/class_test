@@ -1,0 +1,21 @@
+/**清除默认边框**/
+*{margin:0; padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:16px;}
+a{color:#000; text-decoration:none;}
+b,strong{font-weight:normal; }
+i,em{font-style:normal;}
+li{list-style:none;}
+p{line-height:100%;}
+/**清浮动**/
+.clearfix:after(display:block; content:''; clear:both;)
+.clearfix{zoom:1}
+/**浮动**/
+.fl{ float:left;}
+.fr{ float:right;}
+/**垂直头部**/
+img{ vertical-align:top;}
+input{ background:none; border:none; outline:none; border:1px solid #ccc; padding:0;}
+/*文本域*/
+textarea{ resize:none;}
+/**/
+table{ border-collapse:collapse;}
