@@ -1,0 +1,172 @@
+.clickApplyHeader {
+  height: 2.25rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #c6c6c6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.clickApplyHeader a {
+  flex: 1;
+  width: 0.4rem;
+  height: 0.8rem;
+  margin-left: 0.55rem;
+}
+
+.clickApplyHeader a img {
+  width: 0.4rem;
+  height: 0.8rem;
+  vertical-align: top;
+}
+
+.clickApplyHeader h1 {
+  flex: 2;
+  font-size: 0.9rem;
+  color: #5ca32d;
+  font-weight: bold;
+}
+
+.clickApplyBanner img {
+  width: 100%;
+}
+
+.clickApplyChoose h2 {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  padding-left: 0.5rem;
+  font-size: 0.6rem;
+  color: #363636;
+  border-bottom: 0.025rem solid #e4e6e3;
+}
+
+.clickApplyChoose .clickApplyChooseTxt {
+  border-bottom: 0.025rem solid #e4e6e3;
+  margin-top: 0.25rem;
+}
+
+.clickApplyChoose .clickApplyChooseTxt p {
+  color: #31312f;
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.clickApplyLine {
+  height: 0.475rem;
+  background: url(../img/cityList-line.png) repeat-X;
+}
+
+.clickApplyPackage h2 {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  padding-left: 0.5rem;
+  font-size: 0.6rem;
+  color: #353533;
+  border-bottom: 0.025rem solid #e4e6e3;
+}
+
+.clickApplyPackage ul {
+  margin-top: 0.65rem;
+}
+
+.clickApplyPackage ul li {
+  margin-left: 0.5rem;
+}
+
+.clickApplyPackage ul li .clickApplyPackageOne {
+  margin-bottom: 1rem;
+}
+
+.clickApplyPackage ul li .clickApplyPackageTwo {
+  margin-bottom: 1.35rem;
+}
+
+.clickApplyPackage ul li .clickApplyPackageThree {
+  margin-bottom: 1.65rem;
+}
+
+.clickApplyPackage ul li p {
+  font-size: 0.55rem;
+  color: #333331;
+  display: inline-block;
+}
+
+.clickApplyPackage ul li p span {
+  width: 0.85rem;
+  margin-right: 0.375rem;
+  height: 0.85rem;
+  border: 0.025rem solid #949693;
+  display: inline-block;
+}
+
+.clickApplySubmitApplication {
+  width: 100%;
+}
+
+.clickApplySubmitApplication .clickApplySubmit {
+  width: 14.75rem;
+  height: 13.75rem;
+  margin: 0.625rem auto 2.25rem;
+  background: #f5f5f5;
+  border: 0.025rem solid #dadada;
+  border-radius: 0.2rem;
+}
+
+.clickApplySubmitApplication .clickApplySubmit h2 {
+  width: 4.125rem;
+  height: 0.9rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  font-size: 0.45rem;
+  color: #fd403c;
+  background: #fdfdfd;
+  border: 0.025rem solid #dcdcdc;
+  border-radius: 0.2rem;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInput div {
+  width: 12.175rem;
+  height: 1.675rem;
+  line-height: 1.675rem;
+  margin: 0 auto;
+  padding-left: 0.375rem;
+  border: 0.025rem solid #e2e2e2;
+  border-radius: 0.2rem;
+  background: #fff;
+  font-size: 0.45rem;
+  color: #343434;
+  margin-bottom: 0.5rem;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInput div input {
+  border: none;
+  outline: none;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInput .clickApplyInputLast {
+  background: #ff3d3d;
+  text-align: center;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInput .clickApplyInputLast input {
+  font-size: 0.6rem;
+  color: #fff;
+  background: #ff3d3d;
+  margin: 0 auto;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInputTxt {
+  margin-left: 1.5rem;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInputTxt p {
+  font-size: 0.45rem;
+  color: #646464;
+}
+
+.clickApplySubmitApplication .clickApplySubmit .clickApplyInputTxt span {
+  color: #f94230;
+  font-size: 0.45rem;
+}

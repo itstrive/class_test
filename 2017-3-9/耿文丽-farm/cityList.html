@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/cityList.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css"> 
+	<script>
+		;(function(){
+			let html=document.documentElement;
+			html.style.fontSize=html.clientWidth*20/320+'px';
+			window.onresize = function(){
+				html.style.fontSize=html.clientWidth*20/320+'px';
+			};
+		})();		
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<header class="cityListHeader">
+		<a href="javascript:;"><img src="img/sanjiao.png"></a>
+		<h1>城市列表</h1>
+	</header>
+	<!-- line -->
+	<div class="cityListLine"></div>
+	<!-- now address -->
+	<div class="cityListNowAddress">
+		<div class="nowaddress">
+			<a href="javascript:;">当前位置</a>
+		</div>
+		<div class="nowaddress">
+			<a href="javascript:;">深圳</a>
+		</div>
+	</div>
+	<!-- line -->
+	<div class="cityListLine"></div>
+	<!-- choose -->
+	<div class="cityListChoose clearfix">
+		<h2>请选择商业区</h2>
+		<div class="cityListChooseBox">
+			<ul>
+				<li class="fl"><a href:"javascript:;">东门老街</a></li>
+				<li class="fl"><a href:"javascript:;">罗湖商业城</a></li>
+				<li class="fl"><a href:"javascript:;">华强北</a></li>
+				<li class="fl"><a href:"javascript:;">福田中心</a></li>
+				<li class="fl"><a href:"javascript:;">八卦岭</a></li>
+				<li class="fl"><a href:"javascript:;">沙头角</a></li>
+				<li class="fl"><a href:"javascript:;">湾口岸</a></li>
+				<li class="fl"><a href:"javascript:;">南山-南油</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- line -->
+	<div class="cityListLine"></div>
+	<!-- Province -->
+	<div class="cityListLineProvince">
+		<ul>
+			<li>省列城市</li>
+			<li>深圳</li>
+			<li>北京</li>
+			<li>上海</li>
+			<li>广州</li>
+			<li>苏州</li>
+		</ul>
+	</div>
+</body>
+</html>

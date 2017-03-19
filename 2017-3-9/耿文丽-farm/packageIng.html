@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/packageIng.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css"> 
+	<script>
+		;(function(){
+			let html=document.documentElement;
+			html.style.fontSize=html.clientWidth*20/320+'px';
+			window.onresize = function(){
+				html.style.fontSize=html.clientWidth*20/320+'px';
+			};
+		})();		
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<header class="packagePaymentHeader">
+		<a href="javascript:;"><img src="img/sanjiao.png"></a>
+		<h1>我的套餐</h1>
+	</header>
+	<!-- packagePaymentList -->
+	<div class="packagePaymentList clearfix">
+		<ul>
+			<li class="fl">待付款</li>
+			<li class="fl">待开始</li>
+			<li class="fl" style="color:#5da72c; border-bottom: 1px solid #5da72c;">进行中</li>
+			<li class="fl">已完成</li>
+			<li class="fl" style="margin-right:0px;">已取消</li>
+		</ul>
+	</div>
+	<!-- line -->
+	<div class="packagePaymentLine"></div>
+	<!-- luxury -->
+	<div class="packagePaymentBigLuxury clearfix">
+		<a href="javascript:;" class="fl">
+			<img src="img/packagePayment-vegetables.png" />
+		</a>
+		<div class="packagePaymentTxt fl">
+			<div class="fl PaymentMoney">
+				<h2 class="fl">蔬菜豪华套餐</h2>
+				<span class="fr">X1</span>
+			</div>
+			<p class="fl">西红柿 西兰花 白菜 土豆</p>
+			<div class="PaymentMoney2 fl">
+				<i class="fl">农场一</i>
+				<strong class="fr">￥30.00</strong>
+			</div>
+			<div class="packagePaymentBtn clearfix">
+				<div class="packagePaymentBtnLeft fl">
+					<input type="button" value="-" />1
+					<input type="button" value="+" />
+				</div>
+				<input class="fr" type="button" value="付款"/>
+			</div>
+		</div>
+		
+	</div>
+	
+
+	<div class="packageIngImg">
+		<ul>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+			<li class="fl"><a href="javascript:;"><img src="img/packageIng-img.png"></a></li>
+
+		</ul>
+		<input type="button" value="确定" />
+	</div>
+
+	<div class="packagePaymentBack">
+		
+	</div>
+</body>
+</html>
