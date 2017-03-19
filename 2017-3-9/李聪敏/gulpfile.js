@@ -7,7 +7,7 @@ gulp.task('less', function() {
 	gulp.src('less/*.less')
 		.pipe(less())
 		.pipe(px2rem({
-			remUnit: 40,
+			remUnit: 100,
 			remPrecision: 6
 		}))
 		.pipe(rename(function(path) {
