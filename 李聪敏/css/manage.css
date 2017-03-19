@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 7.5rem;
+  background: #eeeeee;
+}
+
+.nav .header {
+  width: 100%;
+  height: 1.28rem;
+  background: #fff;
+  display: flex;
+  justift-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .header .triangle {
+  background: url(../img/triangle.png) no-repeat;
+  width: 0.16rem;
+  height: 0.32rem;
+  background-size: 0.16rem 0.32rem;
+  margin-left: 0.2rem;
+  box-sizing: border-box;
+  text-indent: -99.99rem;
+}
+
+.nav .header .blank {
+  text-indent: -99.99rem;
+}
+
+.nav .header h1 {
+  font-size: 0.36rem;
+  color: #629f28;
+}
+
+.nav .sect {
+  width: 100%;
+  height: 2.44rem;
+  background: #fff;
+  display: flex;
+  margin-top: 0.2rem;
+  flex-direction: column;
+}
+
+.nav .sect .sect_top {
+  width: 100%;
+  height: 0.74rem;
+  display: flex;
+}
+
+.nav .sect .sect_top li {
+  width: 7.1rem;
+  height: 0.74rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .sect .sect_top li .name {
+  font-size: 0.24rem;
+  color: #2d2d2d;
+  margin-left: 0.3rem;
+  box-sizing: border-box;
+}
+
+.nav .sect .sect_top li .number {
+  font-size: 0.18rem;
+  color: #2d2d2d;
+  margin-right: 0.2rem;
+  box-sizing: border-box;
+}
+
+.nav .sect p {
+  width: 100%;
+  height: 0.74rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.01rem solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.nav .sect p a {
+  font-size: 0.24rem;
+  color: #333333;
+  margin-left: 0.2rem;
+}
+
+.nav .sect .sect_fot {
+  width: 100%;
+  height: 0.94rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .sect .sect_fot .rom {
+  display: flex;
+  margin-left: 0.2rem;
+}
+
+.nav .sect .sect_fot .rom a {
+  font-size: 0.2rem;
+  color: #333331;
+}
+
+.nav .sect .sect_fot .rom .round {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  border: 0.01rem solid #ccc;
+  box-sizing: border-box;
+  text-indent: -99.99rem;
+}
+
+.nav .sect .sect_fot span {
+  font-size: 0.2rem;
+  color: #333331;
+}
+
+.nav .sect .sect_fot .note {
+  margin-right: 0.3rem;
+}
+
+.nav .sect .sect_fot .dele {
+  margin-right: 0.2rem;
+}
+
+.nav .sect .sect_fot .img {
+  display: flex;
+}
+
+.nav .sect .sect_fot .img .notepad {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: url(../img/notepad.png) no-repeat;
+  background-size: 0.3rem 0.3rem;
+  text-indent: -99.99rem;
+}
+
+.nav .sect .sect_fot .img .delete {
+  width: 0.25rem;
+  height: 0.27rem;
+  background: url(../img/delete.png) no-repeat;
+  background-size: 0.25rem 0.27rem;
+  text-indent: -99.99rem;
+}
+
+.nav .foot {
+  width: 100%;
+  height: 9.44rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav .foot .button {
+  width: 3.6rem;
+  height: 0.74rem;
+  border: 0.02rem solid #bfbfbf;
+  border-radius: 0.05rem;
+  background: #dcdcdc;
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+  color: #313131;
+  line-height: 0.74rem;
+  font-size: 0.24rem;
+  text-align: center;
+}

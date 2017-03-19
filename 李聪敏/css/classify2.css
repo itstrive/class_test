@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 7.5rem;
+  background: #eeeeee;
+}
+
+.nav .header {
+  width: 100%;
+  height: 0.9rem;
+  background: #fff;
+  display: flex;
+  justift-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .header .cities {
+  font-size: 0.26rem;
+  color: #5fa62c;
+  margin-left: 0.2rem;
+}
+
+.nav .header .line {
+  height: 0.24rem;
+  border: 0.01rem solid #60a42b;
+  margin-right: 0.08rem;
+}
+
+.nav .header h1 {
+  font-size: 0.36rem;
+  color: #629f28;
+}
+
+.nav .header .cart {
+  width: 0.49rem;
+  height: 0.35rem;
+  background: url(../img/shop_cart.png) no-repeat;
+  background-size: 0.49rem 0.35rem;
+  margin-right: 0.2rem;
+  text-indent: -99.99rem;
+}
+
+.nav .section {
+  background: #eeeeee;
+  width: 100%;
+  height: 3.86rem;
+  border-top: 0.01rem solid #bfbfbf;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.nav .section li {
+  float: left;
+  margin-left: 0.36rem;
+  margin-top: 0.24rem;
+}
+
+.nav .section li img {
+  width: 1.5rem;
+  height: 1.52rem;
+}
+
+.nav .section .first {
+  margin-left: 0.2rem;
+}
+
+.nav .section .roof {
+  margin-top: 0.18rem;
+}
+
+.nav .color_pepper {
+  width: 100%;
+  height: 2.42rem;
+  background: #fff;
+  border: 0.01rem solid #bfbfbf;
+  border-left: none;
+  border-right: none;
+}
+
+.nav .color_pepper li {
+  float: left;
+}
+
+.nav .color_pepper li img {
+  width: 2.3rem;
+  height: 1.78rem;
+  margin-top: 0.44rem;
+  margin-left: 0.22rem;
+  border: 0.01rem solid #eee;
+}
+
+.nav .color_pepper li .avocado {
+  font-size: 0.28rem;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-left: 0.16rem;
+}
+
+.nav .color_pepper li .greens {
+  font-size: 0.24rem;
+  color: #666;
+  margin-top: 0.12rem;
+  margin-left: 0.16rem;
+}
+
+.nav .color_pepper li .cast {
+  font-size: 0.22rem;
+  color: #60a42b;
+  margin-top: 0.22rem;
+  margin-left: 0.16rem;
+}
+
+.nav .color_pepper .last {
+  float: right;
+}
+
+.nav .color_pepper .last a .gram {
+  font-size: 0.24rem;
+  color: #666;
+  float: right;
+  margin-right: 0.2rem;
+  margin-top: 0.9rem;
+}
+
+.nav .color_pepper .last a p {
+  width: 1.5rem;
+  height: 0.5rem;
+  background: #fa932c;
+  color: #fff;
+  font-size: 0.22rem;
+  text-align: center;
+  line-height: 0.5rem;
+  border-radius: 0.04rem;
+  margin-right: 0.2rem;
+  margin-top: 1.76rem;
+}
+
+.nav .list_box {
+  margin-top: 0.2rem;
+  width: 100%;
+  border: 0.01rem solid #e7e7e7;
+  box-sizing: border-box;
+  border-left: none;
+  border-right: none;
+  height: 6.66rem;
+  background: #fff;
+}
+
+.nav .list_box .farm {
+  height: 0.8rem;
+  width: 100%;
+  border: 0.01rem solid #bfbfbf;
+  border-left: none;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav .list_box .farm span {
+  font-size: 0.28rem;
+  color: #333331;
+  margin-left: 0.22rem;
+}
+
+.nav .list_box .farm a {
+  width: 1.5rem;
+  height: 0.5rem;
+  background: #60a42b;
+  font-size: 0.24rem;
+  color: #fff;
+  line-height: 0.5rem;
+  padding-left: 0.2rem;
+  float: right;
+  border-radius: 0.05rem;
+  margin-right: 0.2rem;
+}
+
+.nav .list_box .select ul {
+  margin-left: 0.1rem;
+}
+
+.nav .list_box .select ul li {
+  width: 1.68rem;
+  height: 1.46rem;
+  float: left;
+  margin-top: 0.14rem;
+  margin-left: 0.1rem;
+  border: 0.01rem solid #d2d2d2;
+}
+
+.nav .list_box .select ul li img {
+  width: 1.68rem;
+  height: 1.46rem;
+}
+
+.nav .list_box .introduce li {
+  float: left;
+}
+
+.nav .list_box .introduce li img {
+  width: 2.3rem;
+  height: 1.78rem;
+  margin-top: 0.44rem;
+  margin-left: 0.22rem;
+  border: 0.01rem solid #eee;
+}
+
+.nav .list_box .introduce li .avocado {
+  font-size: 0.28rem;
+  color: #333;
+  margin-top: 0.5rem;
+  margin-left: 0.16rem;
+}
+
+.nav .list_box .introduce li .greens {
+  font-size: 0.24rem;
+  color: #666;
+  margin-top: 0.12rem;
+  margin-left: 0.16rem;
+}
+
+.nav .list_box .introduce li .cast {
+  font-size: 0.22rem;
+  color: #60a42b;
+  margin-top: 0.22rem;
+  margin-left: 0.16rem;
+}
+
+.nav .list_box .introduce .last {
+  float: right;
+}
+
+.nav .list_box .introduce .last a .gram {
+  font-size: 0.24rem;
+  color: #666;
+  float: right;
+  margin-right: 0.2rem;
+  margin-top: 0.9rem;
+}
+
+.nav .list_box .introduce .last a p {
+  width: 1.5rem;
+  height: 0.5rem;
+  background: #fa932c;
+  color: #fff;
+  font-size: 0.22rem;
+  text-align: center;
+  line-height: 0.5rem;
+  border-radius: 0.04rem;
+  margin-right: 0.2rem;
+  margin-top: 1.76rem;
+}
+
+.nav .footer {
+  width: 100%;
+  height: 1rem;
+  margin-top: 0.22rem;
+  background: #fff;
+}
+
+.nav .footer ul {
+  width: 100%;
+  height: 1rem;
+}
+
+.nav .footer ul li {
+  margin-top: -0.5rem;
+  float: left;
+  margin-left: 2.14rem;
+}
+
+.nav .footer ul li p {
+  font-size: 0.2rem;
+  color: #666666;
+}
+
+.nav .footer ul li .classfiy {
+  color: #5fa52b;
+}
+
+.nav .footer ul .first {
+  margin-left: 0.88rem;
+}

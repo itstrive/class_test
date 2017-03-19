@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 7.5rem;
+  background: #eeeeee;
+}
+
+.nav .header {
+  width: 100%;
+  height: 0.88rem;
+  margin-top: 0.38rem;
+  display: flex;
+  background: #fff;
+  justift-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .header .triangle {
+  background: url(../img/triangle.png) no-repeat;
+  width: 0.16rem;
+  height: 0.32rem;
+  background-size: 0.16rem 0.32rem;
+  margin-left: 0.2rem;
+  box-sizing: border-box;
+  text-indent: -99.99rem;
+}
+
+.nav .header .blank {
+  text-indent: -99.99rem;
+}
+
+.nav .header h1 {
+  font-size: 0.36rem;
+  color: #629f28;
+}
+
+.nav .section {
+  width: 100%;
+}
+
+.nav .section .farm_shop {
+  height: 2.42rem;
+  margin-top: 0.2rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .section .farm_shop .round {
+  width: 0.22rem;
+  height: 0.22rem;
+  border: 0.02rem solid #a3a5a2;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+  text-indent: -19.99rem;
+}
+
+.nav .section .farm_shop .shop {
+  width: 2.99rem;
+  height: 1.88rem;
+  margin-left: 0.26rem;
+}
+
+.nav .section .farm_shop .shop img {
+  width: 2.32rem;
+  height: 1.8rem;
+}
+
+.nav .section .farm_shop .shop_intr {
+  width: 4.11rem;
+  height: 1.88rem;
+  margin-right: 0.2rem;
+}
+
+.nav .section .farm_shop .shop_intr li {
+  width: 4.11rem;
+  display: flex;
+}
+
+.nav .section .farm_shop .shop_intr .color {
+  height: 0.46rem;
+  justify-content: space-between;
+}
+
+.nav .section .farm_shop .shop_intr .color .color_pepper {
+  font-size: 0.28rem;
+  color: #353533;
+}
+
+.nav .section .farm_shop .shop_intr .color .cost {
+  font-size: 0.24rem;
+  color: #5aa026;
+}
+
+.nav .section .farm_shop .shop_intr .farm {
+  height: 0.62rem;
+}
+
+.nav .section .farm_shop .shop_intr .farm a {
+  font-size: 0.24rem;
+  color: #61615f;
+}
+
+.nav .section .farm_shop .shop_intr .farm a .farm_one {
+  margin-top: 0.2rem;
+}
+
+.nav .section .farm_shop .shop_intr .count {
+  width: 2.16rem;
+  height: 0.45rem;
+  margin-top: 0.36rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+
+.nav .section .farm_shop .shop_intr .count a {
+  width: 0.8rem;
+  background: #e5e5e5;
+  color: #5f5f5f;
+  font-size: 0.2rem;
+  text-align: center;
+  line-height: 0.44rem;
+}
+
+.nav .section .farm_shop .shop_intr .count span {
+  width: 0.56rem;
+  text-align: center;
+  line-height: 0.45rem;
+  font-size: 0.2rem;
+  color: #2f312e;
+}
+
+.nav .footer {
+  width: 100%;
+  height: 0.98rem;
+  margin-top: 5.88rem;
+  background: #fff;
+}
+
+.nav .footer .check_out {
+  height: 0.98rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .footer .check_out .option {
+  display: flex;
+}
+
+.nav .footer .check_out .option .round {
+  width: 0.22rem;
+  height: 0.22rem;
+  border: 0.02rem solid #a3a5a2;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+  text-indent: -19.99rem;
+}
+
+.nav .footer .check_out .option span {
+  margin-left: 0.1rem;
+  font-size: 0.18rem;
+  color: #5f5f5f;
+}
+
+.nav .footer .check_out .total {
+  display: flex;
+}
+
+.nav .footer .check_out .total span {
+  font-size: 0.28rem;
+  color: #656565;
+}
+
+.nav .footer .check_out .total a {
+  margin-left: 0.24rem;
+  font-size: 0.28rem;
+  color: #fa8c00;
+}
+
+.nav .footer .check_out .account {
+  width: 2.85rem;
+  height: 0.98rem;
+  background: #60a42b;
+  display: flex;
+}
+
+.nav .footer .check_out .account a {
+  width: 2.85rem;
+  height: 0.98rem;
+  font-size: 0.34rem;
+  color: #fff;
+  line-height: 0.98rem;
+  padding-left: 0.92rem;
+}
