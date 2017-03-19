@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>农场</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/order.css">
+	<!--[if lt IE 9]>
+  		<script src="js/html5shiv.min.js"></script>
+  	<![endif]-->
+	<script>
+		;(function(){
+			var html=document.documentElement;
+			html.style.fontSize=html.clientWidth*50/375+'px';
+			window.onresize=function(){
+				html.style.fontSize=html.clientWidth*50/375+'px';
+			}
+		})()
+		
+	</script>
+</head>
+<body>
+	<!-- hearder start -->
+	<header class="header">
+		<a href="javascript:;">&lt;</a> 
+		<h1>确认订单</h1>
+		<span>blank</span>
+	</header>
+	<!-- header end -->
+	<!-- section start -->
+	<section class="section">
+		<!-- add address -->
+		<div class="add_address">
+			<a href="javascript:;" class="clearfix">
+				<h3 class="fl">添加地址</h3>
+				<span class="fr">&gt;</span>
+			</a>
+		</div>
+		<!--vegetable meal  -->
+		<div class="vegetable">
+			<a href="javascript:;">
+				<div class="img_vagetable">
+					<img src="img/vegetable.png">
+				</div>
+				<div class="direction">
+					<h3>时令蔬菜套餐6斤装</h3>
+					<p>白菜.胡萝卜.茄子.玉米.西红柿.芹菜</p>
+					<div class="clearfix price">
+						<div class="fl">￥<span>200<strong>.</strong><b>00</b></span></div>
+						<span class="fr number"><span>X</span>1<span>
+					</div>
+				</div>
+			</a>
+		</div>
+		<!-- buy message -->
+		<ul class="buy_message">
+			<li class="buynum">
+				<span>购买数量</span>
+				<div class="change clearfix">
+					<a href="javascript:;" class="add_reduce fl">-</a>
+					<input type="text"  value="1" class="changenum fl">
+					<a href="javascript:;" class="add_reduce fl">+</a>
+				</div>
+			</li>
+			<li class="send_way">
+				<span class="sendW">配送方式</span>
+				<span class="sendG">快递发货</span>
+			</li>
+			<li class="leave_word">
+				<textarea placeholder="买家留言:"></textarea>
+			</li>
+		</ul>
+		<!-- discount vouchers-->
+		<div class="discount">
+			<span class="vouchers">优惠券</span>
+			<span class="now_not">目前没有优惠券可使用&nbsp;&gt;</span>
+		</div>
+		<!-- notice whether or not -->
+		<div class="notice">
+			<span >短信是否通知收件人</span>
+			<div >
+					<span>slider_block</span>
+			</div>
+		</div>
+		<!--set meal sum money  -->
+		<div class="meal_sum">
+			<span>套餐金额</span>
+			<b>￥200.00</b>
+		</div>
+		<!-- transportation expense -->
+		<div class="trans_expense">
+			<span>运费</span>
+			<b>￥00.00</b>
+		</div>
+	</section>
+	<!-- section end -->
+	<footer>
+		<!-- submit order -->
+		<div>
+			<div class="submit_total">
+				合计: <span>￥<b>200.<strong>00<strong></b></span>
+			</div>
+			<div class="submit_order">
+				<a href="javascript:;">提交订单</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

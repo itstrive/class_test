@@ -1,0 +1,423 @@
+body {
+  height: 100%;
+  background: #eee;
+}
+
+.header {
+  width: 7.5rem;
+  height: 0.9rem;
+  background: #fdfffc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+}
+
+.header > a {
+  font-size: 0.3rem;
+  color: #75aa40;
+  font-family: 'Microsoft Yahei';
+  font-weight: bold;
+}
+
+.header > h1 {
+  font-size: 0.38rem;
+  color: #75aa40;
+  font-family: 'Microsoft Yahei';
+  font-weight: bold;
+}
+
+.header > span {
+  text-indent: -99.99rem;
+}
+
+.section .add_address {
+  margin-top: 0.18rem;
+  height: 0.8rem;
+  width: 7.5rem;
+  padding: 0 0.16rem 0 0.16rem;
+  background: #fdfffc;
+  box-sizing: border-box;
+}
+
+.section .add_address > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.section .add_address > a > h3 {
+  width: 1.3rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  padding-left: 0.4rem;
+  background: url(../img/add_map.png) no-repeat 0 0.22rem;
+  background-size: 0.29rem 0.36rem;
+  font-size: 0.26rem;
+  color: #323230;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .add_address > a > span {
+  font-size: 0.36rem;
+  font-family: 'Microsoft Yahei';
+  font-weight: bold;
+  color: #999;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.section .vegetable {
+  margin-top: 0.18rem;
+  height: 2.62rem;
+  background: #fdfffc;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+  width: 7.5rem;
+}
+
+.section .vegetable > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 0.22rem 0 0 0;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+}
+
+.section .vegetable > a .img_vagetable {
+  width: 2.55rem;
+  height: 100%;
+}
+
+.section .vegetable > a .img_vagetable > img {
+  width: 100%;
+}
+
+.section .vegetable > a .direction {
+  -webkit-box-flex: 1;
+  flex: 1;
+  padding-left: 0.14rem;
+  box-sizing: border-box;
+}
+
+.section .vegetable > a .direction > h3 {
+  font-size: 0.3rem;
+  color: #353535;
+  margin-top: 0.34rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section .vegetable > a .direction > p {
+  font-size: 0.24rem;
+  color: #30322f;
+  margin-top: 0.18rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section .vegetable > a .direction .price {
+  margin-top: 0.2rem;
+  height: 0.5rem;
+  width: 100%;
+}
+
+.section .vegetable > a .direction .price > div {
+  font-size: 0.18rem;
+  color: #313332;
+  padding-left: 0.05rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.section .vegetable > a .direction .price > div > span {
+  font-size: 0.28rem;
+  color: #2f2f2d;
+  font-weight: bold;
+}
+
+.section .vegetable > a .direction .price > div > span > b {
+  font-size: 0.2rem;
+  color: #313330;
+  margin-left: -0.04rem;
+}
+
+.section .vegetable > a .direction .price > div > span > strong {
+  text-align: center;
+  font-size: 0.2rem;
+  color: #313330;
+}
+
+.section .vegetable > a .direction .price .number {
+  font-size: 0.22rem;
+  color: #333532;
+  font-weight: bold;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.section .vegetable > a .direction .price .number > span {
+  font-size: 0.16rem;
+}
+
+.section .buy_message {
+  margin-top: 0.18rem;
+  width: 7.5rem;
+}
+
+.section .buy_message .buynum,
+.section .buy_message .send_way {
+  width: 100%;
+  height: 0.8rem;
+  background: #fdfffc;
+  padding: 0 0.16rem 0 0.16rem;
+  border-bottom: 0.01rem solid #e4e6e3;
+  box-sizing: border-box;
+}
+
+.section .buy_message .buynum {
+  height: 0.8rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .buy_message .buynum > span {
+  font-size: 0.26rem;
+  color: #333532;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .buy_message .buynum .change {
+  height: 0.62rem;
+  padding-top: 0.18rem;
+}
+
+.section .buy_message .buynum .change .add_reduce {
+  width: 0.8rem;
+  height: 0.44rem;
+  background: #e5e5e5;
+  font-size: 0.18rem;
+  color: #666;
+  text-align: center;
+  line-height: 0.44rem;
+  font-weight: bold;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .buy_message .buynum .change .changenum {
+  width: 0.56rem;
+  height: 0.44rem;
+  font-size: 0.28rem;
+  text-align: center;
+}
+
+.section .buy_message .send_way {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section .buy_message .send_way .sendW {
+  font-size: 0.26rem;
+  color: #333532;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .buy_message .send_way .sendG {
+  font-size: 0.26rem;
+  color: #6a6a68;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .buy_message .leave_word {
+  width: 100%;
+  height: 1.98rem;
+  background: #fdfffc;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+}
+
+.section .buy_message .leave_word > textarea {
+  height: 1.8rem;
+  width: 100%;
+  padding-top: 0.18rem;
+  font-size: 0.26rem;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .discount {
+  margin-top: 0.18rem;
+  width: 7.5rem;
+  height: 0.8rem;
+  background: #fdfffc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+}
+
+.section .discount .vouchers {
+  font-size: 0.26rem;
+  color: #333532;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .discount .now_not {
+  font-size: 0.24rem;
+  color: #979795;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .notice {
+  margin-top: 0.18rem;
+  width: 7.5rem;
+  height: 0.8rem;
+  background: #fdfffc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+}
+
+.section .notice > span {
+  font-size: 0.26rem;
+  color: #333532;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .notice > div {
+  width: 1.42rem;
+  height: 0.52rem;
+  border: 0.01rem solid #cdcdcd;
+  background: #e5e5e5;
+  padding-left: 0.24rem;
+  box-sizing: border-box;
+  border-radius: 45%;
+}
+
+.section .notice > div > span {
+  width: 0.48rem;
+  height: 0.48rem;
+  display: block;
+  background: #60a42b;
+  text-indent: -99.99rem;
+  margin-top: 0.02rem;
+  border-radius: 50%;
+}
+
+.section .meal_sum,
+.section .trans_expense {
+  margin-top: 0.24rem;
+  width: 7.5rem;
+  height: 0.8rem;
+  background: #fdfffc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.16rem 0 0.16rem;
+  box-sizing: border-box;
+  border-bottom: 0.01rem solid #e4e6e3;
+}
+
+.section .meal_sum > span,
+.section .trans_expense > span {
+  font-size: 0.26rem;
+  color: #333532;
+  font-family: 'Microsoft Yahei';
+}
+
+.section .meal_sum > b,
+.section .trans_expense > b {
+  font-size: 0.2rem;
+  color: #333532;
+}
+
+.section .trans_expense {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.section .trans_expense > b {
+  padding-right: 0.1rem;
+}
+
+footer > div {
+  margin-top: 0.24rem;
+  height: 0.8rem;
+  width: 7.5rem;
+  background: #fdfffc;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .submit_total {
+  width: 3.75rem;
+  padding-left: 0.16rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+  font-size: 0.28rem;
+  color: #6969.69rem;
+  line-height: 0.8rem;
+}
+
+footer .submit_total > span {
+  font-size: 0.18rem;
+  color: #f69008;
+  font-weight: bold;
+}
+
+footer .submit_total > span > b {
+  font-size: 0.26rem;
+}
+
+footer .submit_total > span > b > strong {
+  margin-left: -0.06rem;
+}
+
+footer .submit_order {
+  width: 3.75rem;
+  background: #60a42b;
+  height: 0.8rem;
+}
+
+footer .submit_order > a {
+  width: 100%;
+  height: 100%;
+  font-size: 0.36rem;
+  color: #f3fbee;
+  line-height: 0.8rem;
+  text-align: center;
+  font-family: 'Microsoft Yahei';
+  display: block;
+}

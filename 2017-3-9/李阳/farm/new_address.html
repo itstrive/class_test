@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+		;(function(){
+			let html=document.documentElement;
+			html.style.fontSize=html.clientWidth*50/375+'px';
+			window.onresize=function(){
+				html.style.fontSize=html.clientWidth*50/375+'px';
+			}
+		})()
+	</script>
+</head>
+<body>
+		<!-- headerstart -->
+		<header class="header">
+			<a class="lt" href="javascript:;">&lt;</a>
+			<h1>添加新地址</h1>
+			<a class="save" href="javascript:;">保存</a>
+		</header>
+		<!-- headerend -->
+		<!-- sectionstart -->
+		<section class="section">
+			<!--contacts information start -->
+			<ul>
+				<li class="take">
+					<span>收货人</span>
+					<input type="text"/>
+				</li>
+				<li class="take">
+					<span>联系电话</span>
+					<input type="text"/>
+				</li>
+				<li class="select">
+					<a href="javascript:;" class="clearfix">
+						<span class="area fl">所在地区</span>
+						<span class="choose fr">请选择&gt;</span>
+					</a>
+				</li>
+				<li class="select">
+					<a href="javascript:;" class="clearfix">
+						<span class="area fl">街道</span>
+						<span class="choose fr">请选择&gt;</span>
+					</a>
+				</li>
+			</ul>
+			<!-- contacts information end -->
+			<!-- contacts address start -->
+			<textarea placeholder="请填写下详细地址,不少于5个字"></textarea>
+			<!-- contacts address end -->
+			<!-- set up default start -->
+			<div class="on_off">
+				<span>设为默认</span>
+				<div>
+					<a href="javascript">slider_block</a>
+				</div>
+			</div>
+			<!-- set up default end -->
+		</section>
+		<!-- sectionend -->
+</body>
+</html>
