@@ -1,0 +1,144 @@
+header {
+  width: 7.5rem;
+  height: 4.04rem;
+  border-bottom: 0.01rem solid #ccc;
+  box-sizing: border-box;
+}
+
+header div {
+  width: 7.5rem;
+  height: 0.38rem;
+  margin-top: 0.3rem;
+}
+
+header div span {
+  padding-left: 0.2rem;
+  height: 0.29rem;
+}
+
+header img {
+  width: 0.19rem;
+  height: 0.29rem;
+}
+
+header h1 {
+  font-size: 0.36rem;
+  color: #5da02c;
+  margin-left: 2.55rem;
+}
+
+header .menu {
+  width: 7.5rem;
+  height: 0.8rem;
+  border-bottom: 0.01rem solid #ccc;
+  box-sizing: border-box;
+}
+
+header .menu .firstli {
+  margin-left: 0.2rem;
+}
+
+header .menu .lastli {
+  margin-right: 0;
+}
+
+header .menu li {
+  width: 0.92rem;
+  height: 0.8rem;
+  margin-right: 0.67rem;
+}
+
+header .menu li .current {
+  border-bottom: 0.03rem solid #67a02f;
+  color: #67a02f;
+}
+
+header .menu li a {
+  font-size: 0.3rem;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  display: block;
+}
+
+header .submenu {
+  width: 7.5rem;
+  height: 2.44rem;
+  border-bottom: 0.01rem solid #ccc;
+  box-sizing: border-box;
+  padding-left: 0.2rem;
+}
+
+header .submenu div {
+  width: 2.32rem;
+  height: 1.8rem;
+  border: 0.01rem solid #ccc;
+  margin-top: 0.24rem;
+}
+
+header .submenu div img {
+  width: 2.19rem;
+  height: 1.66rem;
+  margin: 0.06rem 0.06rem;
+}
+
+header .submenu ul {
+  width: 4.76rem;
+  height: 1.8rem;
+  margin-top: 0.24rem;
+  margin-left: 0.15rem;
+  box-sizing: border-box;
+}
+
+header .submenu ul li {
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+header .submenu ul li a {
+  font-size: 0.26rem;
+  display: block;
+}
+
+header .submenu ul li .bo {
+  font-weight: bold;
+}
+
+header .submenu ul li .color {
+  color: #ccc;
+  font-size: 0.22rem;
+}
+
+header .submenu ul li .font24 {
+  font-size: 0.24rem;
+  color: #67a02f;
+}
+
+header .submenu ul li .shop {
+  display: block;
+  width: 1.3rem;
+  height: 0.5rem;
+  background: #959595;
+  color: #eae8e9;
+  border-radius: 0.15rem;
+  line-height: 0.5rem;
+  text-align: center;
+  margin-right: 0.2rem;
+}
+
+header .submenu ul li .buy {
+  background: #fa932c;
+}
+
+.line {
+  width: 7.5rem;
+  height: 0.2rem;
+  background: #eee;
+  margin-top: 0.01rem;
+}
+
+footer {
+  width: 7.5rem;
+  height: 6.05rem;
+  background: #eeeeee;
+}
