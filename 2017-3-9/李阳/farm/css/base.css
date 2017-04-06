@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 0.16rem;
+}
+
+p {
+  line-height: 100%;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+input {
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+textarea {
+  padding: 0;
+  background: none;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
