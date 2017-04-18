@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body {
+  background: #eee;
+}
+
+header {
+  width: 7.5rem;
+  height: 1.27rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #bec0bd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .return {
+  width: 0.16rem;
+  height: 0.32rem;
+  background: url(../img/jiantou.png) no-repeat;
+  background-size: 0.16rem 0.32rem;
+  margin-left: 0.22rem;
+}
+
+header h1 {
+  font-size: 0.36rem;
+  color: #5ea427;
+  margin-left: -0.16rem;
+}
+
+.merchandise {
+  width: 7.5rem;
+  height: 6.27rem;
+  border-bottom: 0.01rem solid #bec0bd;
+  background: #fff;
+}
+
+.merchandise .banner-photo {
+  width: 7.5rem;
+  height: 3.41rem;
+}
+
+.merchandise .banner-photo .banner {
+  width: 7.5rem;
+  height: 3.41rem;
+  display: inline-block;
+}
+
+.merchandise .banner-photo .banner img {
+  width: 100%;
+}
+
+.merchandise .message {
+  width: 7.5rem;
+  height: 1.79rem;
+  border-bottom: 0.01rem solid #bec0bd;
+}
+
+.merchandise .message li {
+  height: auto;
+  padding: 0.15rem 0 0 0.22rem;
+}
+
+.merchandise .message .combo {
+  font-size: 0.34rem;
+  color: #343434;
+}
+
+.merchandise .message .money {
+  font-size: 0.32rem;
+  position: relative;
+}
+
+.merchandise .message .money a {
+  color: #eb8109;
+}
+
+.merchandise .message .money .money-list {
+  width: 0.16rem;
+  height: 0.2rem;
+  padding-left: 0.18rem;
+}
+
+.merchandise .message .money span {
+  width: 0.16rem;
+  height: 0.2rem;
+  display: inline-block;
+  position: absolute;
+  background: url(../img/money.png) no-repeat;
+  background-size: 0.16rem 0.2rem;
+  top: 0.28rem;
+  left: 0.2rem;
+}
+
+.merchandise .message .sales {
+  font-size: 0.23rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.merchandise .message .sales a {
+  color: #8a8a8a;
+}
+
+.merchandise .message .sales .sales-volume {
+  padding-right: 1.27rem;
+}
+
+.merchandise .delivery {
+  font-size: 0.22rem;
+  color: #676767;
+  padding: 0.35rem 0 0 0.22rem;
+}
+
+.optional {
+  width: 7.5rem;
+  height: 4.3rem;
+  border-bottom: 0.01rem solid #bec0bd;
+  margin-top: 0.18rem;
+  background: #fff;
+}
+
+.optional .opt-title {
+  font-size: 0.23rem;
+  border-bottom: 0.01rem solid #bec0bd;
+  padding: 0.21rem 0 0.17rem 0.22rem;
+}
+
+.optional .opt-title a {
+  color: #353535;
+}
+
+.optional .opt-title a span {
+  color: #888;
+}
+
+.optional .particular {
+  padding: 0 0.2rem 0 0.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.optional .particular li {
+  width: 1.67rem;
+  height: 1.43rem;
+  padding: 0.2rem 0.09rem 0 0;
+}
+
+.optional .particular li img {
+  width: 100%;
+  border: 0.01rem solid #70be2c;
+}
+
+.optional .particular .last {
+  padding: 0.2rem 0 0 0;
+}
+
+.evaluate {
+  width: 7.5rem;
+  height: 4.6rem;
+  border-bottom: 0.01rem solid #bec0bd;
+  margin-top: 0.19rem;
+}
+
+.evaluate .commodity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.34rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #bec0bd;
+}
+
+.evaluate .commodity .gray {
+  padding-top: 0.36rem;
+  color: #686868;
+  padding-bottom: 0.26rem;
+}
+
+.evaluate .commodity .green {
+  padding-top: 0.36rem;
+  color: #5c9f2e;
+  padding-bottom: 0.26rem;
+  border-bottom: 0.01rem solid #5c9f2e;
+}
+
+.evaluate .complete {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.3rem;
+  padding: 0.29rem 0 0.33rem;
+  border-bottom: 0.01rem solid #bec0bd;
+  background: #fff;
+}
+
+.evaluate .complete a {
+  display: inline-block;
+  width: 1.3rem;
+  height: 0.46rem;
+  border: 0.01rem solid #61a22c;
+  border-radius: 0.1rem;
+  text-align: center;
+  color: #61a22c;
+}
+
+.evaluate .complete .first {
+  background: #60a42b;
+  color: #fff;
+}
+
+.evaluate .person {
+  width: 7.5rem;
+  height: 2.5rem;
+  background: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.evaluate .person img {
+  width: 1.04rem;
+  height: 1.03rem;
+  padding: 0.19rem 0 0 0.27rem;
+}
+
+.evaluate .person span {
+  height: 1.03rem;
+  line-height: 1.03rem;
+  font-size: 0.22rem;
+  color: #333;
+}
+
+.evaluate .person span {
+  position: absolute;
+  top: 0.18rem;
+  left: 1.4rem;
+}
+
+.evaluate .person p {
+  font-size: 0.22rem;
+  color: #4b4b4b;
+  padding-left: 0.2rem;
+}
+
+.evaluate .person h4 {
+  padding: 0.1rem 0 0 0.2rem;
+  font-size: 0.16rem;
+  color: #adadad;
+}
+
+footer {
+  width: 7.5rem;
+  height: 0.8rem;
+  background: #fff;
+  margin-top: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .cart {
+  width: 0.67rem;
+  height: 0.68rem;
+  background: url(../img/cart.png) no-repeat;
+  background-size: 0.67rem 0.68rem;
+  text-indent: -99999em;
+}
+
+footer p {
+  font-size: 0.28rem;
+  color: #666;
+}
+
+footer span {
+  width: 0.16rem;
+  height: 0.2rem;
+  display: inline-block;
+  background: url(../img/money.png) no-repeat;
+  background-size: 0.16rem 0.2rem;
+  padding-left: 0.1rem;
+}
+
+footer .huang {
+  font-size: 0.32rem;
+  color: #eb8109;
+}
+
+footer .settle {
+  width: 2.85rem;
+  height: 0.8rem;
+  background: #60a42b;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8rem;
+  margin-right: -0.3rem;
+}
