@@ -1,0 +1,111 @@
+.packagePaymentHeader {
+  height: 2.25rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #c6c6c6;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.packagePaymentHeader a {
+  flex: 1;
+  width: 0.4rem;
+  height: 0.8rem;
+  margin-left: 0.55rem;
+}
+
+.packagePaymentHeader a img {
+  width: 0.4rem;
+  height: 0.8rem;
+  vertical-align: top;
+}
+
+.packagePaymentHeader h1 {
+  flex: 2;
+  font-size: 0.9rem;
+  color: #5ca32d;
+  font-weight: bold;
+}
+
+.packagePaymentList ul {
+  height: 2.0rem;
+  line-height: 2.0rem;
+  padding-left: 0.5rem;
+  border-bottom: 0.025rem solid #c6c6c6;
+}
+
+.packagePaymentList ul li {
+  width: 2.25rem;
+  margin-right: 0.875rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #696969;
+}
+
+.packagePaymentLine {
+  height: 0.475rem;
+  background: url(../img/cityList-line.png) repeat-X;
+}
+
+.packagePaymentBigLuxury {
+  height: 6.0rem;
+  background: #fdfffc;
+  margin-top: 0.65rem;
+  border-bottom: 0.025rem solid #c6c6c6;
+}
+
+.packagePaymentBigLuxury a img {
+  width: 4.9rem;
+  border: 0.025rem solid #e4e4e2;
+  padding: 0.125rem;
+  margin-left: 0.5rem;
+  margin-right: 0.425rem;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt {
+  width: 9.375rem;
+  display: inline-block;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt h2 {
+  font-size: 0.7rem;
+  color: #373735;
+  font-weight: bold;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt span {
+  font-size: 0.4rem;
+  color: #656563;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt p {
+  width: 100%;
+  font-size: 0.55rem;
+  color: #5c5c5a;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt i {
+  font-size: 0.5rem;
+  color: #636361;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt strong {
+  font-size: 0.55rem;
+  color: #609e31;
+}
+
+.packagePaymentBigLuxury .packagePaymentTxt .packagePaymentBtn input {
+  width: 3rem;
+  height: 1.25rem;
+  font-size: 0.55rem;
+  background: #666;
+  color: #fff;
+  border-radius: 0.2rem;
+  border: none;
+  margin-right: 0.125rem;
+}
+
+.packagePaymentBack {
+  height: 20rem;
+  background: #eeeeee;
+}
