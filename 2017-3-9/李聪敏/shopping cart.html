@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping_cart</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<script type="text/javascript">
+		;(function(){
+			let html=document.documentElement;
+			html.style.fontSize=html.clientWidth*50/375+'px';
+			window.onresize=function(){
+				html.style.fontSize=html.clientWidth*50/375+'px';
+			}
+		})()
+	</script>
+</head>
+<body>
+	<div class="nav">
+	 <!--  header start -->
+		<header class="header">
+			<a class="triangle" href="javascript:;">三角</a>
+			<a class="site" href="javascript:;"><h1>购物车</h1></a>
+			<a class="blank" href="javascript:;">site</a>
+		</header>
+	  <!--  header end -->
+	  <!--  section start -->
+		<section class="section">
+		 <div class="farm_shop">
+		  <a class="round" href="javascript:;">round</a>
+		   <div class="shop">
+		   	 	<a href="javascript:;"><img src="img/pepper.png"> </a>
+		   </div>
+		   <div class="shop_intr">
+		   	<ul class="buy_pepper">
+		   		<li class="color">
+		   			<a  href="javascript:;" class="color_pepper">彩椒</a>
+		   			<a  href="javascript:;" class="cost">￥30.00</a>
+		   		</li>
+		   		<li class="farm">
+		   			<a href="javascript:;">
+			   			<p>新鲜鲜美有机蔬菜</p>
+			   			<p class="farm_one">农场一</p>
+		   			</a>
+		   		</li>
+		   		
+		   		<li class="count">
+		   			<a href="javascript:;">-</a>
+		   			<span>1</span>
+		   			<a href="javascript:;">+</a>
+		   		</li>
+		   	</ul>
+		   </div>
+		 </div>
+          <div class="farm_shop">
+           <a class="round" href="javascript:;">round</a>
+		   <div class="shop">
+		   	 	<a href="javascript:;"><img src="img/fruit.png"> </a>
+		    </div>
+		    <div class="shop_intr">
+		      <ul>
+		   		<li class="color">
+		   			<a  href="javascript:;" class="color_pepper">蔬菜豪华套餐</a>
+		   			<a  href="javascript:;" class="cost">￥30.00</a>
+		   		</li>
+		   		<li class="farm">
+		   			<a href="javascript:;">
+			   			<p>西红柿 西兰花 白菜 土豆</p>
+			   			<p class="farm_one">农场一</p>
+		   			</a>
+		   		</li>
+		   		<li class="count">
+		   			<a href="javascript:;">-</a>
+		   			<span>1</span>
+		   			<a href="javascript:;">+</a>
+		   		</li>
+		      </ul>
+		    </div>
+		   </div>
+		</section>
+      <!-- section end -->
+     <!--  footer start -->
+		<footer class="footer">
+		  <ul class="check_out">
+		    <li class="option">
+			 <a class="round" href="javascript:;"></a>
+			 <span>全选</span>
+		    </li>
+		    <li class="total">
+		    	<span>合计:  </span>
+		    	<a href="javascript:;">￥200.00</a>
+		    </li>
+		    <li class="account">
+		    	<a href="javascript:;">去结算</a>
+		    </li>
+		  </ul>
+		</footer>
+	</div>
+</body>
+</html>

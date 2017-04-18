@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  width: 7.5rem;
+  background: #eeeeee;
+}
+
+.nav .header {
+  width: 100%;
+  height: 0.88rem;
+  background: #fff;
+  display: flex;
+  justift-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .header .triangle {
+  width: 0.16rem;
+  height: 0.32rem;
+  background: url(../img/triangle.png) no-repeat;
+  background-size: 0.16rem 0.32rem;
+  margin-left: 0.2rem;
+  text-indent: -99.99rem;
+}
+
+.nav .header h1 {
+  font-size: 0.36rem;
+  color: #629f28;
+}
+
+.nav .header .cart {
+  width: 0.49rem;
+  height: 0.35rem;
+  background: url(../img/shop_cart.png) no-repeat;
+  background-size: 0.49rem 0.35rem;
+  margin-right: 0.2rem;
+  text-indent: -99.99rem;
+}
+
+.nav .section {
+  width: 100%;
+  height: 4.22rem;
+  display: flex;
+  background: #fff;
+}
+
+.nav .section .slider {
+  width: 100%;
+  height: 4.22rem;
+}
+
+.nav .section .slider li img {
+  width: 100%;
+  height: 2.6rem;
+}
+
+.nav .section .slider .introduce {
+  width: 6.96rem;
+  height: 1.62rem;
+  display: flex;
+  margin-left: 0.2rem;
+}
+
+.nav .section .slider .introduce a {
+  text-indent: 2em;
+  font-size: 0.2rem;
+  color: #676364;
+}
+
+.nav .option {
+  width: 100%;
+  height: 2.94rem;
+  background: #fff;
+  margin-top: 0.2rem;
+}
+
+.nav .option .apply {
+  width: 100%;
+  height: 0.8rem;
+  border: 0.01rem solid #e4e6e3;
+}
+
+.nav .option .apply span {
+  font-size: 0.28rem;
+  color: #6a9b2e;
+  margin: 0.24rem 0 0.24rem 0.2rem;
+  float: left;
+}
+
+.nav .option .apply a {
+  background: #f5a14b;
+  color: #fff;
+  font-size: 0.26rem;
+  width: 1.6rem;
+  height: 0.5rem;
+  float: right;
+  border-radius: 0.1rem;
+  line-height: 0.5rem;
+  text-align: center;
+  dispaly: block;
+  margin: 0.16rem 0.2rem 0.14rem 0;
+}
+
+.nav .option .select a {
+  width: 1.22rem;
+  height: 0.5rem;
+  font-size: 0.26rem;
+  color: #5fa62e;
+  margin: 0.38rem 0.28rem 0 0.3rem;
+  float: left;
+  border-radius: 0.1rem;
+  line-height: 0.5rem;
+  text-align: center;
+  border: 0.02rem solid #5fa62e;
+}
+
+.nav .option .select .roof {
+  margin-top: 0.32rem;
+}
+
+.nav .option .select .last {
+  margin-right: 0;
+}
+
+.nav .option a:hover {
+  background: #60a42b;
+  color: #fff;
+}
+
+.nav .list {
+  display: flex;
+  background: #fff;
+  margin-top: 0.16rem;
+}
+
+.nav .list ul {
+  margin-left: 0.1rem;
+}
+
+.nav .list ul li {
+  width: 3.48rem;
+  height: 3.54rem;
+  float: left;
+  margin-top: 0.28rem;
+  margin-left: 0.1rem;
+  border: 0.01rem solid #ccc;
+}
+
+.nav .list ul .first {
+  margin-top: 0.32rem;
+}
+
+.nav .list ul img {
+  width: 100%;
+}
+
+.nav .list ul .toma {
+  font-size: 0.26rem;
+  color: #343633;
+  margin-top: 0.06rem;
+  margin-left: 0.14rem;
+}
+
+.nav .list ul .tomat {
+  font-size: 0.2rem;
+  color: #636361;
+  margin-top: 0.14rem;
+  margin-left: 0.18rem;
+}
+
+.nav .list ul .cost {
+  font-size: 0.26rem;
+  margin-left: 0.14rem;
+  color: #f6871e;
+  margin-top: 0.28rem;
+  float: left;
+}
+
+.nav .list ul .gram {
+  color: #717370;
+  margin-left: 0.16rem;
+  font-size: 0.16rem;
+  float: left;
+  margin-top: 0.36rem;
+}
+
+.nav .list ul .car {
+  width: 1.4rem;
+  height: 0.42rem;
+  color: #fff;
+  background: #60a42b;
+  font-size: 0.24rem;
+  display: block;
+  line-height: 0.42rem;
+  text-align: center;
+  border-radius: 0.1rem;
+  float: left;
+  margin-top: 0.16rem;
+  margin-left: 0.28rem;
+}

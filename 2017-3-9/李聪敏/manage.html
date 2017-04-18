@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>manage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="css/manage.css">
+	<script type="text/javascript">
+		;(function(){
+			let html=document.documentElement;
+			html.style.fontSize=html.clientWidth*50/375+'px';
+			window.onresize=function(){
+				html.style.fontSize=html.clientWidth*50/375+'px';
+			}
+		})()
+	</script>
+</head>
+<body>
+	<div class="nav">
+	<!--  header start -->
+		<header class="header">
+			<a class="triangle" href="javascript:;">三角</a>
+			<a href="javascript:;"><h1>地址管理</h1></a>
+			<a class="blank" href="javascript:;">Blank</a>
+		</header>
+	<!--  header end -->
+	
+		<!-- <div class="case"></div> -->
+		<section class="sect">
+			<ul class="sect_top">
+				<li><a class="name" href="javascript:;">李某某</a>
+				<a class="number" href="javascript:;">17316252344</a></li>
+			</ul>
+			<p><a href="javascript:;">北京市丰台区花乡科技园诺德中心1期3号楼708室</a></p>
+			<ul class="sect_fot">
+				<li class="rom">
+				<a class="round" href="javascript:;">圆</a>
+				<a href="javascript:;">默认地址</a></li>
+				<li class="img">
+					<a class="notepad" href="javascript:;">编辑</a><span class="note">编辑</span>
+					<a class="delete" href="javascript:;">删除</a><span class="dele">删除</span>
+				</li>
+			</ul>
+		</section>
+		<footer class="foot">
+			<a class="button" href="javascript:;">新增地址</a>
+		</footer>
+	</div>
+</body>
+</html>
