@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a{
+	color: #323431;
+	text-decoration: none;
+}
+/*city-box css*/
+.city-box{
+	width: 750px;
+	background: #eee;
+	
+	/*header css*/
+	header{
+		width: 100%;
+		height: 89px;
+		background: #fdfffc;
+		display: flex;
+		align-items:center;
+		padding-left: 20px;
+		border-bottom: 1px solid #bec0bd;
+		box-sizing: border-box;
+
+		.return{
+			width: 19px;
+			height: 32px;
+			background: url(../img/return.png) no-repeat;
+			background-size: 19px 32px;
+			text-indent: -9999rem;
+		}
+
+		h4{
+			font-size: 37px;
+			color: #5ca32b;
+			font-weight: normal;
+			margin-left:258px;
+			box-sizing: border-box; 
+		}
+	}
+	/*当前位置cur-pos css*/
+	.cur-pos{
+		height: 162px;
+		background: #fdfffc;
+		border-bottom: 1px solid #c7c7c5;
+		margin-top:18px; 
+		box-sizing: border-box;
+
+		li{
+			height: 81px;
+			line-height: 81px;
+			border-bottom: 1px solid #e4e6e3;
+			box-sizing: border-box;
+			padding-left: 20px;
+
+			a{
+				font-size: 23px;
+				color: #696967;
+			}
+
+			.sitecolor{
+				color: #31312f;
+			}
+		}
+	}
+	/*商业区sowntown css*/
+	.sowntown{
+		height: 294px;
+		background: #fdfffc;
+		margin-top:18px;
+		border-bottom: 1px solid #c6c6c6;
+		box-sizing: border-box;
+
+		.select{
+			height: 80px;
+			line-height: 80px;
+			padding-left: 20px;
+			border-bottom: 1px solid #e4e6e3;
+			box-sizing: border-box;
+
+			h4{
+				font-size: 22px;
+				color: #626262;
+				font-weight: normal;
+			}
+		}
+
+		.retail-centre{
+			height: 213px;
+			display: flex;
+			justify-content:space-between;
+			flex-wrap:wrap;
+			padding:20px 20px;
+			box-sizing: border-box;
+
+			li{
+				width: 159px;
+				height: 55px;
+				text-align: center;
+				background: #dcdcdc;
+				border-radius: 8px;
+
+				a{	
+					display: block;
+					height: 55px;
+					line-height: 55px;
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	/*地址列表locationlist-box css*/
+	.locationlist-box{
+		height: 694px;
+		background: #fdfffc;
+
+		.location-title{
+			height: 81px;
+			padding-left: 20px;
+			border-bottom: 1px solid #e4e6e3;
+			box-sizing: border-box;
+
+			a{
+				display: block;
+				line-height: 81px;
+				font-size: 22px;
+				color: #636363;
+			}
+		}
+
+		.location-list{
+			height: 81px;
+
+			li{
+				height: 81px;
+				line-height: 81px;
+				border-bottom: 1px solid #e4e6e3;
+				box-sizing: border-box;
+
+				a{
+					font-size: 22px;
+					display: block;
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}

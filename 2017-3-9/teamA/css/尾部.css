@@ -1,0 +1,48 @@
+footer {
+  width: 18.75rem;
+  height: 2.5rem;
+  margin-top: 0.55rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li h6 {
+  width: 1.2rem;
+  height: 1.025rem;
+  margin: 0 auto;
+}
+
+footer ul li .zy-home {
+  background: url(../img/zy-home.png) no-repeat;
+  background-size: 1.2rem 1.025rem;
+}
+
+footer ul li .zy-classfiy {
+  background: url(../img/zy-classfiy.png) no-repeat;
+  background-size: 1.2rem 1.025rem;
+}
+
+footer ul li .zy-mine {
+  background: url(../img/zy-mine.png) no-repeat;
+  background-size: 1.2rem 1.025rem;
+}
+
+footer ul li a {
+  font-size: 0.5rem;
+  color: #676767;
+  display: block;
+}
+
+footer ul .classfiy {
+  margin-left: 5.425rem;
+  margin-right: 5.675rem;
+}

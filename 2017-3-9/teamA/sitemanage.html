@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="css/sitemanage.css">
+	<script>
+		;(function(){
+    		let html=document.documentElement;
+   			html.style.fontSize=html.clientWidth*20/375+'px';
+    		window.onresize=function(){
+        		html.style.fontSize=html.clientWidth*20/375+'px';
+		    };
+		})()
+	</script>
+</head>
+<body>
+	<!--sitemanage-box start-->
+	<div class="sitemanage-box">
+		<!--header start-->
+		<header>
+	        <a href="javascript:;" class="return">return</a>
+	        <h4>地址管理</h4>
+    	</header>
+    	<!--header end-->
+    	<!--section start-->
+    	<section>
+    		<div class="info-box">
+	    		<ul class="info">
+	    			<li class="detalied-info">
+	    				<span>李某某</span>
+	    				<span>17316252344</span>
+	    			</li>
+	    			<li>
+	    				<span>北京市丰台区花乡科技园诺德中心1期3号楼708室</span>
+	    			</li>
+	    		</ul>
+	    		<ul class="default">
+	    			<li class="sitel">
+	    				<a href="javascript:;" class="siter">默认地址</a>
+	    			</li>
+	    			<li class="editl">
+	    				<a href="javascript:;" class="edit">编辑</a>
+	    			</li>
+	    			<li class="deletel">
+	    				<a href="javascript:;" class="delete">删除</a>
+	    			</li>
+	    		</ul>
+    		</div>
+    		<div class="newsite">
+    			<a href="javascript:;">新增地址</a>
+    		</div>
+    	</section>
+    	<!--section end-->
+	</div>
+	<!--sitemanage-box end-->
+</body>
+</html>

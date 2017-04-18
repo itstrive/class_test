@@ -1,0 +1,31 @@
+header {
+  width: 18.75rem;
+  height: 2.225rem;
+  background: #fdfffc;
+  border-bottom: 0.025rem solid #bec0bd;
+  display: flex;
+  align-items: center;
+  color: #a6c987;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: bold;
+  flex: 1;
+}
+
+header a h2 {
+  width: 0.475rem;
+  height: 0.8rem;
+  background: url(../img/zy-zuo.png) no-repeat;
+  background-size: 0.475rem 0.8rem;
+  text-indent: -999em;
+  margin-right: 6.45rem;
+}
+
+header .save {
+  font-size: 0.55rem;
+  color: #676966;
+}

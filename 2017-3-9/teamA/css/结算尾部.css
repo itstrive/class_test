@@ -1,0 +1,50 @@
+footer {
+  width: 18.75rem;
+  height: 2.45rem;
+  display: flex;
+  align-items: center;
+}
+
+footer .money {
+  width: 9.35rem;
+}
+
+footer div h6 {
+  font-size: 0.5rem;
+  color: #727272;
+  display: block;
+  margin-left: 0.5rem;
+}
+
+footer div h6 span {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url(../img/radus.png) no-repeat;
+  background-size: 0.5rem;
+  text-indent: -999em;
+  display: block;
+  float: left;
+  margin-top: 0.1rem;
+}
+
+footer div p {
+  font-size: 0.7rem;
+  color: #656565;
+  margin-left: 1.7rem;
+}
+
+footer div p span {
+  font-size: 0.8rem;
+  color: #f8940a;
+}
+
+footer div a {
+  width: 7.125rem;
+  height: 2.45rem;
+  background: #60a42b;
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 2.45rem;
+  text-align: center;
+  float: right;
+}
