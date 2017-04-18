@@ -1,0 +1,221 @@
+header {
+  width: 7.5rem;
+  height: 0.9rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+
+header div {
+  width: 7.5rem;
+  height: 0.36rem;
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+}
+
+header div span {
+  height: 0.29rem;
+}
+
+header img {
+  width: 0.19rem;
+  height: 0.29rem;
+}
+
+header h1 {
+  font-size: 0.36rem;
+  color: #5da02c;
+  margin-left: 2.55rem;
+}
+
+.banner {
+  width: 7.5rem;
+  height: 3.4rem;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.showtime {
+  width: 7.1rem;
+  height: 1.5rem;
+  margin-top: 0.28rem;
+  margin-left: 0.2rem;
+}
+
+.showtime h1 {
+  font-size: 0.32rem;
+}
+
+.showtime p {
+  margin-top: 0.29rem;
+  color: #f88312;
+}
+
+.showtime .i {
+  font-size: 0.2rem;
+  color: #ccc;
+}
+
+.w88 {
+  width: 7.5rem;
+  height: 0.88rem;
+  border-top: 0.01rem solid #ccc;
+  border-bottom: 0.01rem solid #ccc;
+  margin-top: 0.2rem;
+  line-height: 0.88rem;
+  font-size: 0.2rem;
+  color: #ccc;
+}
+
+.w88 p {
+  margin-left: 0.2rem;
+  line-height: 0.88rem;
+}
+
+.line {
+  width: 7.5rem;
+  height: 0.2rem;
+  background: #eee;
+}
+
+.h62 {
+  width: 7.5rem;
+  height: 0.62rem;
+  font-size: 0.2rem;
+  color: #ccc;
+  border-bottom: 0.01rem solid #ccc;
+}
+
+.h62 p {
+  margin-left: 0.2rem;
+  line-height: 0.62rem;
+}
+
+.h311 {
+  width: 7.1rem;
+  height: 3.11rem;
+  margin-top: 0.2rem;
+  margin-left: 0.2rem;
+  margin-bottom: 0.39rem;
+}
+
+.h311 div {
+  width: 1.64rem;
+  height: 1.44rem;
+  border: 0.01rem solid #70be2c;
+  margin-left: 0.09rem;
+  margin-bottom: 0.15rem;
+}
+
+.h311 div img {
+  width: 100%;
+  height: 100%;
+}
+
+.h96 {
+  width: 7.5rem;
+  height: 0.96rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+
+.h96 p {
+  font-size: 0.34rem;
+  color: #5fa01e;
+  line-height: 0.96rem;
+}
+
+.h96 .mg {
+  margin-left: 1.83rem;
+  margin-right: 1.1rem;
+}
+
+.h96 .current {
+  border-bottom: 0.01rem solid #5fa01e;
+}
+
+.list {
+  width: 7.1rem;
+  height: 2.4rem;
+  margin-left: 0.2rem;
+  border: 0.01rem solid #ccc;
+  margin-bottom: 0.2rem;
+}
+
+.list p {
+  height: 0.6rem;
+  background: #eeeeee;
+  line-height: 0.6rem;
+  text-indent: 1em;
+  font-size: 0.2rem;
+}
+
+.list h2 {
+  height: 0.6rem;
+  text-indent: 1em;
+  line-height: 0.6rem;
+  font-size: 0.2rem;
+}
+
+.guige {
+  height: 0.65rem;
+  font-size: 0.26rem;
+  line-height: 0.65rem;
+  text-indent: 2em;
+}
+
+footer {
+  width: 7.5rem;
+  height: 14.47rem;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+
+.shpCart {
+  width: 7.5rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+  padding-left: 0.2rem;
+}
+
+.shpCart .cartbar {
+  width: 4.45rem;
+  height: 0.8rem;
+  box-sizing: border-box;
+}
+
+.shpCart .cartbar span {
+  display: block;
+  width: 0.72rem;
+  height: 0.71rem;
+  background: url(../img/cart.png) no-repeat;
+  background-size: 0.72rem 0.71rem;
+  margin-top: 0.07rem;
+}
+
+.shpCart .cartbar p {
+  font-size: 0.28rem;
+  line-height: 0.71rem;
+  margin-left: 0.68rem;
+}
+
+.shpCart .cartbar p i {
+  color: #f29300;
+}
+
+.shpCart .go {
+  width: 2.85rem;
+  height: 0.8rem;
+  background: #60a42b;
+}
+
+.shpCart .go a {
+  font-size: 0.36rem;
+  color: #fff;
+  line-height: 0.8rem;
+  display: block;
+  text-align: center;
+}

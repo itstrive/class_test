@@ -1,0 +1,9 @@
+NaN（not a number）不等于任何值，包括本身
+alert（NaN==NaN）的返回结果是false；
+isNaN（） 这个函数可以接受一个参数，参数可以是任何类型，而函数会帮我们确定该参数是否“不是数值”
+这个函数会尝试把参数转换成数值，任何不能被转换成数值的参数都会返回true
+例如  alert（isNaN（NaN））  //true
+      alert（isNaN（10））  //false
+      alert（isNaN（“10”）） //false
+      alert（isNaN（“blue”））//true
+      alert（isNaN（true））//false（true可以被转换成1,  那false是否会转换成0？）
